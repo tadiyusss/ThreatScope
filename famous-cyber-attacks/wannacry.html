@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Tailwind</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<!-- NAVIGATION -->
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+            <nav class="w-full p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="w-14 h-14">
+                        <h4 class="text-2xl">ThreatScope</h4>
+                    </div>
+                    <button class="md:hidden block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
+                </div>
+    
+                <ul class="text-xl md:flex hidden items-center space-x-8 ">
+                    <li>Home</li>
+                    <li>Recent News</li>
+                    <li>Learn Now</li>
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </nav>
+
+			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+			<div class="relative max-w-4xl mx-auto mt-48">
+				<h4 class="text-6xl font-medium">WannaCry Ransomware Attack</h4>
+				<p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+			</div>
+		</div>
+		<div class="bg-gradient-to-b from-black to-zinc-900 pt-24 space-y-4 px-2">
+			<div class="max-w-7xl mx-auto space-y-20">
+                <div class="space-y-4">
+                    <h4 class="font-medium text-2xl">Overview</h4>
+                    <p>The WannaCry ransomware attack occurred in May 2017 and quickly became one of the largest cyberattacks in history. It targeted Microsoft Windows systems, spreading rapidly across over 150 countries. Victims included major hospitals, corporations, and government agencies, leading to critical disruptions. The attack exploited a vulnerability known as EternalBlue, which had been leaked from U.S. intelligence services. Although a security patch had been released before the attack, many organizations had not applied it. The ransomware encrypted files and demanded Bitcoin payments for decryption keys. The attack highlighted the severe risks posed by outdated systems. It also demonstrated how cyberweapons developed by nation-states could be repurposed by criminals.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-medium text-2xl">Method of Attack</h4>
+                    <p>The attackers used a wormable ransomware that leveraged the EternalBlue vulnerability in the Windows SMBv1 protocol to spread across networks. Once a system was infected, WannaCry encrypted important files and displayed a ransom note demanding Bitcoin payment. The malware also attempted to spread itself laterally to other vulnerable systems automatically. Although ransomware was the primary threat, the worm-like behavior made it particularly devastating. A "kill switch" domain was accidentally discovered, which helped slow the spread.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-medium text-2xl">Impact and Consequences</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                            <h6 class="font-medium text-lg">Impact 1</h6>
+                            <p>The United Kingdom's National Health Service (NHS) was one of the hardest-hit organizations, leading to canceled surgeries and diverted ambulances. Critical medical equipment and patient records became inaccessible, creating a national healthcare emergency. It exposed serious cybersecurity weaknesses within essential public infrastructure.</p>
+                        </div>
+                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                            <h6 class="font-medium text-lg">Impact 2</h6>
+                            <p>Global businesses such as FedEx and Renault also suffered major disruptions. FedEx reported widespread system outages, severely impacting logistics and delivery operations. Renault had to temporarily halt manufacturing at several plants to contain the spread of the ransomware.</p>
+                        </div>
+                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                            <h6 class="font-medium text-lg">Impact 3</h6>
+                            <p>The total economic damages from WannaCry were estimated to be between $4 billion and $8 billion globally. Many small and medium-sized businesses lacked the resources to recover quickly from the attack. This economic shockwave led companies to reassess their investment in cybersecurity preparedness.</p>
+                        </div>
+                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                            <h6 class="font-medium text-lg">Impact 4</h6>
+                            <p>Governments worldwide initiated urgent cybersecurity reviews after the WannaCry attack. New policies were created to improve the speed of critical patches and encourage better cooperation between the private sector and government agencies. It also reignited debates about the responsibility of intelligence agencies in securing or disclosing cyber vulnerabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+
+		<footer class="text-white w-full p-4 pt-24 bg-zinc-900">
+            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
