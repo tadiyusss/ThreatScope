@@ -1,136 +1,134 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../assets/js/tailwind.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Tailwind</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+            <nav class="w-full p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="w-14 h-14">
+                        <h4 class="text-2xl">ThreatScope</h4>
+                    </div>
+                    <button class="md:hidden block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
+                </div>
+    
+                <ul class="text-xl md:flex hidden items-center space-x-8 ">
+                    <li>Home</li>
+                    <li>Recent News</li>
+                    <li>Learn Now</li>
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </nav>
 
-    <body class="bg-slate-950 text-white">
+			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+			<div class="relative max-w-4xl mx-auto mt-48">
+				<h4 class="text-6xl font-medium">History of Computer Vulnerabilities</h4>
+                <div class="flex items-center space-x-4 mt-4 justify-center">
+                    <a href="">Initial Discovery </a>
+                    <a href="">Common Early Exploits and Attacks</a>
+                    <a href="">The Development of Security Patching</a>
+                </div>
+			</div>
+		</div>
+		<div class="bg-gradient-to-b from-black to-zinc-900 pt-24 space-y-6 px-2">
+            <div class="max-w-7xl mx-auto space-y-20">
+                <div class="space-y-4">
+                    <h4 class="font-medium text-2xl text-indigo-600">The Initial Discovery of Software Vulnerabilities</h4>
+                    <div class="space-y-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-medium text-2xl text-indigo-600">Common Early Exploits and Attacks</h4>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-zinc-800 p-4 rounded space-y-2">
+                            <h6 class="text-2xl font-medium">Phishing</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
+                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                              Learn More</button>
+                        </div>
 
-        <!-- header -->
-        <nav class="w-full bg-slate-800 shadow p-4 flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="assets/logo.png" class="w-14 h-14">
-                <h4 class="text-2xl">ThreatScope</h4>
-            </div>
-            <ul class="text-xl flex items-center space-x-8">
-                <li>Home</li>
-                <li>Recent News</li>
-                <li>Learn Now</li>
-                <li><i class="fa-solid fa-bars"></i></li>
-            </ul>
-           
-        </nav>
+                        <div class="bg-zinc-800 p-4 rounded space-y-2">
+                            <h6 class="text-2xl font-medium">Ransomware</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
+                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                              Learn More</button>
+                        </div>
 
-        <!-- body -->
-        <h3 class="max-w-7xl mx-auto mt-4 font-semibold">Concept of Cybersecurity / History of Computer Vulnerabilities</h3>
-        <div id="hero" class="text-center">
-            <div class="max-w-7xl my-24 mx-auto">
-                <h3 class="text-6xl font-semibold">History of Computer Vulnerabilities</h3>
-                <h6 class="text-2xl mt-4"><a href="#discovery">Initial Discovery</a> | <a href="#common">Common Early Exploits and Attacks</a> | <a href="development">The Development of Security patching.</a></h6>
+                        <div class="bg-zinc-800 p-4 rounded space-y-2">
+                            <h6 class="text-2xl font-medium">SQL Injextion</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
+                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                              Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-medium text-2xl text-indigo-600">The Developement of Security Patching and Updates</div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <img src="https://placehold.co/300x300" class="w-full rounded h-96 object-cover border">
+                        <div class="flex items-center justify-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti molestias neque quaerat expedita odit veritatis alias dicta ex mollitia fugit, possimus doloribus ut nam odio laborum ullam tempora! Fugiat iure, veniam eum voluptatem nulla suscipit accusamus commodi fugit eos, iste sint cum atque corrupti omnis consequuntur perferendis adipisci cupiditate nostrum repudiandae hic molestiae. Numquam in provident hic facere illo, beatae harum laborum tempore pariatur nobis. Eligendi consequuntur hic dignissimos quas facere excepturi, quibusdam labore rerum harum eos earum veritatis, placeat omnis. Dolore nostrum aperiam dolorum, suscipit porro repellat ex velit est fugit neque harum ut. Et iste tempore harum veniam natus deleniti accusamus repellendus laboriosam perferendis eum, reprehenderit architecto odit quasi.</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
+                    </p>
+                </div>
             </div>
         </div>
+		
 
-        <div class="max-w-7xl my-24 mx-auto" id="discovery">
-            <h6 class="text-indigo-600 text-2xl mt-4 font-medium">The initial Discovery of software Vulnerabilities</h6>
-            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>    
-            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
-        </div>
-
-        <div class="max-w-7xl w-full my-24 mx-auto">
-            <h1 class="text-2xl text-indigo-600 mb-8 font-medium">
-              Common Early Exploits and Attacks</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              
-              <!-- box 1 -->
-              <div class="bg-slate-800 rounded-lg shadow-md p-6">
-                <h2 class="text-indigo-600 font-semibold mb-2">Phishing</h2>
-                <p class="mt-4 mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora.</p>
-                  <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                    Learn More</button>
-              </div>
-              
-              <!-- box 2 -->
-              <div class="bg-slate-800 rounded-lg shadow-md p-6">
-                <h2 class="text-indigo-600 font-semibold mb-2">Rasomware</h2>
-                <p class="mt-4 mb-4 ">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora.
-                </p>
-                <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                    Learn More</button>
-              </div>
-              
-              <!-- box 3 -->
-              <div class="bg-slate-800 rounded-lg shadow-md p-6">
-                <h2 class="text-indigo-600 font-semibold mb-2">SQL Injection</h2>
-                <p class="mt-4 mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora.
-                </p>
-                <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                    Learn More</button>
-              </div>
-        
+		<footer class="text-white w-full p-4 pt-24 bg-zinc-900">
+            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        
-
-          <div class="max-w-7xl my-24 mx-auto">
-            <h1 class="text-2xl text-indigo-600 mb-8 font-medium">
-              The Development of Security Patching and Updates   </h1>
-            
-            <div class="flex flex-col md:flex-row gap-6 mb-6">
-              <!-- Image -->
-              <div class="bg-white w-full md:w-1/2 h-72 rounded-md shadow-md flex-shrink-0"></div>
-              
-              <!-- Text Content -->
-              <div class="mt-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
-              </div>
-            </div>
-            
-            <!-- Bottom Paragraph -->
-            <div class="mt-4">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
-              </p>
-            </div>
-          </div>
-
-
-        <!-- footer -->
-        <footer class="w-full max-w-7xl mx-auto p-2 mt-24 p-8 flex justify-between">
-          <div>
-              <h4 class="text-indigo-600 text-3xl font-medium">ThreatScope</h4>
-              <p class="text-gray-500">© 2024 | All rights reserved.</p>
-          </div>
-          <div class="flex space-x-4">
-              <div>
-                  <h5 class="text-lg font-semibold text-gray-900">Prepared By</h5>
-                  <ul>
-                      <li class="text-gray-700">RICAFRANCA, EDWARD ALLEN L.</li>
-                      <li class="text-gray-700">SONGODANAN, CYRUS M.</li>
-                      <li class="text-gray-700">TOLEDO, THADDEUS F.</li>
-                      <li class="text-gray-700">MOYA, PATRICK CHRISTOPHER L.</li>
-                      <li class="text-gray-700">PAGADUAN, JAN ART C.</li>
-                  </ul>
-              </div>
-
-              <div>
-                  <h5 class="text-lg font-semibold text-gray-900">Prepared By</h5>
-                  <ul>
-                      <li class="text-gray-700">MARCIANO, LATISHA D. ***</li>
-                      <li class="text-gray-700">LAUGO, CYRIL MARIUS M.</li>
-                      <li class="text-gray-700">CUENCO, JOHN LOUIE R.</li>
-                      <li class="text-gray-700">PANGILINAN, MYLES JOAQUIN T.</li>
-                      <li class="text-gray-700">PAGUEL, JESS PATRICK R.</li>
-                  </ul>
-              </div>
-          </div>
-      </footer>
-        
-    </body>
+        </footer>
+	</body>
 </html>
