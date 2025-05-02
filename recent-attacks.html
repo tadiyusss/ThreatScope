@@ -4,69 +4,91 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./assets/js/tailwind.js"></script>
+        <link rel="stylesheet" href="assets/css/fonts.css">
         <title>ThreatScope</title>
     </head>
-    <body class="text-zinc-800">
-        <nav class="w-full bg-white shadow border border-gray-200 p-4 flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="assets/logo.png" class="w-14 h-14">
-                <h4 class="text-2xl">ThreatScope</h4>
+    <body class="bg-gradient-to-b from-zinc-950 to-slate-950 text-white">
+        <nav class="w-full p-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="../assets/logo.svg" class="w-14 h-14">
+                    <h4 class="text-2xl">ThreatScope</h4>
+                </div>
+                <button class="md:hidden block">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                  
+                </button>
             </div>
-            <ul class="text-xl flex items-center space-x-8">
+            <ul class="text-xl md:flex hidden items-center space-x-8 ">
                 <li>Home</li>
                 <li>Recent News</li>
                 <li>Learn Now</li>
+                <li><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
-        <div class="max-w-4xl border-gray-200 mx-auto p-4 mt-14">
+        <div class="max-w-4xl mx-auto p-4 mt-14 space-y-8">
+            <img src="https://placehold.co/500x500" class="w-full rounded h-96 object-cover">
             <h2 class="font-semibold text-4xl">Structured Query Language Injection</h2>
-            <div class="my-8 flex items-center space-x-8">
-                <img src="https://placehold.co/100x100" class="w-14 h-14 rounded-full">
+            <div class="flex items-center space-x-4">
+                <img src="https://placehold.co/250x250" class="rounded-full w-16 h-16">
                 <div>
                     <h4 class="text-lg font-medium">Author Name</h4>
                     <h5 class="text-sm text-gray-500 font-medium">March 14, 2025</h5>
                 </div>
             </div>
-            <div class="my-10 p-4 bg-indigo-400/20 border border-indigo-500/50 rounded">
-                <h4 class="text-lg font-medium text-indigo-800">TL;DR</h4>
-                <p class="mt-2 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nulla. Ut quae qui saepe quo sint, dolorem voluptate reprehenderit dolores asperiores illo voluptates harum, rerum eveniet tempora nemo id totam, ipsum adipisci! Excepturi ducimus rem qui eligendi sed voluptatem et sequi recusandae officia temporibus veritatis, aspernatur similique impedit corrupti molestias necessitatibus accusantium odio ex velit iste omnis unde eum. Nostrum iure consequatur eum amet cupiditate odit ipsa error optio maiores quas, fuga, possimus quidem! Doloribus alias maxime praesentium voluptatibus suscipit. A odit quidem, possimus dolorem iste soluta doloremque alias tenetur incidunt dicta ab ullam voluptas esse. Quia fugit vel fugiat eum aliquam eaque est, iure sed, a aspernatur autem dolorem!</p>
+            <div class="p-4 rounded text-white bg-zinc-800 border-zinc-700">
+                <h4 class="text-lg font-medium">TL;DR</h4>
+                <p class="mt-2 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nulla. Ut quae qui saepe quo sint, dolorem voluptate reprehenderit dolores asperiores illo voluptates harum, rerum eveniet tempora nemo id totam, ipsum adipisci! Excepturi ducimus rem qui eligendi sed voluptatem et sequi recusandae officia temporibus veritatis, aspernatur similique impedit corrupti molestias necessitatibus accusantium odio ex velit iste omnis unde eum. Nostrum iure consequatur eum amet cupiditate odit ipsa error optio maiores quas, fuga, possimus quidem! Doloribus alias maxime praesentium voluptatibus suscipit. A odit quidem, possimus dolorem iste soluta doloremque alias tenetur incidunt dicta ab ullam voluptas esse. Quia fugit vel fugiat eum aliquam eaque est, iure sed, a aspernatur autem dolorem!</p>
             </div>
-            <h4 class="text-2xl font-semibold mb-4">This a header for this content</h4>
-            <p class="mb-4 text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium beatae animi unde possimus eius pariatur aut. Maiores iure magnam natus molestias, adipisci nobis, magni non ex ea rem, autem nostrum veniam eveniet tempore similique dolorem cupiditate dolor dolore exercitationem pariatur sint quidem facilis quo officiis? Dolores dolorem saepe reiciendis quae repellat dolorum, nulla iure aperiam, explicabo, fuga placeat? Culpa quos quam quia dolorem cum laboriosam velit ab, distinctio eos quas dicta ipsum magnam ad, maiores commodi aspernatur, id recusandae illo omnis? Quod necessitatibus voluptates optio repellat explicabo libero eos quo, harum error animi repellendus similique dignissimos! Magni beatae voluptatem incidunt magnam? Dolor fugit tempore non? Tempore enim pariatur cumque assumenda.</p>
-            <h4 class="text-2xl font-semibold mb-4">This is a header for this section</h4>
-            <ol class="list-decimal list-inside mb-4">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
-            <div class="mb-4 border border-gray-300 rounded bg-gray-50 p-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum vel quod distinctio vitae velit magnam provident quisquam!</p>
-            </div>
-            <div class="mt-18">
-                <h4 class="text-3xl mb-4">Read More</h4>
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="#" class="col-span-1">
-                        <img src="assets/sample-1.png" class="w-full h-64 object-cover rounded">
-                        <h5 class="mt-2 text-2xl font-medium">Article Title</h5>
-                        <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum vel quod distinctio vitae velit magnam provident quisquam!</p>
-                    </a>
-                    <a href="#" class="col-span-1">
-                        <img src="assets/sample2.jpg" class="w-full h-64 object-cover rounded">
-                        <h5 class="mt-2 text-2xl font-medium">Article Title</h5>
-                        <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum vel quod distinctio vitae velit magnam provident quisquam!</p>
-                    </a>
-                    <a href="#" class="col-span-1">
-                        <img src="assets/sample3.jpg" class="w-full h-64 object-cover rounded">
-                        <h5 class="mt-2 text-2xl font-medium">Article Title</h5>
-                        <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum vel quod distinctio vitae velit magnam provident quisquam!</p>
-                    </a>
-                    <a href="#" class="col-span-1">
-                        <img src="assets/sample4.jpg" class="w-full h-64 object-cover rounded">
-                        <h5 class="mt-2 text-2xl font-medium">Article Title</h5>
-                        <p class="text-gray-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum vel quod distinctio vitae velit magnam provident quisquam!</p>
-                    </a>
+            <div class="space-y-6">
+                <h4 class="text-2xl font-semibold">This a header for this content</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium beatae animi unde possimus eius pariatur aut. Maiores iure magnam natus molestias, adipisci nobis, magni non ex ea rem, autem nostrum veniam eveniet tempore similique dolorem cupiditate dolor dolore exercitationem pariatur sint quidem facilis quo officiis? Dolores dolorem saepe reiciendis quae repellat dolorum, nulla iure aperiam, explicabo, fuga placeat? Culpa quos quam quia dolorem cum laboriosam velit ab, distinctio eos quas dicta ipsum magnam ad, maiores commodi aspernatur, id recusandae illo omnis? Quod necessitatibus voluptates optio repellat explicabo libero eos quo, harum error animi repellendus similique dignissimos! Magni beatae voluptatem incidunt magnam? Dolor fugit tempore non? Tempore enim pariatur cumque assumenda.</p>
+                <h4 class="text-2xl font-semibold">This is a header for this section</h4>
+                <div class="border p-4 rounded border-zinc-800 bg-zinc-800 text-gray-100">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde adipisci illo, natus possimus mollitia inventore culpa vel cumque nobis eius, facere debitis voluptates voluptatum doloribus at illum iure beatae architecto iusto? Dolor beatae aperiam doloribus, sed voluptatem blanditiis veniam laborum quae! Eos quis possimus harum omnis labore repellat beatae quas alias maiores fugiat laudantium dolore dolorum quasi tempora repellendus a, blanditiis non maxime! Magnam reprehenderit consectetur praesentium velit eaque aperiam repellendus quis accusamus corrupti veritatis eos nostrum voluptatibus, ipsam, dignissimos, suscipit sequi! Rem tempore excepturi delectus minus, libero beatae quo cupiditate sunt enim necessitatibus aliquam laboriosam. Enim deleniti nobis eum, a cupiditate atque suscipit, inventore quia dolores at iusto esse?</p>
                 </div>
             </div>
         </div>
+        <footer class="text-white w-full p-4">
+            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
