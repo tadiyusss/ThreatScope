@@ -28,7 +28,7 @@ To maintain a clean, consistent, and readable codebase, please follow the guidel
 
 ## 💬 Commit Messages
 
-<type>: <short description>
+type: "short description"
 
 ```
 feat: add responsive layout to about page
