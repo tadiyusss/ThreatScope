@@ -1,6 +1,8 @@
 const menu_toggle = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 
+sidebar.classList.remove('-translate-x-full'); 
+
 menu_toggle.addEventListener('click', () => {
     sidebar.classList.toggle('-translate-x-full');
 });
