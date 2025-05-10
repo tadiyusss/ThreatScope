@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Tailwind</title>
-        <script src='https://cdn.tailwindcss.com'></script>
+        <script src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'></script>
     </head>
     <body class="text-white bg-[#191A2E]">
         <nav class="">
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+            <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
             [&::-webkit-scrollbar-track]:bg-gray-100
             [&::-webkit-scrollbar-thumb]:bg-gray-300
             dark:[&::-webkit-scrollbar-track]:bg-neutral-700
@@ -275,31 +275,86 @@
                 </ul>
             </div>
         </nav>
-        <div id="hero" class="p-4 mx-auto md:max-w-6xl max-w-5xl grid md:grid-cols-2 grid-cols-1 gap-y-4 mt-8">
-            <div class="flex items-center justify-center">
+        <div id="hero" class="p-4 mx-auto md:max-w-5xl max-w-4xl grid md:grid-cols-3 grid-cols-1 gap-y-4 mt-8">
+            <div class="md:col-span-2 col-span-1 flex items-center justify-center">
                 <div class="md:space-y-4 space-y-8">
-                    <h4 class="text-7xl font-medium">Future Cyber Threats</h4>
+                    <h4 class="text-6xl font-medium">Future Cyber Threats</h4>
                     <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
                     <a href="#" class="bg-indigo-600 px-2 py-1 rounded inline-block">Call to Action</a>
                 </div>
             </div>
-            <div class="flex items-center justify-center">
-                <img src="../assets/future-cyber-threats.png">
+            <div class="col-span-1 flex items-center justify-center">
+                <img src="../assets/future-cyber-threats.png" class="drop-shadow drop-shadow-2xl drop-shadow-[0px_0px_100px_50px_#24d1cf]">
             </div>
         </div>
-        <div class="my-14 w-full space-y-14">
-            <div class="max-w-5xl mx-auto px-2 grid grid-cols-3 gap-4">
-                <div class="border bg-indigo-900/20 border-indigo-800/20">
-                    <img src="https://placehold.co/250x250" class="w-full h-48 object-cover rounded-t">
+        <div class="my-32 w-full space-y-14">
+            <div class="max-w-5xl mx-auto px-2 grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="border bg-[#111436] border-indigo-950 ">
+                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
                     <div class="p-4 space-y-2">
                         <h5 class="text-lg font-medium">AI in Hacking</h5>
                         <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
                         <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
                     </div>
                 </div>
-                
+                <div class="border bg-[#111436] border-indigo-950 ">
+                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
+                    <div class="p-4 space-y-2">
+                        <h5 class="text-lg font-medium">AI in Hacking</h5>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                        <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
+                    </div>
+                </div>
+                <div class="border bg-[#111436] border-indigo-950 ">
+                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
+                    <div class="p-4 space-y-2">
+                        <h5 class="text-lg font-medium">AI in Hacking</h5>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
+                        <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer class="text-white w-full p-4">
+            <div class="max-w-5xl mx-auto border p-6 border bg-[#111436]/60 border-indigo-950 rounded md:flex block justify-between">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="../assets/js/main.js"></script>
     </body>
 </html>
