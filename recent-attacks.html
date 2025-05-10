@@ -1,61 +1,354 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./assets/js/tailwind.js"></script>
-        <link rel="stylesheet" href="assets/css/fonts.css">
-        <title>ThreatScope</title>
-    </head>
-    <body class="bg-gradient-to-b from-zinc-950 to-slate-950 text-white">
-        <nav class="w-full p-4 flex items-center justify-between">
-            <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                <div class="flex items-center space-x-4">
-                    <img src="../assets/logo.svg" class="w-14 h-14">
-                    <h4 class="text-2xl">ThreatScope</h4>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>ThreatScope</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full h-[85dvh] relative">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
+                    </div>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-                <button class="md:hidden block">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>                  
-                </button>
-            </div>
-            <ul class="text-xl md:flex hidden items-center space-x-8 ">
-                <li>Home</li>
-                <li>Recent News</li>
-                <li>Learn Now</li>
-                <li><i class="fa-solid fa-bars"></i></li>
-            </ul>
-        </nav>
-        <div class="max-w-4xl mx-auto p-4 mt-14 space-y-8">
-            <img src="https://placehold.co/500x500" class="w-full rounded h-96 object-cover">
-            <h2 class="font-semibold text-4xl">Structured Query Language Injection</h2>
-            <div class="flex items-center space-x-4">
-                <img src="https://placehold.co/250x250" class="rounded-full w-16 h-16">
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+			<div class="grid md:grid-cols-3 grid-cols-1 max-w-7xl mx-auto md:mt-20 mt-10">
+				<div class="md:col-span-2 col-span-1 flex items-center justify-center">
+                    <div class="block px-4">
+                        <h4 class="text-5xl font-medium">Recent Cyber Attacks</h4>
+                        <p class="mt-4 text-gray-200 md:text-left text-justify">Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                    </div>
+				</div>
+				<div class="flex justify-center mt-8 px-4 md:mt-0">
+					<img src="assets/recent-cyber-attacks.png" alt="Pic" class="md:block hidden max-w-full h-auto">
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="md:px-2 px-4 space-y-4 max-w-6xl mx-auto">
+            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
+                <h5 class="text-xl font-medium">Change Healthcare Ransomware Attack</h5>
+                <p>Cybercrime and hacking have a surprisingly long history, beginning as early as 1834 when two brothers manipulated France's telegraph system to steal financial information—arguably the first recorded cyberattack. In the 1940s, René Carmille used his knowledge of punch-card computers to quietly sabotage Nazi data collection, making him one of the earliest ethical hackers. The 1960s and 70s saw the rise of more experimental hacking, like the Creeper virus that moved between computers on ARPANET and its antidote, Reaper—the first antivirus software. As personal computers became more common in the 1980s and 90s, malicious hacking increased, but so did the efforts of white hat hackers trying to protect systems. One of the most famous cases was Kevin Mitnick, who went from infiltrating major corporations to becoming a cybersecurity consultant. Over time, the fight against cybercrime has evolved into a full-blown industry, with experts working daily to defend against increasingly sophisticated digital threats.</p>
                 <div>
-                    <h4 class="text-lg font-medium">Author Name</h4>
-                    <h5 class="text-sm text-gray-500 font-medium">March 14, 2025</h5>
+                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
                 </div>
             </div>
-            <div class="p-4 rounded text-white bg-zinc-800 border-zinc-700">
-                <h4 class="text-lg font-medium">TL;DR</h4>
-                <p class="mt-2 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nulla. Ut quae qui saepe quo sint, dolorem voluptate reprehenderit dolores asperiores illo voluptates harum, rerum eveniet tempora nemo id totam, ipsum adipisci! Excepturi ducimus rem qui eligendi sed voluptatem et sequi recusandae officia temporibus veritatis, aspernatur similique impedit corrupti molestias necessitatibus accusantium odio ex velit iste omnis unde eum. Nostrum iure consequatur eum amet cupiditate odit ipsa error optio maiores quas, fuga, possimus quidem! Doloribus alias maxime praesentium voluptatibus suscipit. A odit quidem, possimus dolorem iste soluta doloremque alias tenetur incidunt dicta ab ullam voluptas esse. Quia fugit vel fugiat eum aliquam eaque est, iure sed, a aspernatur autem dolorem!</p>
-            </div>
-            <div class="space-y-6">
-                <h4 class="text-2xl font-semibold">This a header for this content</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium beatae animi unde possimus eius pariatur aut. Maiores iure magnam natus molestias, adipisci nobis, magni non ex ea rem, autem nostrum veniam eveniet tempore similique dolorem cupiditate dolor dolore exercitationem pariatur sint quidem facilis quo officiis? Dolores dolorem saepe reiciendis quae repellat dolorum, nulla iure aperiam, explicabo, fuga placeat? Culpa quos quam quia dolorem cum laboriosam velit ab, distinctio eos quas dicta ipsum magnam ad, maiores commodi aspernatur, id recusandae illo omnis? Quod necessitatibus voluptates optio repellat explicabo libero eos quo, harum error animi repellendus similique dignissimos! Magni beatae voluptatem incidunt magnam? Dolor fugit tempore non? Tempore enim pariatur cumque assumenda.</p>
-                <h4 class="text-2xl font-semibold">This is a header for this section</h4>
-                <div class="border p-4 rounded border-zinc-800 bg-zinc-800 text-gray-100">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde adipisci illo, natus possimus mollitia inventore culpa vel cumque nobis eius, facere debitis voluptates voluptatum doloribus at illum iure beatae architecto iusto? Dolor beatae aperiam doloribus, sed voluptatem blanditiis veniam laborum quae! Eos quis possimus harum omnis labore repellat beatae quas alias maiores fugiat laudantium dolore dolorum quasi tempora repellendus a, blanditiis non maxime! Magnam reprehenderit consectetur praesentium velit eaque aperiam repellendus quis accusamus corrupti veritatis eos nostrum voluptatibus, ipsam, dignissimos, suscipit sequi! Rem tempore excepturi delectus minus, libero beatae quo cupiditate sunt enim necessitatibus aliquam laboriosam. Enim deleniti nobis eum, a cupiditate atque suscipit, inventore quia dolores at iusto esse?</p>
+
+            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
+                <h5 class="text-xl font-medium">History of Computer Vulnerabilities</h5>
+                <p>Cybersecurity's journey began in 1971 when Bob Thomas created "Creeper," a program that moved across ARPANET, displaying the message "I'm the creeper, catch me if you can!" Though not harmful, it revealed the potential for network vulnerabilities. Ray Tomlinson, known for inventing email, responded with "Reaper," the first antivirus software designed to eliminate Creeper, marking the inception of cybersecurity measures. The 1980s saw a surge in cyber threats, with notable breaches at institutions like AT&T and the Los Alamos National Laboratory, highlighting the need for robust security protocols. Terms like "computer virus" and "trojan horse" emerged, and antivirus solutions such as McAfee's VirusScan became essential tools. The decade also introduced the Morris Worm in 1988, one of the first worms to cause widespread disruption, emphasizing the escalating complexity of cyber threats and the critical importance of cybersecurity defenses.</p>
+                <div>
+                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
                 </div>
             </div>
-        </div>
-        <footer class="text-white w-full p-4">
-            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+
+            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
+                <h5 class="text-xl font-medium">LoanDepot Ransomware Attack</h5>
+                <p>Cybersecurity's journey began in 1971 when Bob Thomas created "Creeper," a program that moved across ARPANET, displaying the message "I'm the creeper, catch me if you can!" Though not harmful, it revealed the potential for network vulnerabilities. Ray Tomlinson, known for inventing email, responded with "Reaper," the first antivirus software designed to eliminate Creeper, marking the inception of cybersecurity measures. The 1980s saw a surge in cyber threats, with notable breaches at institutions like AT&T and the Los Alamos National Laboratory, highlighting the need for robust security protocols. Terms like "computer virus" and "trojan horse" emerged, and antivirus solutions such as McAfee's VirusScan became essential tools. The decade also introduced the Morris Worm in 1988, one of the first worms to cause widespread disruption, emphasizing the escalating complexity of cyber threats and the critical importance of cybersecurity defenses.</p>
+                <div>
+                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                </div>
+            </div>
+
+            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
+                <h5 class="text-xl font-medium">Kawasaki Motors Europe Cyber Attack</h5>
+                <p>The evolution of cyber threats has progressed from early computer viruses to sophisticated AI-driven attacks, reflecting the rapid advancement of technology and the increasing value of digital assets. In the 1980s, threats like the Morris Worm highlighted the potential for widespread disruption, leading to the development of antivirus software and firewalls. The 1990s and early 2000s saw the rise of more destructive malware, such as the ILOVEYOU worm, which caused billions in damages, the damage that this particular virus has caused prompted the establishment of dedicated cybersecurity divisions. By the mid-2000s, cybercriminals shifted to advanced persistent threats(APTs), exemplified by Operation Aurora, targeting corporate and government data through prolonged, stealthy intrusions. The 2010s introduced ransomware attacks like WannaCry, exploiting system vulnerabilities for financial gain, and the COVID-19 pandemic further exacerbated cyber threats, with significant breaches in organizations like the WHO. Today, AI-powered cyberattacks employ automation, deep fakes, and personalized phishing, posing significant challenges to traditional cybersecurity measures and necessitating the development of AI-driven defense mechanisms.</p>
+                <div>
+                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                </div>
+            </div>
+
+            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
+                <h5 class="text-xl font-medium">Crowdstrike Incident</h5>
+                <p>The field of ethical hacking involves the use of hacking skills for legal and constructive purposes, often to identify and fix vulnerabilities in systems to improve security. In the list of famous names, the most renowned ethical hackers is Kevin Mitnick, who, after a notorious hacking career, became a leading security consultant and author. Tsutomu Shimomura, a physicist and cybersecurity expert, played a critical role in capturing Mitnick with the help of the FBI. Joanna Rutkowska is known for her groundbreaking work on rootkit vulnerabilities, notably exposing flaws in Windows Vista, while Charlie Miller identified vulnerabilities in Apple products and demonstrated security risks in car systems. Jayson E. Street specializes in physical security penetration and has conducted real-world penetration tests to help organizations secure their premises. Other notable figures in this field include Richard Thieme, Chris Hadnagy, Marc Maiffret, Mohamed Elnouby, and Rafay Baloch, who have all contributed immensely to identifying vulnerabilities in major platforms and improving security standards.</p>
+                <div>
+                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                </div>
+            </div>
+			
+		</div>
+		
+
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
                 </div>
@@ -90,5 +383,7 @@
                 </div>
             </div>
         </footer>
-    </body>
+		</div>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
