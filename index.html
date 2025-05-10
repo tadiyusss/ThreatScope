@@ -3,69 +3,337 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>ThreatScope</title>
 		<script src='https://cdn.tailwindcss.com'></script>
 		<link rel="stylesheet" href="assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="w-full p-4 flex items-center justify-between">
-                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.svg" class="w-14 h-14">
-                        <h4 class="text-2xl">ThreatScope</h4>
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full h-[85dvh] relative">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
                     </div>
-                    <button class="md:hidden block">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>                  
-                    </button>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
                 </div>
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
     
-                <ul class="text-xl md:flex hidden items-center space-x-8 ">
-                    <li>Home</li>
-                    <li>Recent News</li>
-                    <li>Learn Now</li>
-                    <li><i class="fa-solid fa-bars"></i></li>
-                </ul>
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">Computer Vulnerabilities: Recent Cyber Attacks</h4>
-				<p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+			<div class="grid md:grid-cols-3 grid-cols-1 max-w-7xl mx-auto md:mt-20 mt-10">
+				<div class="md:col-span-2 col-span-1 flex items-center justify-center">
+                    <div class="block px-4">
+                        <h4 class="text-5xl font-medium">Computer Vulnerabilities: Recent Cyber Attacks</h4>
+                        <p class="mt-4 text-gray-200 md:text-left text-justify">Welcome to the section on Types of Vulnerabilities, where we uncover the hidden weaknesses that cyber attackers often exploit. From software bugs and misconfigurations to human errors and outdated systems, vulnerabilities come in many forms. This page breaks down the most common types, such as SQL injections and cross-site scripting, and explains how they impact system security. Understanding these flaws is the first step toward building safer, more resilient digital environments.</p>
+                    </div>
+				</div>
+				<div class="flex justify-center mt-8 px-4 md:mt-0">
+					<img src="assets/home-page.png" alt="Pic" class="md:block hidden max-w-full h-auto">
+				</div>
 			</div>
 		</div>
-		<div class="bg-gradient-to-b from-black to-zinc-900 pt-24">
-            <div class="grid grid-cols-3 max-w-7xl mx-auto gap-4 p-4">
-                <div class="rounded bg-zinc-800 p-4">
-                    <h4 class="text-2xl font-medium">Get Secured</h4>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus nobis ducimus cumque officia veritatis iste provident ea, deserunt enim eius numquam consectetur incidunt voluptatum labore accusamus voluptas minima sequi.</p>
-                    <button class="bg-indigo-600 hover:bg-indigo-700 ease duration-200 text-white px-2 py-1 rounded mt-4">Learn More</button>
+
+		
+		<div class="md:px-0 px-4">
+			<div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 max-w-6xl gap-4 mx-auto">
+				<div class="bg-[#141528] p-4 rounded text-white space-y-2 border border-indigo-900">
+                    <h5 class="text-xl font-medium">Types of Vulnerabilities</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores voluptatum magni quod mollitia dolorem molestias, aperiam ab iure. Corrupti at eum reiciendis nam mollitia cumque, cum error incidunt placeat.</p>
+                    <div>
+                        <a href="#" class="px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                    </div>
                 </div>
 
-                <div class="rounded bg-zinc-800 p-4">
-                    <h4 class="text-2xl font-medium">Get Secured</h4>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus nobis ducimus cumque officia veritatis iste provident ea, deserunt enim eius numquam consectetur incidunt voluptatum labore accusamus voluptas minima sequi.</p>
-                    <button class="bg-indigo-600 hover:bg-indigo-700 ease duration-200 text-white px-2 py-1 rounded mt-4">Learn More</button>
+                <div class="bg-[#141528] p-4 rounded text-white space-y-2 border border-indigo-900">
+                    <h5 class="text-xl font-medium">Protective Measures</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores voluptatum magni quod mollitia dolorem molestias, aperiam ab iure. Corrupti at eum reiciendis nam mollitia cumque, cum error incidunt placeat.</p>
+                    <div>
+                        <a href="#" class="px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                    </div>
                 </div>
 
-                <div class="rounded bg-zinc-800 p-4">
-                    <h4 class="text-2xl font-medium">Get Secured</h4>
-                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloribus nobis ducimus cumque officia veritatis iste provident ea, deserunt enim eius numquam consectetur incidunt voluptatum labore accusamus voluptas minima sequi.</p>
-                    <button class="bg-indigo-600 hover:bg-indigo-700 ease duration-200 text-white px-2 py-1 rounded mt-4">Learn More</button>
+                <div class="bg-[#141528] p-4 rounded text-white space-y-2 border border-indigo-900">
+                    <h5 class="text-xl font-medium">Protective Measures</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores voluptatum magni quod mollitia dolorem molestias, aperiam ab iure. Corrupti at eum reiciendis nam mollitia cumque, cum error incidunt placeat.</p>
+                    <div>
+                        <a href="#" class="px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
+                    </div>
                 </div>
-                
-            </div>
-        </div>
+			</div>
+		</div>
 		
 
-		<footer class="text-white w-full p-4 pt-24 bg-zinc-900">
-            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
                 </div>
@@ -100,5 +368,7 @@
                 </div>
             </div>
         </footer>
+		</div>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
