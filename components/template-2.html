@@ -1,322 +1,339 @@
 <!doctype html>
 <html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>Tailwind</title>
-        <script src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'></script>
-    </head>
-    <body class="text-white bg-[#191A2E]">
-        <nav class="">
-            <div class="w-full p-4 flex items-center justify-between">
-                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.svg" class="w-14 h-14">
-                        <h4 class="text-2xl">ThreatScope</h4>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Types of Vulnerabilities</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+			<!-- NAVIGATION -->
+		<div id="hero" class="w-full h-dvh relative">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
                     </div>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="md:flex items-center space-x-4">
-                    <li>
-                        <a href="#" class="hidden md:block">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hidden md:block">Recent News</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hidden md:block">Learn Now</a>
-                    </li>
-                    <li>
-                        <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>                  
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
-            [&::-webkit-scrollbar-track]:bg-gray-100
-            [&::-webkit-scrollbar-thumb]:bg-gray-300
-            dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-            dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                <ul class="space-y-2 text-left">
-                    <li class="flex items-center space-x-4 p-4">
-                        <img src="../assets/logo.svg" class="w-14 h-14">
-                        <h4 class="text-2xl">ThreatScope</h4>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Navigations</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Recent News</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Learn Now</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Concepts</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Famous Attacks</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Recent Attacks</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Companies Affected</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Protective Measures</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Future Threats</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Gallery</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">About Us</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Contact Us</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2">
-                        <ul class="space-y-2">
-                            <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                            <li>
-                                <ul class="">
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 1</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 2</a>
-                                    </li>
-                                    <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                        <a href="#">Item 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="hero" class="p-4 mx-auto md:max-w-5xl max-w-4xl grid md:grid-cols-3 grid-cols-1 gap-y-4 mt-8">
-            <div class="md:col-span-2 col-span-1 flex items-center justify-center">
-                <div class="md:space-y-4 space-y-8">
-                    <h4 class="text-6xl font-medium">Future Cyber Threats</h4>
-                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
-                    <a href="#" class="bg-indigo-600 px-2 py-1 rounded inline-block">Call to Action</a>
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-span-1 flex items-center justify-center">
-                <img src="../assets/future-cyber-threats.png" class="drop-shadow drop-shadow-2xl drop-shadow-[0px_0px_100px_50px_#24d1cf]">
-            </div>
-        </div>
-        <div class="my-32 w-full space-y-14">
-            <div class="max-w-5xl mx-auto px-2 grid md:grid-cols-3 grid-cols-1 gap-4">
-                <div class="border bg-[#111436] border-indigo-950 ">
-                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
-                    <div class="p-4 space-y-2">
-                        <h5 class="text-lg font-medium">AI in Hacking</h5>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                        <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
+            </nav>
+
+			<div class="grid md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto mt-8">
+				<div class="flex items-center justify-center">
+                    <div class="block px-4">
+                        <h4 class="text-6xl font-medium"> <span class="text-[#6366F1]">Types</span> of Vulnerabilities</h4>
+                        <p class="mt-4 text-gray-200">Welcome to the section on Types of Vulnerabilities, where we uncover the hidden weaknesses that cyber attackers often exploit. From software bugs and misconfigurations to human errors and outdated systems, vulnerabilities come in many forms. This page breaks down the most common types, such as SQL injections and cross-site scripting, and explains how they impact system security. Understanding these flaws is the first step toward building safer, more resilient digital environments.</p>
+                        <button class="mt-2 bg-indigo-600 hover:bg-indigo-700 ease duration-200 px-2 py-1 rounded">Learn More</button>
                     </div>
-                </div>
-                <div class="border bg-[#111436] border-indigo-950 ">
-                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
-                    <div class="p-4 space-y-2">
-                        <h5 class="text-lg font-medium">AI in Hacking</h5>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                        <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
-                    </div>
-                </div>
-                <div class="border bg-[#111436] border-indigo-950 ">
-                    <img src="https://placehold.co/250x250" class="w-full md:h-48 h-64 object-cover rounded-t">
-                    <div class="p-4 space-y-2">
-                        <h5 class="text-lg font-medium">AI in Hacking</h5>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex.</p>
-                        <button class="px-2 py-1 rounded text-white bg-indigo-600 text-sm">Learn More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="text-white w-full p-4">
-            <div class="max-w-5xl mx-auto border p-6 border bg-[#111436]/60 border-indigo-950 rounded md:flex block justify-between">
+				</div>
+				<div class="flex justify-center mt-8 px-4 md:mt-0">
+					<img src="../assets/hacker.png" alt="Pic" class="md:block hidden max-w-full h-auto">
+				</div>
+                
+			</div>
+		</div>
+
+		
+		<div class="">
+			<div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 max-w-6xl mx-auto py-16">
+				<div class="px-4">
+					<img src="https://placehold.co/500x500" class="w-full rounded-t h-64 object-cover" alt="">
+					<div class="space-y-2 bg-[#141528] p-5 rounded-b-lg">
+						<h5 class="font-medium text-2xl">Software Bugs</h5>
+						<p class="text-sm">Software bugs are defects or errors  in a program's code that result in security flaws or unexpected behavior. They frequently happen as a result of miscommunication during development, human error, or a misunderstanding of the requirements.</p>
+						<button class="mt-2 bg-indigo-500 text-sm hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+					</div>
+				</div>
+                <div class="px-4">
+					<img src="https://placehold.co/500x500" class="w-full h-64 object-cover rounded" alt="">
+					<div class="space-y-2 bg-[#141528] p-5 rounded-b-lg">
+						<h5 class="font-medium text-2xl">Software Bugs</h5>
+						<p class="text-sm">Software bugs are defects or errors in a program's code that result in security flaws or unexpected behavior. They frequently happen as a result of miscommunication during development, human error, or a misunderstanding of the requirements.</p>
+						<button class="mt-2 bg-indigo-500 text-sm hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+					</div>
+				</div>
+                <div class="px-4">
+					<img src="https://placehold.co/500x500" class="w-full h-64 object-cover rounded" alt="">
+					<div class="space-y-2 bg-[#141528] p-5 rounded-b-lg">
+						<h5 class="font-medium text-2xl">Software Bugs</h5>
+						<p class="text-sm">Software bugs are defects or errors in a program's code that result in security flaws or unexpected behavior. They frequently happen as a result of miscommunication during development, human error, or a misunderstanding of the requirements.</p>
+						<button class="mt-2 bg-indigo-500 text-sm hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="text-white w-full p-4 pt-24">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
                         <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
@@ -355,6 +372,7 @@
                 </div>
             </div>
         </footer>
-        <script src="../assets/js/main.js"></script>
-    </body>
+		</div>
+		
+	</body>
 </html>
