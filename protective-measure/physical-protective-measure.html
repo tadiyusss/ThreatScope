@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Types of Vulnerabilities</title>
+		<script src='https://cdn.tailwindcss.com'></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
-		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full h-dvh relative">
+            <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -29,6 +29,9 @@
                             <a href="#" class="hidden md:block">Learn Now</a>
                         </li>
                         <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
                             <button class="cursor-pointer p-2 rounded" id="menu-toggle">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -37,7 +40,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto right-0 w-64 bg-zinc-950 text-white transform translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
@@ -47,298 +50,334 @@
                             <img src="../assets/logo.svg" class="w-14 h-14">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Navigations</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Home</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Recent News</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Concepts</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Vulnerabilities</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Famous Attacks</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Recent Attacks</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Companies Affected</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Protective Measures</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Future Threats</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Gallery</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">About Us</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Contact Us</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="px-2">
+    
+                        <li class="px-4">
                             <ul class="space-y-2">
                                 <li class="text-lg font-medium px-2">Vulnerabilities</li>
                                 <li>
                                     <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 1</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 2</a>
                                         </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-2 px-2 rounded">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
                                             <a href="#">Item 3</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        
-                        
-                        
-
                     </ul>
                 </div>
             </nav>
 
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">Physical Protective Measure</h4>
-				<p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium voluptatem odit, eum magni, quisquam porro animi eveniet at quia, debitis maiores repudiandae mollitia blanditiis rem dignissimos adipisci neque ex ipsa.</p>
+			<div class="grid md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto mt-8">
+				<div class="flex items-center justify-center">
+                    <div class="block px-4">
+                        <h4 class="text-6xl font-medium ">Physical <span class="text-[#6366F1]">Protective Measures</span></h4>
+                        <p class="mt-4 text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus quaerat, rerum adipisci earum minima perferendis eveniet tempora alias, nam vel labore odit veritatis explicabo omnis nesciunt asperiores ex at.</p>
+                    </div>
+				</div>
+				<div class="flex justify-center mt-8 px-4 md:mt-0">
+					<img src="../assets/hacker.png" alt="Pic" class="md:block hidden max-w-full h-auto">
+				</div>
+                
 			</div>
 		</div>
-        <!-- Content -->
-        <div class="bg-gradient-to-b from-black to-zinc-900">
-			<div class="grid md:grid-cols-3 grid-cols-1 gap-4 container mx-auto py-16">
 
-				<div class="bg-zinc-800">
+		
+		<!-- Content -->
+        <div class="">
+			<div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 max-w-6xl mx-auto py-16 gap-4">
+
+				<div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
 					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
 					<div class="p-4">
 						<h5 class=" font-medium text-2xl">AI in hacking</h5>
 						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
-						<button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-					</div>
-				</div>
-	
-				<div class="bg-zinc-800">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Quantum Computing Risks</h5>
-						<p class="my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, velit? Praesentium recusandae molestiae explicabo aliquid asperiores ad, nisi adipisci facilis quasi libero odit odio a nam, exercitationem sed? Nesciunt, deleniti?
-                        </p>
-						<button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-					</div>
-				</div>
-	
-				<div class="bg-zinc-800">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">DeFi and Blockchain Exploits</h5>
-						<p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro in obcaecati possimus officia cupiditate voluptatem eius, impedit rem et id maiores facilis natus quibusdam iste nemo tempora ex mollitia?</p>
-						<button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
 					</div>
 				</div>
 
-                <div class="bg-zinc-800">
+                <div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
 					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
 					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Biohacking and Implant Vulnerabilities</h5>
-						<p class="my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, velit? Praesentium recusandae molestiae explicabo aliquid asperiores ad, nisi adipisci facilis quasi libero odit odio a nam, exercitationem sed? Nesciunt, deleniti?
-                        </p>
-						<button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+						<h5 class=" font-medium text-2xl">AI in hacking</h5>
+						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
+					</div>
+				</div>
+
+                <div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
+					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
+					<div class="p-4">
+						<h5 class=" font-medium text-2xl">AI in hacking</h5>
+						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
+					</div>
+				</div>
+
+                <div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
+					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
+					<div class="p-4">
+						<h5 class=" font-medium text-2xl">AI in hacking</h5>
+						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
+					</div>
+				</div>
+
+                <div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
+					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
+					<div class="p-4">
+						<h5 class=" font-medium text-2xl">AI in hacking</h5>
+						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
+					</div>
+				</div>
+
+
+                <div class=" bg-[#111436] outline outline-1 outline-white rounded space-y-2">
+					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
+					<div class="p-4">
+						<h5 class=" font-medium text-2xl">AI in hacking</h5>
+						<p class="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, officia facere at laudantium quas iure facilis modi sunt porro fugiat, molestias saepe id ab atque sapiente rem dolorem beatae. Reprehenderit.</p>
+                        <div class="text-right">
+                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
+                        </div>
+						
 					</div>
 				</div>
 	
-				<div class="bg-zinc-800">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">5G and Beyond</h5>
-						<p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro in obcaecati possimus officia cupiditate voluptatem eius, impedit rem et id maiores facilis natus quibusdam iste nemo tempora ex mollitia?</p>
-						<button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-					</div>
-				</div>
+				
 
             
               
@@ -347,12 +386,12 @@
 		</div>
 		
 
-		<footer class="text-white w-full p-4 pt-24 bg-zinc-900">
-            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
                 </div>
@@ -387,6 +426,7 @@
                 </div>
             </div>
         </footer>
-        <script src="../assets/js/main.js"></script>
+		</div>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
