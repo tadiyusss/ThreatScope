@@ -3,13 +3,14 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>Evolution of Cyber Threats</title>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('./assets/hero-evolution-of-cybersecurity.png')] bg-cover bg-center bg-no-repeat relative">
             <nav class="absolute inset-0 z-10">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
@@ -20,13 +21,13 @@
                     </div>
                     <ul class="md:flex items-center space-x-4">
                         <li>
-                            <a href="#" class="hidden md:block">Home</a>
+                            <a href="../index.html" class="hidden md:block">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
+                            <a href="../recent-attacks.html" class="hidden md:block">Recent News</a>
                         </li>
                         <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
+                            <a href="../concepts-of-cybersecurity.html" class="hidden md:block">Learn Now</a>
                         </li>
                         <li>
                             <a href="#" class="hidden md:block">Contact Us</a>
@@ -290,51 +291,62 @@
             </nav>
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
-			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">Evolution of Cyber Threats</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">From Basic Malware to Complex Threats </a>
-                    <a href="">Rise of Social Engineering</a>
-                    <a href="">Modern Threats in Cloud</a>
+                <div class="relative max-w-4xl mx-auto mt-48">
+                    <h4 class="text-6xl font-medium">Evolution of Cyber Threats</h4>
+                    <div class="flex items-center space-x-4 mt-4 justify-center">
+                        <p>
+                            <a href="#basic" class="text-white hover:text-purple-500 transition-colors duration-200">From Basic Malware to Complex Threats</a> |
+                            <a href="#rise" class="text-white hover:text-purple-500 transition-colors duration-200">Rise of Social Engineering</a> |
+                            <a href="#modern" class="text-white hover:text-purple-500 transition-colors duration-200">Modern Threats</a>
+                        </p>
+
+                    </div>
                 </div>
-			</div>
-		</div>
+            </div>
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="max-w-7xl my-24 mx-auto">
-                    <h6 class="text-[#E2C8F1] text-2xl mt-4 font-medium">Progression from Basic Malware to Complex Threats</h6>
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>    
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
+                    <h6 class="text-[#E2C8F1] text-2xl mt-4 font-medium" id="basic">Progression from Basic Malware to Complex Threats</h6>
+                    <p class="mt-4 text-justify">In the early days of computing, malware was relatively simple, often designed more for mischief than for profit or destruction. Viruses like the "Brain" virus of 1986 and the "ILOVEYOU" worm of 2000 were rudimentary, spreading primarily through floppy disks or email attachments. These early threats relied on user interaction and exploited basic security flaws in operating systems and applications. As digital environments grew in complexity and connectivity, attackers began creating more advanced malware with targeted functions. The evolution from simple viruses to trojans, worms, and spyware marked the beginning of more organized and financially motivated cybercrime.</p>    
+                    <p class="mt-4 text-justify">In recent years, malware has grown into a complex ecosystem that includes ransomware, rootkits, fileless malware, and advanced persistent threats (APTs). These threats often use encryption, obfuscation, and zero-day exploits to evade detection by traditional security tools. Modern malware is frequently developed by sophisticated groups with financial, political, or ideological goals, sometimes backed by nation-states. They can remain undetected for long periods, enabling data theft, espionage, or system sabotage. This evolution reflects a shift from opportunistic attacks to strategic, well-funded cyber operations aimed at critical infrastructure and enterprise systems.</p>
                 </div>
 
 
                 <div class="p-5 bg-[#141528] border border-indigo-900 rounded">
-                <div class="text-medium text-2xl text-[#E2C8F1] mb-4">The Rise of Social Engineering and Human Exploitation</div>
-                <div class="grid grid-cols-2 gap-8">
-                    <img src="https://placehold.co/300x300" class="w-full rounded h-96 object-cover border mb-4">
-                    <div class="flex items-center justify-center">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti molestias neque quaerat expedita odit veritatis alias dicta ex mollitia fugit, possimus doloribus ut nam odio laborum ullam tempora! Fugiat iure, veniam eum voluptatem nulla suscipit accusamus commodi fugit eos, iste sint cum atque corrupti omnis consequuntur perferendis adipisci cupiditate nostrum repudiandae hic molestiae. Numquam in provident hic facere illo, beatae harum laborum tempore pariatur nobis. Eligendi consequuntur hic dignissimos quas facere excepturi, quibusdam labore rerum harum eos earum veritatis, placeat omnis. Dolore nostrum aperiam dolorum, suscipit porro repellat ex velit est fugit neque harum ut. Et iste tempore harum veniam natus deleniti accusamus repellendus laboriosam perferendis eum, reprehenderit architecto odit quasi.</p>
+                    <div class="text-medium text-2xl text-[#E2C8F1] mb-4" id="rise">
+                        The Rise of Social Engineering and Human Exploitation
                     </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
-                </p>
-                </div>
 
-
-                <div class="space-y-4 mt-16">
-                    <div class="text-medium text-2xl text-[#E2C8F1] ">Modern Threats in Cloud Computing and IoT Environments</div>
-                    <div class="grid grid-cols-2 gap-8">
-                        <img src="https://placehold.co/300x300" class="w-full rounded h-96 object-cover border">
-                        <div class="flex items-center justify-center">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti molestias neque quaerat expedita odit veritatis alias dicta ex mollitia fugit, possimus doloribus ut nam odio laborum ullam tempora! Fugiat iure, veniam eum voluptatem nulla suscipit accusamus commodi fugit eos, iste sint cum atque corrupti omnis consequuntur perferendis adipisci cupiditate nostrum repudiandae hic molestiae. Numquam in provident hic facere illo, beatae harum laborum tempore pariatur nobis. Eligendi consequuntur hic dignissimos quas facere excepturi, quibusdam labore rerum harum eos earum veritatis, placeat omnis. Dolore nostrum aperiam dolorum, suscipit porro repellat ex velit est fugit neque harum ut. Et iste tempore harum veniam natus deleniti accusamus repellendus laboriosam perferendis eum, reprehenderit architecto odit quasi.</p>
-                        </div>
+                    <div class="text-white text-justify">
+                        <img src="https://placehold.co/300x300" class="float-left w-90 h-68 object-cover rounded mr-6 mb-4 border" />
+                        <p class="text-justify">
+                        Social engineering has emerged as one of the most effective tactics in cybercrime, capitalizing on human psychology rather than technical vulnerabilities. Early forms of social engineering, such as phishing emails and baiting tactics, manipulated users into revealing sensitive information or downloading malicious files. Attackers rely on trust, urgency, fear, or curiosity to trick individuals into bypassing security protocols. These methods often require minimal technical skill but yield high success rates, making them attractive to a wide range of threat actors. As organizations strengthen their technical defenses, cybercriminals increasingly target the human element as the weakest link.
+                        </p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
+
+                    <p class="text-white mt-6 text-justify">
+                        Modern social engineering attacks have evolved to become more sophisticated, leveraging personal data from social media and public records to create highly convincing messages. Techniques like spear-phishing, vishing (voice phishing), and pretexting are used to impersonate trusted entities such as colleagues, banks, or government agencies. Business Email Compromise (BEC) schemes have caused significant financial losses by tricking employees into transferring funds or sharing confidential information. Security awareness training and simulated phishing exercises are now crucial components of organizational defense strategies. Despite technological advancements, the exploitation of human behavior remains a persistent and growing cybersecurity threat.
                     </p>
+                </div>
+
+
+
+                <div class="space-y-4 mt-16" >
+                    <div class="text-medium text-2xl text-[#E2C8F1]" id="modern">
+                        Modern Threats in Cloud Computing and IoT Environments
+                    </div>
+                    <div class="text-justify">
+                        <img src="https://placehold.co/300x300" class="float-left w-90 h-68 object-cover rounded mr-6 mb-4 border" />
+                        <p>
+                        The integration of cloud computing and the Internet of Things (IoT) has revolutionized the digital landscape, offering unprecedented scalability and connectivity. However, this convergence has also introduced a myriad of security challenges. In cloud computing, misconfigurations, such as unsecured storage buckets and improperly set access controls, remain a primary concern, often leading to data breaches and unauthorized access . Additionally, the expansive attack surface created by interconnected services and APIs increases the risk of exploitation. Threat actors are increasingly targeting supply chains, exploiting vulnerabilities in third-party services to gain access to broader networks.
+                        <br><br>
+                        In the grand scheme of IoT, the proliferation of devices with limited computational resources and often inadequate security measures has made them prime targets for cyberattacks. Many IoT devices suffer from vulnerabilities like weak authentication protocols, outdated firmware, and lack of encryption, which can be exploited to gain unauthorized access or launch distributed denial-of-service (DDoS) attacks . The integration of these devices with cloud services further complicates security, as compromised devices can serve as entry points into cloud infrastructures. Moreover, the lack of standardized security frameworks for IoT devices exacerbates the challenge, making it difficult to implement consistent protective measures across diverse devices and platforms .​
+                        </p>
+                        <button class="btn btn-success">Hello</button>
+                    </div>
                 </div>
             </div>
 		</div>
-		
 
 		<footer class="text-white w-full p-4 bg-[#141528]">
             <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
