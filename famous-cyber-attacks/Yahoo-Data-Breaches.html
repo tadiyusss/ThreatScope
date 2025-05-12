@@ -4,67 +4,327 @@
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<title>Tailwind</title>
-		<script src='https://cdn.tailwindcss.com'></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="w-full p-4 flex items-center justify-between">
-                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.svg" class="w-14 h-14">
-                        <h4 class="text-2xl">ThreatScope</h4>
+            <nav class="absolute inset-0 z-10">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
                     </div>
-                    <button class="md:hidden block">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>                  
-                    </button>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-    
-                <ul class="text-xl md:flex hidden items-center space-x-8 ">
-                    <li>Home</li>
-                    <li>Recent News</li>
-                    <li>Learn Now</li>
-                    <li><i class="fa-solid fa-bars"></i></li>
-                </ul>
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="px-2">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+
+                    </ul>
+                </div>
             </nav>
 
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Yahoo Data Breaches</h4>
-				<p class="mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                <div class="flex items-center space-x-4 mt-4 justify-center">
+                    <a href="">Initial Discovery </a>
+                    <a href="">Common Early Exploits and Attacks</a>
+                    <a href="">The Development of Security Patching</a>
+                </div>
 			</div>
 		</div>
-
-        <!-- CONTENT -->
-		<div class="bg-gradient-to-b from-black to-zinc-900 pt-24 space-y-4 px-2">
-			<div class="max-w-7xl mx-auto space-y-20">
+		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-indigo-600">Overview</h4>
-                    <p>The Yahoo data breaches were among the largest known breaches in internet history. They occurred between 2013 and 2014 but were only disclosed to the public in 2016 and 2017. The breaches compromised data from all 3 billion Yahoo accounts. Stolen information included names, email addresses, hashed passwords, and security questions and answers. Yahoo initially underestimated the number of affected users, leading to significant public backlash. Nation-state actors were suspected to be involved in at least one of the breaches. The late disclosure and mishandling of the breach damaged Yahoo’s reputation severely. It also significantly impacted Yahoo’s acquisition by Verizon.</p>
+                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+                    <p>The Yahoo data breaches were among the largest known breaches in internet history. They occurred between 2013 and 2014 but were only disclosed to the public in 2016. The breaches compromised data from all 3 billion Yahoo accounts. Stolen information included names, email addresses, hashed passwords, and security questions and answers. Yahoo initially underestimated the number of affected users, leading to significant public backlash. Nation-state actors were suspected to be involved in at least one of the breaches. The late disclosure and mishandling of the breach damaged Yahoo’s reputation severely. It also significantly impacted Yahoo’s acquisition by Verizon.</p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-indigo-600">Method of Attack</h4>
+                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
                     <p>Attackers used spear-phishing tactics to gain initial access to Yahoo’s systems. Once inside, they forged authentication cookies, allowing them to access accounts without needing passwords. The breaches were persistent, with hackers maintaining long-term access to Yahoo's user database. Although no financial data was reported stolen, the personal information compromised created long-term risks for users. The main threat involved credential theft and account compromise across multiple platforms.</p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-indigo-600">Impact and Consequences</h4>
+                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Impact and Consequences</h4>
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 1</h6>
                             <p>Yahoo faced significant financial consequences when Verizon reduced its acquisition price by $350 million. The final deal valued Yahoo at around $4.48 billion, a sharp decrease from the original offer. This represented one of the largest merger devaluations due to a cyber incident.</p>
                         </div>
-                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 2</h6>
                             <p>The breach destroyed much of Yahoo’s brand trust among users. Many users abandoned their accounts or moved to competing services due to fears over security. This severely reduced Yahoo’s active user base and advertising revenue.</p>
                         </div>
-                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 3</h6>
                             <p>The U.S. Securities and Exchange Commission (SEC) fined Yahoo's parent company for failing to disclose the breach sooner. This was one of the first instances where a company was penalized for delayed cyber breach disclosure. It set a legal precedent for breach notification regulations in the U.S.</p>
                         </div>
-                        <div class="border bg-zinc-800 border-zinc-700 rounded p-4 space-y-2">
+                        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 4</h6>
                             <p>The stolen Yahoo data was sold and distributed on underground forums. This created widespread secondary attacks like phishing, credential stuffing, and identity theft. Many users’ accounts on unrelated services were compromised because of password reuse.</p>
                         </div>
@@ -74,8 +334,8 @@
 		</div>
 		
 
-		<footer class="text-white w-full p-4 pt-24 bg-zinc-900">
-            <div class="max-w-7xl mx-auto border p-6 border-zinc-700 bg-zinc-800 rounded md:flex block justify-between">
+		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
+            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
                 <div>
                     <div class="flex items-center space-x-4">
                         <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
@@ -114,5 +374,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../assets/js/main.js"></script>
 	</body>
 </html>

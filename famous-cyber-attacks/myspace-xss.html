@@ -291,7 +291,7 @@
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">LockBit Ransomware</h4>
+				<h4 class="text-6xl font-medium">MySpace XSS</h4>
                 <div class="flex items-center space-x-4 mt-4 justify-center">
                     <a href="">Initial Discovery </a>
                     <a href="">Common Early Exploits and Attacks</a>
@@ -303,13 +303,12 @@
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="space-y-4">
                     <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-                    <p>LockBit ransomware attacks first emerged in 2020 and have rapidly become one of the most dominant ransomware threats globally. The group operates a Ransomware-as-a-Service (RaaS) model, enabling affiliates to launch attacks using LockBit's tools. LockBit is known for its fast encryption speeds and double extortion tactics, where data is both encrypted and stolen. The group has targeted various sectors, including healthcare, manufacturing, education, and government. LockBit consistently updates its malware, releasing new versions like LockBit 2.0, 3.0, and LockBit Black. Their attacks often include threats to leak data unless ransom demands are met. Despite law enforcement crackdowns, LockBit remains highly active as of 2025. It continues to be a major player in the global ransomware ecosystem.
-
+                    <p>A major cyberattack against MySpace occurred in October 2005 as a result of a Cross-Site Scripting (XSS) vulnerability. Samy Kamkar, a MySpace member, developed a worm that quickly propagated over user profiles. In under 20 hours, the worm gained Samy a million pals by self-replicating with just 4 KB of JavaScript. By taking advantage of vulnerabilities in MySpace's profile input sanitization, the worm enabled the execution of malicious code. MySpace had to briefly stop down in order to clean up the attack as the worm spread out of hand. The event showed the potential dangers of XSS vulnerabilities. Samy later had to deal with legal repercussions despite his innocent statement. One of the first and most well-known instances of an XSS worm in history was this incident.
                     </p>
                 </div>
                 <div class="space-y-4">
                     <h4 class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
-                    <p>LockBit affiliates often use phishing emails, exposed Remote Desktop Protocol (RDP) servers, or stolen credentials to access networks. Once inside, they move laterally and deploy the ransomware payload to encrypt critical systems. The malware uses strong encryption algorithms and can automate parts of the attack to maximize damage quickly. LockBit operators also steal sensitive data before encryption for additional leverage. Their approach combines both ransomware and data exfiltration threats.
+                    <p>The attack made use of a vulnerability in MySpace's input sanitization procedure that made it possible to add JavaScript to a profile page. When Samy added malicious JavaScript to his own profile, it sent friend requests automatically and spread to other profiles that saw it. Without any human engagement, this process turned the worm into a self-spreading piece of malware that infected millions of individuals. The threat type that was employed was Cross-Site Scripting (XSS), a flaw that lets hackers insert malicious scripts into websites that other people are viewing. Within a few hours, the worm had taken over MySpace due to its exponential growth.
                     </p>
                 </div>
                 <div class="space-y-4">
@@ -317,21 +316,20 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 1</h6>
-                            <p>Healthcare institutions targeted by LockBit faced life-threatening service interruptions. Hospitals had to cancel surgeries and reroute emergency patients due to locked systems. This demonstrated the devastating impact of ransomware on critical infrastructure.</p>
+                            <p>Within 20 hours, more than a million MySpace profiles got hacked, resulting in chaos on the social networking platform. MySpace had to temporarily shut down its platform in order to eliminate the infection and restore security. Major vulnerabilities in input validation and content sanitization procedures were revealed by the incident.</p>
                         </div>
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 2</h6>
-                            <p>Businesses attacked by LockBit experienced massive operational downtime and ransom demands reaching millions of dollars. Many organizations faced public relations crises after data leaks. Some companies went bankrupt following unsuccessful recovery efforts.
+                            <p>As part of his punishment, the attacker, Samy Kamkar, was prohibited from using the internet for a number of years. He performed 720 hours of community service, paid a $20,000 fine, and admitted guilt to a felony hacking offense. A significant legal precedent for the handling of cybercrimes via social networks was established by the case.
                             </p>
                         </div>
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 3</h6>
-                            <p>LockBit's success has encouraged the growth of the RaaS model in the cybercriminal ecosystem. More amateur hackers now have access to sophisticated ransomware tools. This has led to an overall increase in the frequency of ransomware attacks worldwide.</p>
+                            <p>The claimed vulnerability in MySpace's security procedures damaged the company's credibility. The platform's ability to protect user information and preserve site security was questioned by users. The need for improved web security standards was brought to light by rivals and security specialists.</p>
                         </div>
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
                             <h6 class="font-medium text-lg">Impact 4</h6>
-                            <p>Law enforcement agencies like the FBI and Europol have launched major crackdowns against LockBit affiliates. Some affiliates have been arrested, and LockBit’s infrastructure has been temporarily disrupted. However, the group's decentralized model allows it to recover and rebrand quickly.
-
+                            <p>Social media businesses were forced by the incident to give XSS vulnerability security top priority. Following the incident, filtering user inputs and applying stronger verification became the standard procedure. One of the most important case studies for teaching cybersecurity about online application vulnerabilities is still the Samy Worm.
                             </p>
                         </div>
                     </div>
