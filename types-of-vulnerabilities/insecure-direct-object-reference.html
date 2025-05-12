@@ -281,9 +281,6 @@
                                 </li>
                             </ul>
                         </li>
-                        
-                        
-                        
 
                     </ul>
                 </div>
@@ -291,7 +288,7 @@
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">Software bugs</h4>
+				<h4 class="text-6xl font-medium">Insecure Direct Object Reference (IDOR)</h4>
                 <div class="flex items-center space-x-4 mt-4 justify-center">
                     <a href="">Emergance of Hacking </a>
                     <a href="">Milesstone Incidents</a>
@@ -305,22 +302,20 @@
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
           <p>
-            Software bugs are inadvertent defects or mistakes in computer programs that lead to unexpected behavior, crashes, or inaccurate output. Usually, these problems result from errors made in the software development process during the design, coding, or testing stages. Logic errors, syntax errors, and integration problems are common bug types that can jeopardize the dependability and functionality of software applications. SonarSource claims that these bugs frequently arise from coding mistakes that cause unexpected runtime behavior. Since these bugs have the potential to cause serious operational disruptions and security vulnerabilities, fixing them is essential.
-
+            Insecure Direct Object Reference (IDOR) is a common web security vulnerability that falls under the broader category of Broken Access Control. It occurs when a web application uses user-supplied input to access objects directly, such as files, database records, or URLs, without proper authorization checks. This flaw allows attackers to manipulate input parameters, like IDs or filenames, to gain unauthorized access to data. IDOR is especially dangerous in APIs and web applications that rely on predictable object references. When exploited, it can lead to unauthorized information disclosure, data manipulation, or even complete account takeovers.
           </p>
           <p>
-            Besides just being technical issues, software bugs can have a significant negative impact on an organization's finances and reputation. For example, millions of users may be impacted by a small bug in a popular application, which could result in a decline in trust and possible legal ramifications. Furthermore, software defects can present significant safety hazards in vital systems like healthcare or aviation. To find and fix bugs early in the development cycle, it is crucial to implement strict testing and quality assurance procedures. SonarQube and other tools help developers identify and fix these problems quickly, guaranteeing the delivery of dependable and secure software.
-
+            IDOR vulnerabilities are typically caused by a lack of proper access control validation in the backend systems. Developers might assume that users can only access resources they’re authorized to view based on the frontend logic, which can be bypassed. Attackers often test for IDOR by incrementing or changing numeric or string parameters to see if they can access other users' data. This makes IDOR a favorite target in automated tools and manual penetration testing. Addressing IDOR requires a strong implementation of access control checks on every data request and avoiding the use of easily guessable identifiers in URLs or requests.
           </p>
         </div>
     
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
           <p>
-            Human error during the software development lifecycle is usually the source of software bugs. Misunderstandings of the requirements, improper logic implementation, or insufficient testing can all lead to these mistakes. Unexpected behavior or system failures may result from a bug that is dormant until it is triggered by particular conditions during runtime. By looking for patterns in the codebase that frequently result in errors, static code analysis tools like SonarQube assist in finding these bugs. Developers can avoid possible problems before the software goes into production by identifying bugs early.
+            The basic mechanism behind IDOR involves a user input—like an account ID or document number—being sent to the server to retrieve specific resources. If the application does not verify whether the user has permission to access the requested object, an attacker can simply modify the input to reference a different object. For instance, changing a URL from /invoice/102 to /invoice/103 might allow access to someone else’s invoice. The vulnerability is often hidden in plain sight and can be discovered through careful inspection of URL patterns or API request parameters. Without server-side authorization checks, any authenticated user can exploit these references to access data they shouldn't see.
           </p>
           <p>
-            Attackers frequently use software flaws to access systems or data without authorization. A buffer overflow bug, for instance, can compromise system security by enabling an attacker to run arbitrary code. Such flaws have been exploited in real-world situations to compromise systems, steal confidential data, or interfere with services. Because of the notorious Heartbleed flaw in the OpenSSL library, hackers were able to read protected memory and reveal private information. As a result, identifying and fixing software bugs affects both functionality and security.
+            In real-world scenarios, attackers might use IDOR to view confidential documents, access personal information of other users, or even modify someone else's data. Many mobile apps and APIs are particularly vulnerable because developers sometimes rely solely on frontend controls for security. Attackers use tools like intercepting proxies (e.g., Burp Suite) to tamper with request parameters and monitor the responses. Once an IDOR is confirmed, it can be used repeatedly to scrape or manipulate large amounts of unauthorized data. Because of its simplicity and impact, IDOR remains a critical and often exploited vulnerability in modern applications.
           </p>
         </div>
     
@@ -329,29 +324,25 @@
           <div class="grid grid-cols-3 gap-4">
             
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Heartbleed Bug (2014)</h6>
+              <h6 class="font-medium text-lg">Instagram (2018)</h6>
               <p class="p-3">
-                The OpenSSL cryptographic software library was found to have the Heartbleed bug in 2014. This flaw compromised the security of millions of websites by enabling attackers to read private information from the memory of compromised systems. The bug had far-reaching effects, causing many organizations to suffer severe financial and reputational harm.
-            </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Uber App Glitch (2017)</h6>
-              <p class="p-3">
-                An Uber app bug unintentionally revealed a man's affair to his wife by sending notifications to a user's device even after they had logged out. The unintended personal consequences of software bugs were brought to light by this incident, which resulted in a divorce and a lawsuit against Uber. The error highlighted how crucial comprehensive testing is, particularly when it comes to user privacy.
+                In 2018, an IDOR flaw in Instagram’s mobile API allowed hackers to access private profile information. By modifying user IDs in the request, attackers could scrape email addresses and phone numbers. The issue was reported responsibly and patched soon after.
               </p>
             </div>
     
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">The Knight Capital Group Trading Glitch (2012)
-            </h6>
+              <h6 class="font-medium text-lg">Facebook (2012)<h6>
               <p class="p-3">
-                In 2012, a software bug in Knight Capital Group’s trading system caused the company to lose $440 million in just 45 minutes. The bug led to a series of unintended trades that disrupted the stock market and resulted in significant financial losses for the company. This incident demonstrates how software bugs in financial systems can lead to rapid and devastating economic consequences. The bug in Knight Capital Group’s trading system was a functional bug that led to significant financial losses.
-
+                In 2012, a security researcher discovered an IDOR vulnerability in Facebook's mobile interface. It allowed users to delete photos uploaded by other users by manipulating photo IDs. Facebook quickly patched the issue after being notified.
               </p>
             </div>
-  
     
+            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
+              <h6 class="font-medium text-lg">Uber (2016)</h6>
+              <p class="p-3">
+                In 2016, a security researcher exploited an IDOR vulnerability in Uber’s driver portal. By changing user IDs, he could access and retrieve personal trip history and data of other users. Uber fixed the issue and rewarded the researcher through their bug bounty program.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -361,81 +352,76 @@
           <!-- Accordion Item 1 -->
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Financial Losses</span>
+              <span class="text-xl">Unauthorized Data Access</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-                Businesses may suffer large financial losses as a result of software bugs. For example, a trading company lost $440 million in 2012 as a result of a software error that resulted in unauthorized trades. These kinds of incidents draw attention to the financial risks that come with undetected bugs. These monetary risks can be lessened by making investments in thorough testing and quality control.
+                IDOR allows attackers to access confidential information that they are not permitted to view. This could include personal details, financial records, or internal company documents. Such access violates data privacy laws and regulations. It can lead to serious legal and reputational consequences.
             </div>
           </details>
         
           <!-- Accordion Item 2 -->
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Security Vulnerabilities</span>
+              <span class="text-xl">Account Takeover</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-                Software systems may have exploitable security flaws due to bugs. These flaws can be used by attackers to obtain illegal access, steal information, or interfere with services. One excellent example is the Heartbleed bug, in which a straightforward coding mistake resulted in extensive data breaches. To find and address such vulnerabilities, regular code reviews and security assessments are crucial.​ 
+                Through IDOR, attackers might gain access to user settings or authentication tokens. This can lead to partial or full account compromise without the need for login credentials. It undermines user trust in the application. In severe cases, it may expose administrative or privileged functionality.
             </div>
           </details>
-            
+
           <!-- Accordion Item 3 -->
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Reputational damage</span>
+              <span class="text-xl">Data Tampering</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-                Can occur when software defects result in well-publicized malfunctions or security breaches. Consumers may stop trusting you, which would hurt your business and brand. For instance, the Horizon software problems seriously harmed the UK Post Office's reputation. Preserving public trust requires maintaining high software quality.
-​ 
+                Some IDOR vulnerabilities permit attackers not only to view but also to modify data. For example, an attacker could alter another user’s shipping address or subscription settings. This poses a serious integrity risk for any system that processes transactions or stores user data. It can disrupt services and damage customer relationships.
             </div>
+          </details>
 
           <!-- Accordion Item 4 -->
-          </details>
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Legal consequences</span>
+              <span class="text-xl">Regulatory and Legal Consequences</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-                When software defects cause damage or data breaches, the parties involved may face legal action. Lawsuits, fines from the government, or other legal repercussions could befall businesses. The legal ramifications of software errors were illustrated by the Uber app bug that resulted in a lawsuit and exposed personal information. Thorough testing is essential to guaranteeing adherence to legal requirements.
+                Exploitation of IDOR can result in breaches of data protection laws such as GDPR, HIPAA, or CCPA. Organizations found negligent in protecting user data may face fines and lawsuits. Regulatory bodies take unauthorized data exposure seriously. Maintaining compliance requires strict access control implementations.
             </div>
+          </details>
 
           <!-- Accordion Item 5 -->
-          </details>
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Operational Disruptions</span>
+              <span class="text-xl">Reputation Damage</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-                When critical systems malfunction, it can result in service interruptions and operational downtime. A worldwide IT outage that affected banks, airlines, and healthcare providers occurred in 2024 as a result of a bug in CrowdStrike's software. The necessity of dependable software systems is highlighted by the potential for such disruptions to have a domino effect on multiple industries. Such risks can be managed by putting rapid response plans and ongoing monitoring into practice.
-
+                Publicly known breaches due to IDOR vulnerabilities can harm a company’s brand and credibility. Customers may lose confidence in the security of the platform. It may result in user churn and lost revenue. Rebuilding trust can be costly and time-consuming.
             </div>
           </details>
-
         </div>
       </div>
     </div>
     
-		
-		
 
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
             <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
