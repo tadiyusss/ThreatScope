@@ -3,306 +3,44 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Evolution of Cyber Threats</title>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Evolution of Cyberthreats</title>
+		<script src='https://cdn.tailwindcss.com'></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
-		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('./assets/hero-evolution-of-cybersecurity.png')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
+            <nav class="w-full p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="w-14 h-14">
+                        <h4 class="text-2xl">ThreatScope</h4>
                     </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="../index.html" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="../recent-attacks.html" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="../concepts-of-cybersecurity.html" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
+                    <button class="md:hidden block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </button>
                 </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
-                [&::-webkit-scrollbar-track]:bg-gray-100
-                [&::-webkit-scrollbar-thumb]:bg-gray-300
-                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
-                        
-
-                    </ul>
-                </div>
+    
+                <ul class="text-xl md:flex hidden items-center space-x-8 ">
+                    <li>Home</li>
+                    <li>Recent News</li>
+                    <li>Learn Now</li>
+                    <li><i class="fa-solid fa-bars"></i></li>
+                </ul>
             </nav>
 
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
-                <div class="relative max-w-4xl mx-auto mt-48">
-                    <h4 class="text-6xl font-medium">Evolution of Cyber Threats</h4>
-                    <div class="flex items-center space-x-4 mt-4 justify-center">
-                        <p>
-                            <a href="#basic" class="text-white hover:text-purple-500 transition-colors duration-200">From Basic Malware to Complex Threats</a> |
-                            <a href="#rise" class="text-white hover:text-purple-500 transition-colors duration-200">Rise of Social Engineering</a> |
-                            <a href="#modern" class="text-white hover:text-purple-500 transition-colors duration-200">Modern Threats</a>
-                        </p>
-
-                    </div>
+			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+			<div class="relative max-w-4xl mx-auto mt-40">
+				<h4 class="text-6xl font-medium">Evolution of Cybersecurity</h4>
+                <div class="flex items-center space-x-4 mt-4 justify-center">
+                    <a href="#basic">Basic Malware to Complex Threats</a><p> | </p>
+                    <a href="#rise">Rise of Social Engineering</a><p> | </p>
+                    <a href="#modern">Modern Threats</a>
                 </div>
-            </div>
+			</div>
+		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="max-w-7xl my-24 mx-auto">
@@ -318,7 +56,7 @@
                     </div>
 
                     <div class="text-white text-justify">
-                        <img src="https://placehold.co/300x300" class="float-left w-90 h-68 object-cover rounded mr-6 mb-4 border" />
+                    <img src="./assets/evolution-of-cybersecurity-social-engineering.png" class="float-left w-[360px] h-[270px] object-cover rounded mr-6 mb-4 border border-gray-700" />
                         <p class="text-justify">
                         Social engineering has emerged as one of the most effective tactics in cybercrime, capitalizing on human psychology rather than technical vulnerabilities. Early forms of social engineering, such as phishing emails and baiting tactics, manipulated users into revealing sensitive information or downloading malicious files. Attackers rely on trust, urgency, fear, or curiosity to trick individuals into bypassing security protocols. These methods often require minimal technical skill but yield high success rates, making them attractive to a wide range of threat actors. As organizations strengthen their technical defenses, cybercriminals increasingly target the human element as the weakest link.
                         </p>
@@ -336,19 +74,40 @@
                         Modern Threats in Cloud Computing and IoT Environments
                     </div>
                     <div class="text-justify">
-                        <img src="https://placehold.co/300x300" class="float-left w-90 h-68 object-cover rounded mr-6 mb-4 border" />
+                        <img src="./assets/evolution-of-cybersecurity-cloud-computing.png" class="float-left w-[360px] h-[270px] object-cover rounded mr-6 mb-4 border border-gray-700" />
                         <p>
                         The integration of cloud computing and the Internet of Things (IoT) has revolutionized the digital landscape, offering unprecedented scalability and connectivity. However, this convergence has also introduced a myriad of security challenges. In cloud computing, misconfigurations, such as unsecured storage buckets and improperly set access controls, remain a primary concern, often leading to data breaches and unauthorized access . Additionally, the expansive attack surface created by interconnected services and APIs increases the risk of exploitation. Threat actors are increasingly targeting supply chains, exploiting vulnerabilities in third-party services to gain access to broader networks.
                         <br><br>
                         In the grand scheme of IoT, the proliferation of devices with limited computational resources and often inadequate security measures has made them prime targets for cyberattacks. Many IoT devices suffer from vulnerabilities like weak authentication protocols, outdated firmware, and lack of encryption, which can be exploited to gain unauthorized access or launch distributed denial-of-service (DDoS) attacks . The integration of these devices with cloud services further complicates security, as compromised devices can serve as entry points into cloud infrastructures. Moreover, the lack of standardized security frameworks for IoT devices exacerbates the challenge, making it difficult to implement consistent protective measures across diverse devices and platforms .​
                         </p>
-                        <button class="btn btn-success">Hello</button>
                     </div>
+                </div>
+
+                <div class="mt-5">
+                    <details class="rounded border shadow" open>
+                        <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                        References
+                        </summary>
+                        <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>CompTIA. (n.d.). What is social engineering? The human element in the technology scam. Retrieved May 1, 2025, from https://www.comptia.org/content/articles/what-is-social-engineering</li>
+                            <li>CrowdStrike. (n.d.). 12 cloud security issues: Risks, threats & challenges. Retrieved May 1, 2025 https://www.crowdstrike.com/en-us/cybersecurity-101/cloud-security/cloud-security-risks/​CrowdStrike</li>
+                            <li>Microminder. (n.d.). The top emerging cloud-based security threats. Retrieved May 1, 2025
+https://www.micromindercs.com/blog/top-emerging-cloud-based-security-threats​Microminder CS</li>
+                            <li>Miller, C., & Rowe, D. C. (2012). A survey of SCADA and critical infrastructure incidents. Proceedings of the 1st Annual Conference on Research in Information Technology, 51–56. https://doi.org/10.1145/2380790.2380805</li>
+                        </ul>
+                        </div>
+                    </details>
                 </div>
             </div>
 		</div>
 
-		<footer class="text-white w-full p-4 bg-[#141528]">
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+		
+
+		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
             <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
                 <div>
                     <div class="flex items-center space-x-4">
@@ -388,6 +147,5 @@
                 </div>
             </div>
         </footer>
-        <script src="../assets/js/main.js"></script>
 	</body>
 </html>
