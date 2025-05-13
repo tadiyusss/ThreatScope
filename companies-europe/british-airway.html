@@ -9,12 +9,12 @@
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -285,68 +285,58 @@
                 </div>
             </nav>
 
-			<div class="mt-10 max-w-7xl mx-auto">
-                <div class="flex items-center text-gray-300 space-x-2">
-                    <a class="text-sm" href="#">Companies Affected</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="#">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Europe</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">British Airway</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">British Airway</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
+                    </div>
                 </div>
-                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
-                    <h3 class="text-6xl font-semibold">Famous Cyber Attacked Companies</h3>
-                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                </div>
+                <img src="https://placehold.co/500x500" class="w-full h-96 mt-10 object-cover rounded-lg ">
+                
 			</div>
 		</div>
-		
-        <div class="grid grid-cols-3 max-w-6xl mx-auto mt-24 gap-4">
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Africa</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Asia</p>
-                </div>
-            </a>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40">
+            
+            <div class="space-y-4" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p>In 2018, British Airways experienced a significant cybersecurity breach that exposed the data of over 400,000 customers. The firm was unaware of the problem for two months before a security researcher brought it to their attention. Financial and personal data, including credit card numbers and login credentials, were compromised during the attack. The Information Commissioner's Office (ICO) conducted a detailed investigation into the matter. In 2020, the ICO fined British Airways £20 million for inadequately safeguarding customer information. The initial penalties of £183 million was reduced because of the financial strain caused by COVID-19. This incident was one of the most significant sanctions imposed under the EU's GDPR laws</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Australia/Oceania</p>
-                </div>
-            </a>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Injection of Malicious JavaScript via Third-Party Scripts</h1>
+                <p class="pl-4">- By inserting malicious JavaScript into third-party scripts, hackers took advantage of a weakness in the British Airways website. As the customer provided their information, this script collected it secretly on the payment page. It got past standard security checks since it seemed to be from a reliable source. For weeks, the intrusion went unnoticed, enabling extensive data collecting.
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Europe</p>
-                </div>
-            </a>
+                </p>
+                <h1 class="text=xl font-medium">Exploitation of Third-Party Code Vulnerability</h1>
+                <p class="pl-4">- The attackers exploited a vulnerability in third-party code used by the site, enabling them to inject a script that mirrored legitimate site behavior. When customers entered their payment details, the malicious script captured and transmitted the information to the attackers. Since the code appeared to be trusted, it was not flagged by security systems, allowing the breach to persist undetected.</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">North America</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">South America</p>
-                </div>
-            </a>
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Personal Identifiable Information (PII) Leaked</h5>
+                <p class="pl-4">- During the incident, customer names, email addresses, and physical addresses were obtained. Identity fraud and phishing attacks can both leverage this kind of information. Additionally, users are at long-term danger of impersonation when such facts are made public. Consumers were cautioned to remain alert and keep an eye out for any questionable communications.</p>
+
+                <h5 class="text-xl font-medium">Financial and Account Credentials Stolen</h5>
+                <p class="pl-4">- During purchases, complete credit card information, including CVV numbers, was stolen in real time. Additionally, attackers gained access to login information, including passwords and usernames. This made it possible for customers other than British Airways to have their accounts accessed without authorization. Users who were impacted were required to update their passwords for several services and replace their cards.</p>
+
+            </div>
         </div>
+		
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">

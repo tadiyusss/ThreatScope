@@ -9,12 +9,12 @@
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -285,68 +285,57 @@
                 </div>
             </nav>
 
-			<div class="mt-10 max-w-7xl mx-auto">
-                <div class="flex items-center text-gray-300 space-x-2">
-                    <a class="text-sm" href="#">Companies Affected</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="#">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Europe</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Merck</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Merck</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
+                    </div>
                 </div>
-                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
-                    <h3 class="text-6xl font-semibold">Famous Cyber Attacked Companies</h3>
-                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                </div>
+                <img src="https://placehold.co/500x500" class="w-full h-96 mt-10 object-cover rounded-lg ">
+                
 			</div>
 		</div>
-		
-        <div class="grid grid-cols-3 max-w-6xl mx-auto mt-24 gap-4">
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Africa</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Asia</p>
-                </div>
-            </a>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40">
+            
+            <div class="space-y-4" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p>The NotPetya hack had a major effect on pharmaceutical behemoth Merck & Co. in June 2017. Initially targeted at Ukrainian systems, the malware quickly expanded throughout the world, impacting Merck among other multinational corporations. Merck, one of the biggest pharmaceutical companies, experienced significant disruptions in its business, research, and production processes. Over 30,000 computers were rendered inoperable by the hack, which also caused a delay in the production of vital medications and vaccines. Using the EternalBlue vulnerability, the attack took advantage of flaws in out-of-date Windows systems. Merck promptly started recovery measures after officially confirming the occurrence. The onslaught, which is regarded as one of the most damaging malware incidents in history, was ascribed to state-sponsored Russian actors.</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Australia/Oceania</p>
-                </div>
-            </a>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Initial Infection via M.E.Doc and Exploitation of EternalBlue</h1>
+                <p class="pl-4">- Through a corrupted upgrade to a Ukrainian accounting program named M.E.Doc, the NotPetya malware gained access to systems. Merck did not deploy the program, but once within a global network, the malware's worm-like characteristics allowed it to spread quickly. The EternalBlue exploit, a flaw in Microsoft's SMB protocol that was made public by the hacker collective Shadow Brokers, was used in the attack. Systems were left unprotected and susceptible to infection, even if they had not yet installed the available Windows fixes.
+                </p>
+                <h1 class="text=xl font-medium">Destructive Payload and Impact on Merck's Operations</h1>
+                <p class="pl-4">- NotPetya was a "wiper" that permanently corrupted data, yet it functioned similarly to ransomware. Without complete backups, recovery would be impossible because it encrypted systems and erased important boot information. The quick spread was facilitated by Merck's network segmentation and antiquated security protocols. Systems utilized for email correspondence, logistics, and potentially medicine manufacture were rendered inoperable by the infection.</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Europe</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">North America</p>
-                </div>
-            </a>
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Operational Disruption and System Recovery</h5>
+                <p class="pl-4">- The attack resulted in a significant loss of operational data but did not target financial or personal data. Important documents and systems pertaining to internal logistics and medication production were made unavailable. Shipments of medications were delayed and vaccine production was temporarily stopped down as a result of the damage. Over the course of several months, Merck was forced to rebuild the impacted systems using backups.</p>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">South America</p>
-                </div>
-            </a>
+                <h5 class="text-xl font-medium"> Communication Breakdowns and Supply Chain Issues</h5>
+                <p class="pl-4">- Email, scheduling, and documentation tools were among the communication platforms that experienced disruptions. In the immediate aftermath, this led to lost production and internal disarray. Delays and difficulties with fulfillment resulted from the impact on supply chain systems as well. For a while, Merck was unable to provide important drugs like Gardasil and other vaccines.</p>
+
+            </div>
         </div>
+		
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">

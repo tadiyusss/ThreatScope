@@ -9,12 +9,12 @@
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -285,68 +285,58 @@
                 </div>
             </nav>
 
-			<div class="mt-10 max-w-7xl mx-auto">
-                <div class="flex items-center text-gray-300 space-x-2">
-                    <a class="text-sm" href="#">Companies Affected</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="#">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Europe</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Trvelex</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Travelex</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
+                    </div>
                 </div>
-                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
-                    <h3 class="text-6xl font-semibold">Famous Cyber Attacked Companies</h3>
-                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                </div>
+                <img src="https://placehold.co/500x500" class="w-full h-96 mt-10 object-cover rounded-lg ">
+                
 			</div>
 		</div>
-		
-        <div class="grid grid-cols-3 max-w-6xl mx-auto mt-24 gap-4">
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Africa</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Asia</p>
-                </div>
-            </a>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40">
+            
+            <div class="space-y-4" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p>On December 31, 2019, a ransomware assault using the Sodinokibi (REvil) strain targeted Travelex, a significant foreign exchange company. Travelex's worldwide operations experienced service disruptions as a result of the attack forcing them to take its systems down. In the event that their demands were not fulfilled, hackers threatened to disclose 5GB of consumer data and demanded a $3 million ransom. Both Travelex's own services and those of its banking partners, Virgin Money and Tesco Bank, were impacted by the event. Customer dissatisfaction and serious operational difficulties resulted from the company's incapacity to perform transactions. The public and authorities criticized Travelex for its tardy revelation and reaction to the attack. Travelex eventually filed for bankruptcy as a result of the breach's serious financial repercussions.</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Australia/Oceania</p>
-                </div>
-            </a>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Network Access Through Unpatched VPN and Ransomware Deployment</h1>
+                <p class="pl-4">- Attackers gained access to the Travelex network by exploiting unpatched vulnerabilities in the company’s VPN servers. Once inside, they deployed the Sodinokibi ransomware, which encrypted critical systems and data. The malware spread rapidly across both internal systems and customer-facing platforms. This widespread impact was facilitated by delayed patching and a lack of effective network segmentation, allowing the ransomware to propagate without containment.
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">Europe</p>
-                </div>
-            </a>
+                </p>
+                <h1 class="text=xl font-medium">Ransom Demands, Data Theft, and Delayed Response</h1>
+                <p class="pl-4">- After encrypting important data, the attackers issued a ransom note demanding payment. In addition to encryption, they stole sensitive data including client and transaction information—and threatened to publish it if their demands were not met. Travelex's slow response and initial reluctance to disclose the full scope of the attack allowed the attackers to further infiltrate systems, which significantly complicated recovery efforts.</p>
+            </div>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">North America</p>
-                </div>
-            </a>
 
-            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
-                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
-                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                    <p class="text-white text-lg font-semibold">South America</p>
-                </div>
-            </a>
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Theft of Financial and Personally Identifiable Information (PII)</h5>
+                <p class="pl-4">-Approximately 5GB of sensitive data was stolen, including financial transaction records and personally identifiable information such as names, addresses, and payment details. Some credit card information was also compromised, raising the risk of identity theft and fraud. The breach prompted serious concerns about the security of personal financial data, especially in the context of international currency exchange operations.</p>
+
+                <h5 class="text-xl font-medium">Exposure of Transactional Data and Reputational Damage</h5>
+                <p class="pl-4">- The ransomware attack also resulted in the public exposure of transaction records, including payment histories, transaction IDs, exchange amounts, and processing dates. While the breach was not directly linked to financial losses, the risk of fraudulent activity remained. The incident caused reputational harm to both Travelex and its banking partners, especially in terms of the integrity and confidentiality of customer transaction data.</p>
+
+            </div>
         </div>
+		
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
