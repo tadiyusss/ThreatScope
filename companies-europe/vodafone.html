@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Companies Affected</title>
+		<title>Types of Vulnerabilities</title>
 		<script src='https://cdn.tailwindcss.com'></script>
-		<link rel="stylesheet" href="assets/css/fonts.css">
+		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full h-[85dvh] relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-2 text-left">
                         <li class="flex items-center space-x-4 p-4">
-                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </li>
     
@@ -285,72 +285,67 @@
                 </div>
             </nav>
 
-			<div class="grid md:grid-cols-3 grid-cols-1 max-w-6xl mx-auto mt-10">
-				<div class="md:col-span-2 col-span-1 flex items-center justify-center">
-                    <div class="block px-4">
-                        <h4 class="text-5xl text-[#E2C8F1] font-medium">Companies Affected</h4>
-                        <p class="mt-4 text-gray-200 md:text-left text-justify">Welcome to this section, where we explore the real-world impact of cybersecurity breaches. Discover how leading companies were compromised, the financial toll they endured, and the steps they took to recover. This page sheds light on the legal, ethical, and strategic responses organizations faced in the aftermath of cyberattacks.</p>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="#">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Europe</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Vodafone</a>
                     </div>
-				</div>
-				<div class="flex justify-center mt-8 px-4 md:mt-0">
-					<img src="assets/companies-affected.png" alt="Pic" class="md:block hidden max-w-full h-auto">
-				</div>
+                    <h4 class="font-semibold text-5xl">Vodafone</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
+                    </div>
+                </div>
+                <img src="https://placehold.co/500x500" class="w-full h-96 mt-10 object-cover rounded-lg ">
+                
 			</div>
 		</div>
 
-        <div class="md:px-2 px-4 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/companies-affected-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Famous Cyber Attacked Companies</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Dive into real-world examples of high-profile companies that fell victim to cyberattacks. Discover what went wrong and how these incidents shaped the cybersecurity landscape.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
-                </div>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40">
+            
+            <div class="space-y-4" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p>A major data breach at Vodafone Iceland in November 2013 resulted in the exposure of some 70,000 customers' personal data. A compressed file containing encrypted passwords, social security numbers, usernames, and other private information was acquired and made public by hackers. Unauthorized access by outside attackers who took advantage of weaknesses in Vodafone's systems was blamed for the breach. Serious questions were raised by the event regarding Vodafone's data security procedures and consumer information protection capabilities. Vodafone's handling of the hack, notably the delays in informing authorities and impacted customers, drew criticism. The hack brought to light the dangers of insufficient cybersecurity safeguards and the significance of prompt incident response. After that, Vodafone made an attempt to bolster its security framework and win back the faith of its users.</p>
             </div>
 
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/financial-impact-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Financial Impact of Breachers</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Uncover the hidden costs behind cyber breaches—from revenue loss to reputational damage. This section reveals how attacks hit companies where it hurts most: their bottom line.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/recovery-mitigation-measures-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Recovery and Mitigation Measures</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Learn how companies bounce back after an attack through strategic recovery plans and enhanced security protocols. Explore best practices that turn crises into opportunities.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
-                </div>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Exploitation of System Weaknesses and Lack of Monitoring</h1>
+                <p class="pl-4">- Hackers obtained unauthorized access to consumer data by taking advantage of flaws in Vodafone Iceland's systems. Sensitive data was extracted from the company’s infrastructure after attackers bypassed existing security safeguards. The breach was made possible by inadequate security protocols and a lack of system access monitoring. Due to the absence of strong intrusion detection systems, the attackers were able to remain undetected for a significant period.
+
+                </p>
+                <h1 class="text=xl font-medium">Public Disclosure and Delayed Response Intensify Impact</h1>
+                <p class="pl-4">- The situation worsened when the compromised data was publicly posted online, drawing widespread attention. This led to public and regulatory criticism of Vodafone’s delayed response and failure to notify affected customers promptly. The incident emphasized the importance of transparency and timely communication in the wake of a data breach.</p>
             </div>
 
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/legal-ethical-consequences-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Legal and Ethical Consequences</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Understand the legal battles and ethical dilemmas companies face post-breach. This section highlights the importance of compliance and responsible data handling.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
-                </div>
+
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Exposure of Personal Identifiable Information (PII)</h5>
+                <p class="pl-4">- The breach exposed a range of personal information, including names, social security numbers, and contact details. This type of data is highly valuable for identity theft and other malicious activities. As a result, Vodafone faced pressure to support and protect impacted customers, given the serious risks associated with the exposure of such sensitive data.
+
+</p>
+
+                <h5 class="text-xl font-medium">Risk of Account Access Through Encrypted Credential</h5>
+                <p class="pl-4">- In addition to PII, the attackers accessed encrypted passwords and other account-related information. While the passwords were encrypted, concerns remained about the potential for them to be cracked and used to access client accounts. The breach underscored the need for multi-factor authentication (MFA) and strong password policies. Customers were advised to change their passwords immediately and to monitor their accounts for suspicious activity.</p>
+
             </div>
         </div>
-
+		
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
                         <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
@@ -387,6 +382,6 @@
             </div>
         </footer>
 		</div>
-		<script src="assets/js/main.js"></script>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>

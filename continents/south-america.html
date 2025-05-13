@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Companies Affected</title>
+		<title>Types of Vulnerabilities</title>
 		<script src='https://cdn.tailwindcss.com'></script>
-		<link rel="stylesheet" href="assets/css/fonts.css">
+		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full h-[85dvh] relative">
+		<div id="hero" class="w-full relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-2 text-left">
                         <li class="flex items-center space-x-4 p-4">
-                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </li>
     
@@ -285,72 +285,72 @@
                 </div>
             </nav>
 
-			<div class="grid md:grid-cols-3 grid-cols-1 max-w-6xl mx-auto mt-10">
-				<div class="md:col-span-2 col-span-1 flex items-center justify-center">
-                    <div class="block px-4">
-                        <h4 class="text-5xl text-[#E2C8F1] font-medium">Companies Affected</h4>
-                        <p class="mt-4 text-gray-200 md:text-left text-justify">Welcome to this section, where we explore the real-world impact of cybersecurity breaches. Discover how leading companies were compromised, the financial toll they endured, and the steps they took to recover. This page sheds light on the legal, ethical, and strategic responses organizations faced in the aftermath of cyberattacks.</p>
-                    </div>
-				</div>
-				<div class="flex justify-center mt-8 px-4 md:mt-0">
-					<img src="assets/companies-affected.png" alt="Pic" class="md:block hidden max-w-full h-auto">
-				</div>
+			<div class="mt-10 max-w-7xl mx-auto">
+                <div class="flex items-center text-gray-300 space-x-2">
+                    <a class="text-sm" href="#">Companies Affected</a>
+                    <span class="text-gray-300 text-sm">/</span>
+                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                    <span class="text-gray-300 text-sm">/</span>
+                    <a href="#" class="text-sm">South America</a>
+                </div>
+                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
+                    <h3 class="text-6xl font-semibold">Companies in South America</h3>
+                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+                </div>
 			</div>
 		</div>
+		
+        <div class="grid grid-cols-3 max-w-6xl mx-auto mt-24 gap-4">
+            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                    <p class="text-white text-lg font-semibold">Banco De Chile</p>
+                </div>
+            </a>
 
-        <div class="md:px-2 px-4 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/companies-affected-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Famous Cyber Attacked Companies</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Dive into real-world examples of high-profile companies that fell victim to cyberattacks. Discover what went wrong and how these incidents shaped the cybersecurity landscape.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
+            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                    <p class="text-white text-lg font-semibold">Consejo Nacional Electoral</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/financial-impact-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Financial Impact of Breachers</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Uncover the hidden costs behind cyber breaches—from revenue loss to reputational damage. This section reveals how attacks hit companies where it hurts most: their bottom line.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
+            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                    <p class="text-white text-lg font-semibold">Embratel</p>
                 </div>
-            </div>
-    
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/recovery-mitigation-measures-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Recovery and Mitigation Measures</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Learn how companies bounce back after an attack through strategic recovery plans and enhanced security protocols. Explore best practices that turn crises into opportunities.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
-                </div>
-            </div>
+            </a>
 
-            <div class="bg-[#141528] rounded text-white border border-indigo-900 transform transition-all duration-300 hover:scale-105 h-[400px] overflow-hidden flex flex-col">
-                <img src="./assets/legal-ethical-consequences-container.png" class="w-full h-44 object-cover rounded-t filter grayscale hover:grayscale-0 transition duration-300">
-                <div class="p-4 space-y-2 flex-grow flex flex-col">
-                    <h5 class="text-lg font-medium">Legal and Ethical Consequences</h5>
-                    <p class="text-sm text-gray-300 flex-grow">Understand the legal battles and ethical dilemmas companies face post-breach. This section highlights the importance of compliance and responsible data handling.</p>
-                    <div class="mt-2">
-                        <a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-auto inline-block">Learn More</a>
-                    </div>
+            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                    <p class="text-white text-lg font-semibold">Ministerio De Salud Publica</p>
                 </div>
-            </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://placehold.co/500x500" class="w-full h-96 object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
+                    <p class="text-white text-lg font-semibold">Telecom Argentina</p>
+                </div>
+            </a>
+
+
+            
         </div>
-
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
                         <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
@@ -387,6 +387,6 @@
             </div>
         </footer>
 		</div>
-		<script src="assets/js/main.js"></script>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
