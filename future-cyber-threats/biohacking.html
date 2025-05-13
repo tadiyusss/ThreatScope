@@ -306,7 +306,7 @@
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
           <p>
-            Artificial Intelligence (AI) is transforming the cyber threat landscape by automating and enhancing hacking techniques. AI allows attackers to launch highly personalized phishing attacks, bypass traditional security systems, and identify vulnerabilities at scale. Malicious use of AI can enable adaptive malware that evolves to avoid detection. As machine learning systems become widespread, attackers are also targeting the AI models themselves. This emerging threat poses significant challenges for both individuals and organizations.
+            The rise of biohacking including wearable tech, medical implants, and human augmentation has introduced new cybersecurity concerns. Devices connected to or implanted in the body are increasingly internet-enabled. This opens the door to malicious interference with health-monitoring systems or even physical harm.
           </p>
           
         </div>
@@ -317,21 +317,21 @@
             <table class="table-auto w-full border-separate border-spacing-y-2 p-4">
               <tbody>
                 <tr class="align-top mb-10">
-                  <td class="pr-4 font-medium w-20">AI-Driven Phishing Campaigns</td>
+                  <td class="pr-4 font-medium w-20">Wireless Exploits of Implants</td>
                   <td class="mb-52">
-                    AI can craft highly targeted phishing emails using natural language processing and data mining. These emails mimic legitimate communication with alarming accuracy, increasing the chances of deception. This automation enables mass deployment with high success rates.
+                    Pacemakers, insulin pumps, and neural implants often use Bluetooth or RF communication. Without strong encryption, these signals can be intercepted or altered. Attackers could disrupt functionality or extract sensitive health data.
                   </td>
                 </tr>
                 <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Adaptive Malware</td>
+                  <td class="pr-4 font-medium w-20">Unauthorized Firmware Manipulation</td>
                   <td>
-                    Attackers are embedding machine learning into malware, allowing it to adapt based on system responses. For instance, malware can monitor detection attempts and alter its code to avoid antivirus software. This makes traditional static detection tools far less effective.
+                    Implants and wearables receive software updates for maintenance or upgrades. If the update process lacks authentication, attackers could install malicious firmware. This compromises device safety and patient trust.
                   </td>
                 </tr>
                 <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Attacks on AI Models</td>
+                  <td class="pr-4 font-medium w-20">Data Harvesting from Wearables</td>
                   <td>
-                    Hackers exploit vulnerabilities in machine learning models via adversarial inputs data specifically designed to mislead AI systems. This can cause misclassification in facial recognition, spam filters, or autonomous systems. Such manipulation undermines trust in AI-powered technologies.
+                    Fitness trackers and smartwatches constantly collect biometric data. Without proper safeguards, this information can be sold or stolen. Privacy breaches can lead to discrimination or exploitation.
                   </td>
                 </tr>
               </tbody>
@@ -344,42 +344,43 @@
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
         
+          <!-- Accordion Item 1 -->
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Large Enterprises</span>
+              <span class="text-xl">Patients with Critical Implants</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-              Corporations that use AI for customer service, fraud detection, or cybersecurity are at risk. Compromising these systems can lead to massive data breaches or disruptions in automated services. Their scale and reliance on AI make them lucrative targets.
+              Individuals using devices like pacemakers or insulin pumps are directly exposed to life-threatening risks. Compromised functionality could result in medical emergencies. These users depend heavily on device integrity.
             </div>
           </details>
         
+          <!-- Accordion Item 2 -->
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Healthcare Sector</span>
+              <span class="text-xl">Biohacker Enthusiasts</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-              AI is increasingly used for diagnostics, patient monitoring, and records management. If attackers manipulate AI-driven tools or breach data systems, it could endanger lives or compromise sensitive medical information. The personal nature of the data adds to the risk.
-            </div>
+              DIY biohackers implant unregulated chips for convenience or experimentation. These devices may lack encryption or authentication. Their open-source nature makes them vulnerable.
           </details>
 
           <details class="group" open>
             <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Educational Institutions</span>
+              <span class="text-xl">Healthcare Providers and Device Manufacturers</span>
               <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </summary>
             <div class="mt-2 pl-16 mb-8">
-              Universities are adopting AI for admissions, grading, and learning analytics. These systems, if compromised, could lead to identity theft, data leaks, or biased outcomes. Their limited cybersecurity budgets make them vulnerable.
+              Hospitals and developers bear responsibility for device security. A single flaw could affect thousands of patients. Legal and reputational damage can be severe.
             </div>
           </details>
         </div>
@@ -389,37 +390,37 @@
           <div class="grid grid-cols-3 gap-4">
             
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 1: Implement AI Threat Detection Tools</h6>
+              <h6 class="font-medium text-lg">Step 1: Use Encrypted Communication Channels</h6>
               <p class="p-3">
-                Deploy advanced security systems that use AI to detect malicious behavior patterns. These tools can identify anomalies more quickly than traditional methods. Regular updates are essential to maintain effectiveness.
+                All implant communications must use strong encryption. Authentication protocols should validate both the sender and receiver. Avoid default credentials or open ports.
               </p>
             </div>
     
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 2: Train Employees on AI-Generated Phishing</h6>
+              <h6 class="font-medium text-lg">Step 2: Enforce Secure Firmware Updates</h6>
               <p class="p-3">
-                Educate staff on recognizing highly personalized phishing attempts. Include simulated attacks in training sessions. Awareness is a key defense against AI-powered social engineering.
+                Only verified updates should be accepted by medical devices. Implement signing and validation processes. Update rollout should be monitored for anomalies.
               </p>
             </div>
     
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 3: Secure Machine Learning Pipelines</h6>
+              <h6 class="font-medium text-lg">Step 3: Conduct Risk Assessments and Penetration Testing</h6>
               <p class="p-3">
-                Protect the data, training processes, and model deployment stages. This includes input validation, version control, and access restrictions. Securing the entire pipeline reduces opportunities for exploitation.
+                Devices should undergo regular security audits by ethical hackers. Testing uncovers vulnerabilities before exploitation. Continuous evaluation is essential.
               </p>
             </div>
 
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 4: Train Employees on AI-Generated Phishing</h6>
+              <h6 class="font-medium text-lg">Step 4: Educate Patients and Biohackers</h6>
               <p class="p-3">
-                Incorporate transparency into AI models to understand how decisions are made. This helps detect unusual behavior caused by tampering. XAI also builds user trust in system integrity.
+                Provide clear guidance on device risks, safety settings, and updates. Informed users are better protected. Encourage responsible use of biohacking technology.
               </p>
             </div>
 
             <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 5: Train Employees on AI-Generated Phishing</h6>
+              <h6 class="font-medium text-lg">Step 5: Develop Regulatory Oversight</h6>
               <p class="p-3">
-                Participate in shared intelligence efforts with cybersecurity and AI research communities. These partnerships accelerate the discovery of new threats and defenses. Collaboration improves resilience across sectors.	
+                Enforce standards for implant cybersecurity through government or medical boards. Compliance must be mandatory for certification. Oversight ensures safer adoption.
               </p>
             </div>
   
@@ -434,13 +435,13 @@
                 </summary>
                 <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
                 <ul class="list-disc list-inside space-y-1">
-                    <li>Help Net Security. (2023, August 23). AI-enabled email threats are on the rise. <i>Help Net Security</i>. Retrieved May 13, 2025, from: <br> https://www.helpnetsecurity.com/2023/08/23/ai-enabled-email-threats/</li>
-                    <li>Oxen. (2024, January 04). How Do Hackers Use AI in Omaha, NE? <i>Oxen Technology</i>. Retrieved May 13, 2025, from: <br> https://oxen.tech/blog/how-do-hackers-use-ai-omaha-ne/</li>
+                    <li>Wired Middle East. (2025, April 25). The Great Biohack: The Future of Human Performance. <i>Wired</i>. Retrieved May 13, 2025, from: <br> https://wired.me/technology/the-great-biohack-future-human-performance/</li>
+                    <li>Bhattacharyya, S., & Midya, S. (2018). Internet of Bio-Things: Towards a Cyber-Physical Framework for Next-Generation Healthcare. In <i>2018 IEEE International Conference on Information Technology (ICIT)</i> (pp. 1–5). IEEE. Retrieved May 13, 2025, from: <br> https://ieeexplore.ieee.org/document/8460454</li>
                 </ul>
                 </div>
             </details>
         </div>
-    
+
       </div>
     </div>
     
