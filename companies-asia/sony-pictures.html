@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Companies in Asia</title>
+		<title>Sony Pictures (Japan/US Based)</title>
 		<script src='https://cdn.tailwindcss.com'></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -285,68 +285,80 @@
                 </div>
             </nav>
 
-			<div class="mt-10 max-w-7xl mx-auto">
-                <div class="flex items-center text-gray-300 space-x-2">
-                    <a class="text-sm" href="#">Companies Affected</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Asia</a>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="../companies-affected.html">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../continents/asia.html" class="text-sm">Asia</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Sony Pictures (Japan/US-Based)</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Sony Pictures (Japan/US-Based)</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a><p>|</p>
+                        <a href="#method">How it Happened</a><p>|</p>
+                        <a href="#data-compromised">Data Compromised</a><p>|</p>
+                        <a href="#impact">Impact on the Company and Customers</a>
+                    </div>
                 </div>
-                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
-                    <h3 class="text-6xl font-semibold">Companies in Asia</h3>
-                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                </div>
+                <a href="./assets/sony-pictures-japan.png" target="image-viewer"><img src="./assets/sony-pictures-japan.png" class="w-full h-96 mt-10 object-cover rounded-lg filter grayscale-0 hover:grayscale transition duration-300"></a>
 			</div>
 		</div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto mt-24 gap-4 px-4">
-        <!-- COMPANY 1 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-sony-pictures.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Sony Pictures (Japan / US Based)</p>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40 pt-10">
+            
+            <div class="space-y-4 pt-11" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p class="text-justify">In November 2014, Sony Pictures Entertainment suffered a significant cyberattack carried out by a group calling themselves "Guardians of Peace." This attack involved the exfiltration of a massive amount of sensitive data, including employee emails, personal information, unreleased films, and future movie plans. The hackers demanded that Sony halt the release of "The Interview," a satirical film about North Korea's leader, and threatened terrorist attacks on cinemas showing the movie. This brazen act not only compromised a vast amount of data but also had significant repercussions for the company's operations and reputation. Ultimately, the United States government attributed the attack to North Korean state-sponsored actors in retaliation for the film.</p>
             </div>
-        </a>
 
-        <!-- COMPANY 2 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-tata-consultancy-services.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Tata Consultancy Services India</p>
-            </div>
-        </a>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Initial Access</h1>
+                <p class="pl-4 text-justify">- The attackers gained initial access to Sony Pictures' network through sophisticated malware that bypassed the company's antivirus software. This malware included a "digital backdoor," allowing the hackers to gain persistent and repeated entry into the network over an extended period. It is believed that the attackers may have had access to Sony's networks for months before the attack was detected on November 24, 2014. The method of initial infection is not entirely clear, but physical introduction of the malware into the company's systems is suspected.
 
-        <!-- COMPANY 3 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-air-india.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Air India</p>
+                </p>
+                <h1 class="text=xl font-medium">Wiper Malware and Data Exfiltration</h1>
+                <p class="pl-4 text-justify">- Once inside the network, the attackers deployed a "wiper" malware designed to render computer systems inoperable, causing significant disruption to Sony's operations. This destructive element was accompanied by tools for data exfiltration, allowing the hackers to copy and remove large volumes of confidential information. The malware utilized legitimate Microsoft Windows management and network file-sharing features to propagate across the network and disable services. This sophisticated approach suggests a well-organized and potentially state-sponsored operation.</p>
             </div>
-        </a>
 
-        <!-- COMPANY 4 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-bangladesh-bank.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Bangladesh Bank</p>
-            </div>
-        </a>
 
-        <!-- COMPANY 5 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-shanghai-national-police.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Shanghai National Police</p>
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Personal Privacy and Identity Security</h5>
+                <p class="pl-4 text-justify">- The data stolen in the Sony Pictures breach was extensive and highly sensitive. It included the personal information of current and former employees and their families, such as names, addresses, contact details, Social Security numbers, medical records, and salary information. The exposure of this data created a significant risk of identity theft and other malicious activities for the affected individuals.</p>
+
+                <h5 class="text-xl font-medium">Case of Strategic Disruption</h5>
+                <p class="pl-4 text-justify">- In addition to personal data, the hackers also stole and leaked confidential company information. This included unreleased films and scripts, future film plans, and sensitive email correspondence between employees and film executives. The release of this proprietary information caused significant financial damage and reputational harm to Sony Pictures, disrupting their business operations and strategic planning.</p>
             </div>
-        </a>
-    </div>
+
+            <div class="space-y-4" id="impact">
+                <h4 class="text-3xl font-medium text-purple-300">Impact on the Company and Customers</h4>
+                <p class="text-justify">The Sony Pictures cyberattack had a profound impact on the company, leading to significant financial losses and a severe blow to its reputation. The leak of sensitive employee data led to distress and potential harm for those affected, raising serious concerns about data security practices within the entertainment industry. The cancellation of the theatrical release of "The Interview" by major US cinema chains due to terrorist threats demonstrated the real-world consequences of cyberattacks on critical infrastructure and free expression. The US government's attribution of the attack to North Korea elevated the incident to a matter of national security and prompted discussions about international cyber warfare and retaliation. While Sony Pictures worked to restore its systems and address the fallout, the breach served as a stark reminder of the vulnerability of large organizations to sophisticated cyber threats and the importance of robust cybersecurity measures. The incident also highlighted the potential for state-sponsored actors to leverage cyberattacks for political and disruptive purposes.</p>
+            </div>
+
+            <!-- REFERENCES -->
+            <div>
+                <details class="rounded border shadow" open>
+                    <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                    References
+                    </summary>
+                    <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Lee, D. (2014, December 19). What is FBI evidence for North Korea hack attack? BBC News. https://www.bbc.com/news/technology-30554444</li>
+                        <li>Peterson, A. (2021, December 6). The Sony Pictures hack, explained. The Washington Post. https://www.washingtonpost.com/news/the-switch/wp/2014/12/18/the-sony-pictures-hack-explained/</li>
+                        <li>Update on Sony investigation. (2022, July 21). https://www.fbi.gov/news/press-releases/update-on-sony-investigation</li>
+                    </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
 		
+		
+
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>

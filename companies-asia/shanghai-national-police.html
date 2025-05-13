@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Companies in Asia</title>
+		<title>Shanghai National Police</title>
 		<script src='https://cdn.tailwindcss.com'></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -285,68 +285,79 @@
                 </div>
             </nav>
 
-			<div class="mt-10 max-w-7xl mx-auto">
-                <div class="flex items-center text-gray-300 space-x-2">
-                    <a class="text-sm" href="#">Companies Affected</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
-                    <span class="text-gray-300 text-sm">/</span>
-                    <a href="#" class="text-sm">Asia</a>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="../companies-affected.html">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../continents/asia.html" class="text-sm">Asia</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Shanghai National Police</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Shanghai National Police</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a><p>|</p>
+                        <a href="#method">How it Happened</a><p>|</p>
+                        <a href="#data-compromised">Data Compromised</a><p>|</p>
+                        <a href="#impact">Impact on the Company and Customers</a>
+                    </div>
                 </div>
-                <div class="mt-24 text-center space-y-4 max-w-3xl mx-auto md:px-2 px-4">
-                    <h3 class="text-6xl font-semibold">Companies in Asia</h3>
-                    <p class="text-lg text-gray-200">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                </div>
+                <a href="./assets/shanghai-national-police.png" target="image-viewer"><img src="./assets/shanghai-national-police.png" class="w-full h-96 mt-10 object-cover rounded-lg filter grayscale-0 hover:grayscale transition duration-300"></a>
 			</div>
 		</div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto mt-24 gap-4 px-4">
-        <!-- COMPANY 1 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-sony-pictures.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Sony Pictures (Japan / US Based)</p>
+		<div class="space-y-8 max-w-5xl mx-auto mt-40 pt-10">
+            
+            <div class="space-y-4 pt-11" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p class="text-justify">In early July 2022, a massive data breach reportedly occurred at the Shanghai National Police Database (SHGA Database), resulting in the potential exposure of the personal information of over one billion Chinese residents. An unidentified hacker offered this vast dataset, totaling approximately 23 terabytes, for sale online, claiming it included names, addresses, birthplaces, national ID numbers, phone numbers, photos, mobile phone numbers, and details of criminal cases. If the claims are accurate, this would represent one of the largest and most significant data breaches in history. The origin of the leaked information is believed to be the Shanghai Municipal Public Security Bureau, although official confirmation has not been provided, and the incident has faced censorship within mainland China.</p>
             </div>
-        </a>
 
-        <!-- COMPANY 2 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-tata-consultancy-services.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Tata Consultancy Services India</p>
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Unsecured Backdoors and Security Lapses</h1>
+                <p class="pl-4 text-justify">- The precise vulnerability or method of access used to breach the Shanghai National Police Database has not been officially confirmed. However, reports suggest that the data may have been accessible through an unsecured backdoor link, potentially available since as early as April 2021, which would have allowed unauthorized access without requiring specific credentials. This indicates a potential lapse in basic security protocols for a highly sensitive database.</p>
+                
+                <h1 class="text=xl font-medium">Vulnerabilities in Cloud Security and Data Exfiltration</h1>
+                <p class="pl-4 text-justify">- Some reports have also implicated Alibaba's cloud platform, suggesting that the police database might have been hosted on their services with outdated security measures. Authorities reportedly scrutinized Alibaba's cloud platform following the breach. Additionally, the sheer volume of data exfiltrated (23 terabytes) suggests a significant period of undetected access or a highly efficient method of data extraction once the initial breach occurred.</p>
             </div>
-        </a>
 
-        <!-- COMPANY 3 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-air-india.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Air India</p>
-            </div>
-        </a>
 
-        <!-- COMPANY 4 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-bangladesh-bank.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Bangladesh Bank</p>
-            </div>
-        </a>
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Personal Data on a National Scale</h5>
+                <p class="pl-4 text-justify">- The leaked data purportedly includes an extensive range of highly sensitive personal information for over one billion Chinese citizens. This includes fundamental identity details such as names, addresses, birthplaces, and national identification numbers, as well as contact information like phone numbers and even photos. The availability of such comprehensive personal data on a massive scale poses a significant risk of identity theft, fraud, and potential surveillance.</p>
 
-        <!-- COMPANY 5 -->
-        <a href="#" class="relative w-full rounded-lg overflow-hidden shadow-lg group">
-            <img src="./assets/asia-shanghai-national-police.png" class="w-full h-96 object-cover transition-opacity duration-300" />
-            <div class="absolute inset-0 bg-gray-900 opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 p-4">
-                <p class="text-white text-lg font-semibold">Shanghai National Police</p>
+                <h5 class="text-xl font-medium">Privacy and Law Enforcement Integrity</h5>
+                <p class="pl-4 text-justify">- Beyond basic personal information, the breach allegedly exposed detailed police case records. These records could include sensitive information about individuals involved in criminal investigations, including victims, witnesses, and suspects. The disclosure of such data could have severe implications for privacy, personal safety, and the integrity of law enforcement processes.</p>
             </div>
-        </a>
-    </div>
+
+            <div class="space-y-4" id="impact">
+                <h4 class="text-3xl font-medium text-purple-300">Impact on the Company and Customers</h4>
+                <p class="text-justify">The reported breach of the Shanghai National Police Database has caused significant embarrassment for the Chinese government, especially given its recent emphasis on data privacy laws. The potential exposure of personal data for a vast majority of the country's population raises serious questions about the security measures in place for government-held sensitive information. The incident has faced censorship on Chinese social media platforms, indicating an attempt to control the narrative and limit public discussion. International cybersecurity experts have expressed concerns about the implications of such a massive data leak and the potential for misuse of the compromised information. As of the latest reports, Chinese authorities have not officially acknowledged or publicly addressed the breach, leading to criticism regarding the lack of transparency surrounding data security incidents in the country. The long-term consequences for the individuals whose data may have been compromised and the broader implications for data security practices within China remain uncertain.</p>
+            </div>
+
+            <!-- REFERENCES -->
+            <div>
+                <details class="rounded border shadow" open>
+                    <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                    References
+                    </summary>
+                    <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Fallout from Shanghai National Police Data Breach Continues. (n.d.). https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2022/july/shanghai-breach-fallout/</li>
+                        <li>Reuters. (2022, July 6). Hacker claims to have stolen 1 bln records of Chinese citizens from police. Reuters. https://www.reuters.com/world/china/hacker-claims-have-stolen-1-bln-records-chinese-citizens-police-2022-07-04/</li>
+                        <li>Vicens, A. (2022, July 27). Fallout from massive Shanghai Police data breach reverberates on dark web. CyberScoop. https://cyberscoop.com/shanghai-data-breach-1-billion-dark-web/</li>
+                    </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
 		
+		
+
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
