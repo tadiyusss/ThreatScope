@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Latitude Financial</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full h-[80dvh] relative">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
+                    </div>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="../companies-affected.html">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../continents/australia-oceania.html" class="text-sm">Australia/Oceania</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Latitude Financial</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Latitude Financial</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a><p>|</p>
+                        <a href="#method">How it Happened</a><p>|</p>
+                        <a href="#data-compromised">Data Compromised</a><p>|</p>
+                        <a href="#impact">Impact on the Company and Customers</a>
+                    </div>
+                </div>
+                <a href="./assets/latitude-financial.png" target="image-viewer"><img src="./assets/latitude-financial.png" class="w-full h-96 mt-10 object-cover rounded-lg filter grayscale-0 hover:grayscale transition duration-300"></a>
+			</div>
+		</div>
+
+		<div class="space-y-8 max-w-5xl mx-auto mt-40 pt-10">
+            
+            <div class="space-y-4 pt-11" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p class="text-justify">In March 2023, Latitude Financial, a prominent Australian non-bank lender, experienced a significant cyberattack that compromised the personal information of approximately 14 million individuals across Australia and New Zealand. Initially, the company reported that around 330,000 customer records were affected, but subsequent investigations revealed a much larger impact. The breach involved unauthorized access to sensitive data, including identification documents and contact information. Latitude Financial promptly engaged cybersecurity experts and notified relevant authorities to contain the incident. The company also communicated with affected customers, providing information and support. This breach stands as one of the most substantial data security incidents in Australian financial history. It underscores the critical importance of robust cybersecurity measures in the financial sector.</p>
+            </div>
+
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Compromised Employee Credentials</h1>
+                <p class="pl-4 text-justify">- The attackers obtained login credentials of Latitude Financial employees, possibly through phishing or social engineering tactics. With these credentials, they accessed systems managed by third-party service providers. This unauthorized access allowed the exfiltration of vast amounts of customer data. The incident emphasizes the need for stringent access controls and employee cybersecurity training</p>
+                <h1 class="text=xl font-medium">Inadequate Monitoring and Detection</h1>
+                <p class="pl-4 text-justify">- The breach remained undetected for a period, suggesting shortcomings in system monitoring and threat detection capabilities. Effective monitoring tools and protocols are essential for early detection of unauthorized activities. Implementing real-time alerts and regular system audits can mitigate such risks. This aspect of the breach highlights the importance of proactive cybersecurity measures.</p>
+                <h1 class="text=xl font-medium">Lack of Multi-Factor Authentication (MFA)</h1>
+                <p class="pl-4 text-justify">- The absence or insufficient implementation of MFA may have facilitated unauthorized access using compromised credentials. MFA adds an additional layer of security, making it more difficult for attackers to gain access. Organizations should enforce MFA across all critical systems and user accounts. This breach underscores the necessity of adopting comprehensive authentication mechanisms.
+</p>
+            </div>
+
+
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Passport Numbers</h5>
+                <p class="pl-4 text-justify">- The breach included the theft of around 53,000 passport numbers. Exposure of such sensitive identification documents poses significant risks of identity theft and fraud. Affected individuals may face challenges in securing their identities and may need to replace compromised documents. This incident highlights the critical need for secure storage and handling of personal identification information</p>
+
+                <h5 class="text-xl font-medium">Personal Contact Information</h5>
+                <p class="pl-4 text-justify">- Approximately 6.1 million customer records containing names, addresses, phone numbers, and dates of birth were compromised. This information can be exploited for targeted phishing attacks and other malicious activities. Individuals affected by the breach may experience increased unsolicited communications and potential scams. Organizations must ensure robust protection of personal contact information to maintain customer trust.</p>
+
+                <h5 class="text-xl font-medium">Financial Statements</h5>
+                <p class="pl-4 text-justify">- Less than 100 current and former customers had their monthly financial statements accessed. While this number is relatively small, the exposure of financial data can lead to unauthorized transactions and financial fraud. Affected customers may need to monitor their accounts closely and take preventive measures. This aspect of the breach underscores the importance of safeguarding financial information.</p>
+            </div>
+
+            <div class="space-y-4" id="impact">
+                <h4 class="text-3xl font-medium text-purple-300">Impact on the Company and Customers</h4>
+                <p class="text-justify">The cyberattack had profound implications for both Latitude Financial and its customers. Financially, the company incurred approximately $76 million in pre-tax costs related to the breach, contributing to a $98 million loss in the first half of 2023. Operational disruptions included a temporary halt in new originations and pricing actions, as well as significant interruptions in collections activities. Customers faced increased risks of identity theft and fraud, necessitating vigilance and potential replacement of compromised identification documents. The breach also led to reputational damage, with potential long-term effects on customer trust and business relationships. In response, Latitude Financial engaged cybersecurity experts, notified affected individuals, and implemented enhanced security measures. This incident serves as a stark reminder of the critical importance of comprehensive cybersecurity strategies in protecting sensitive data.</p>
+            </div>
+
+            <!-- REFERENCES -->
+            <div>
+                <details class="rounded border shadow" open>
+                    <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                    References
+                    </summary>
+                    <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Barrett, J. (2023, March 26). Latitude Financial cyber-attack worse than first thought with 14m customer records stolen. The Guardian. Retrieved from https://www.theguardian.com/australia-news/2023/mar/27/latitude-financial-cyber-data-breach-hack-14m-customer-records-stolen</li>
+                        <li>Gordon Legal. (2023). Latitude Financial Privacy Breach. Retrieved from https://gordonlegal.com.au/services/class-actions/latitude-financial-privacy-breach/</li>
+                        <li>Latitude Financial. (2023). Latitude Cyber Incident: Information and Support. Retrieved from https://www.latitudefinancial.com.au/latitude-cyber-incident/Twingate: It's time to ditch your VPN+2latitudefinancial.com.au+2Wikipedia+2</li>
+                        <li>Sadler, D. (2023, August 22). Data breach cost Latitude $76 million. Information Age. Retrieved from https://ia.acs.org.au/article/2023/data-breach-cost-latitude--76-million.htmlInformation Age</li>
+                        <li>Twingate. (2024, May 23). What happened in the Latitude Financial data breach?. Retrieved from https://www.twingate.com/blog/tips/latitude-financial-data-breachTwingate: It's time to ditch your VPN</li>
+                    </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+		
+		
+
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		</div>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
