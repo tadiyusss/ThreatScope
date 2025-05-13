@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Australia Broadcasting Corporation</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full h-[80dvh] relative">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
+                    </div>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="#" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Navigations</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Recent News</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Learn Now</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Concepts</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Famous Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Recent Attacks</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Companies Affected</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Protective Measures</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Future Threats</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Gallery</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">About Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Contact Us</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
+                                <li>
+                                    <ul class="">
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 1</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 2</a>
+                                        </li>
+                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+                                            <a href="#">Item 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="../companies-affected.html">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="../continents/australia-oceania.html" class="text-sm">Australia/Oceania</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Australia Broadcasting Corporation</a>
+                    </div>
+                    <h4 class="font-semibold text-5xl">Australia Broadcasting Corporation</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a><p>|</p>
+                        <a href="#method">How it Happened</a><p>|</p>
+                        <a href="#data-compromised">Data Compromised</a><p>|</p>
+                        <a href="#impact">Impact on the Company and Customers</a>
+                    </div>
+                </div>
+                <a href="./assets/abc.png" target="image-viewer"><img src="./assets/abc.png" class="w-full h-96 mt-10 object-cover rounded-lg filter grayscale-0 hover:grayscale transition duration-300"></a>
+			</div>
+		</div>
+
+		<div class="space-y-8 max-w-5xl mx-auto mt-40 pt-10">
+            
+            <div class="space-y-4 pt-11" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p class="text-justify">In 2020, the Australian Broadcasting Corporation (ABC) experienced a significant data breach involving the exposure of sensitive information stored on Amazon Web Services (AWS) S3 buckets. The breach was discovered by Ukrainian cybersecurity firm Kromtech, which found that several thousand emails, customer logins and passwords, requests for licensed content, and 1,800 daily database backups made since 2015 were publicly accessible due to misconfigured storage settings. This incident highlighted vulnerabilities in ABC's data storage practices and raised concerns about the security of sensitive information. The breach was attributed to human error, specifically the failure to properly configure access permissions on cloud storage services. As a result, unauthorized individuals could access and potentially misuse the exposed data. The ABC took steps to secure the exposed data and prevent similar incidents in the future. This breach underscores the importance of proper configuration and management of cloud-based storage solutions.</p>
+            </div>
+
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Human Error in Configuration</h1>
+                <p class="pl-4 text-justify">- The primary cause of the breach was human error in setting access permissions on the AWS S3 storage buckets. Instead of restricting access to authorized personnel, the buckets were inadvertently configured to be publicly accessible. This misconfiguration allowed anyone with the appropriate URL to access the stored data without authentication. Such errors highlight the critical need for thorough training and oversight in managing cloud infrastructure.</p>
+                <h1 class="text=xl font-medium">Lack of Automated Security Checks</h1>
+                <p class="pl-4 text-justify">- The absence of automated security checks and alerts contributed to the prolonged exposure of sensitive data. Without systems in place to detect and notify administrators of misconfigurations, the breach went unnoticed until discovered by external cybersecurity researchers. Implementing automated tools can help identify and rectify security issues promptly. This incident emphasizes the importance of proactive monitoring and automated safeguards in cloud environments.</p>
+                <h1 class="text=xl font-medium">Inadequate Access Controls</h1>
+                <p class="pl-4 text-justify">- The breach also revealed shortcomings in ABC's access control policies. Properly implemented access controls would have limited data exposure even in the event of misconfigurations. The lack of granular permissions and role-based access increased the risk of unauthorized data access. Strengthening access control measures is essential to protect sensitive information.</p>
+            </div>
+
+
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Customer Login Credentials</h5>
+                <p class="pl-4 text-justify">- The exposed data included customer login information, such as usernames and passwords. This information could be exploited by malicious actors to gain unauthorized access to user accounts. The breach underscores the necessity of encrypting sensitive data and enforcing strong password policies. Users affected by the breach were advised to change their passwords and monitor their accounts for suspicious activity.</p>
+
+                <h5 class="text-xl font-medium">Licensed Content Requests</h5>
+                <p class="pl-4 text-justify">- Requests for licensed content were among the data exposed in the breach. This information could reveal proprietary content interests and business relationships. Unauthorized access to such data might lead to intellectual property concerns and competitive disadvantages. Protecting business-sensitive information is crucial for maintaining organizational integrity.</p>
+
+                <h5 class="text-xl font-medium">Daily Database Backups</h5>
+                <p class="pl-4 text-justify">- The breach included exposure of 1,800 daily database backups dating back to 2015. These backups potentially contained a wide range of sensitive information, including historical data and internal communications. Access to such comprehensive data sets could facilitate extensive data mining and misuse. Regular audits and secure storage practices are vital for safeguarding backup data.</p>
+            </div>
+
+            <div class="space-y-4" id="impact">
+                <h4 class="text-3xl font-medium text-purple-300">Impact on the Company and Customers</h4>
+                <p class="text-justify">The ABC cyber breach had significant implications for both the organization and its stakeholders. For the ABC, the incident resulted in reputational damage and highlighted deficiencies in its data security practices. The organization faced scrutiny over its handling of sensitive information and its reliance on third-party cloud services. In response, the ABC undertook a comprehensive review of its data management policies and implemented stricter security measures, including improved access controls and regular security audits. Customers affected by the breach were at risk of identity theft and unauthorized access to their accounts, leading to potential financial and privacy concerns. The incident served as a wake-up call for the importance of robust cybersecurity frameworks, especially when utilizing cloud-based storage solutions. Overall, the breach emphasized the need for continuous vigilance and proactive measures to protect sensitive data in an increasingly digital landscape.</p>
+            </div>
+
+            <!-- REFERENCES -->
+            <div>
+                <details class="rounded border shadow" open>
+                    <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                    References
+                    </summary>
+                    <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>DataCenterDynamics. (2017, November 16). Human error causes Australian Broadcasting Corporation breach. https://www.datacenterdynamics.com/en/news/human-error-causes-australian-broadcasting-corporation-breach/Data Center Dynamics</li>
+                        <li>CliffsNotes. (n.d.). Case Study Research Task: The Australian Broadcasting Corporation (ABC) Data Loss Incident. https://www.cliffsnotes.com/study-notes/18987296CliffsNotes</li>
+                        <li>ABC News. (2025, April 29). Data breach. https://www.abc.net.au/news/corrections/2025-04-29/data-breach/105228556ABC</li>
+                    </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+		
+		
+
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm">Page 1</li>
+                            <li class="text-gray-300 text-sm">Page 2</li>
+                            <li class="text-gray-300 text-sm">Page 3</li>
+                            <li class="text-gray-300 text-sm">Page 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		</div>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
