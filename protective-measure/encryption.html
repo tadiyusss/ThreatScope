@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>ThreatScope</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link rel="stylesheet" href="../assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<!-- NAVIGATION -->
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/antivirus-software.jpg')] bg-cover bg-center bg-no-repeat relative">
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
+			<div class="relative max-w-4xl mx-auto mt-48">
+				<h4 class="text-6xl font-medium">Data Encryption</h4>
+			</div>
+		</div>
+		<div class="bg-gradient-to-b from-black to-[#141528]">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<div class="space-y-2">
+						<p>Encryption is a fundamental cybersecurity technique that protects data by converting it into unreadable code, which can only be deciphered with the correct key. It ensures the confidentiality and integrity of sensitive information during storage and transmission. Encryption is used in emails, messaging, file storage, databases, and network communications. There are two main types: symmetric (same key to encrypt/decrypt) and asymmetric (public/private key pair). Without encryption, data sent across networks can be easily intercepted or altered. Encryption is essential for privacy, secure transactions, and regulatory compliance.</p>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Data Encryption at Rest</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Full Disk Encryption</h6>
+							<p>Protects the entire contents of a disk (e.g., BitLocker, FileVault). Prevents data access if a device is lost or stolen. Common in laptops and mobile devices.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Database Encryption</h6>
+							<p>Encrypts database fields or entire databases (e.g., MySQL TDE, Oracle Transparent Data Encryption). Protects stored customer data and personal records.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Cloud Storage Encryption</h6>
+							<p>Cloud services encrypt stored files (e.g., Google Drive, Dropbox). Usually paired with server-side encryption and user-specific access controls.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Data Encryption in Transit</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">TLS/SSL Protocols</h6>
+							<p>Encrypt data transmitted between web browsers and servers (HTTPS). Secures login credentials, online forms, and financial transactions.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">VPN Encryption</h6>
+							<p>Virtual Private Networks use encryption to tunnel traffic securely over public networks. Protects remote users and sensitive corporate data.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Email Encryption</h6>
+							<p>Encrypts email content and attachments. Ensures messages are readable only by intended recipients. Used in business and legal communication.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">End-to-End Encryption</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Messaging Apps</h6>
+							<p>Messages are encrypted on the sender's device and decrypted only on the recipient’s. Prevents access even by the service provider.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">File-Sharing Tools</h6>
+							<p>End-to-end encrypted storage and file sharing. Ensures only users with decryption keys can view content.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Zero-Knowledge Encryption</h6>
+							<p>Providers have no access to encryption keys or content (e.g., MEGA, ProtonMail). Enhances privacy by design.</p>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/datacenter.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Enterprise Environments</h5>
+								<p>Secure data transfers are essential in corporate environments, where companies encrypt sensitive files exchanged between branches or vendors to prevent industrial espionage and ensure compliance with data protection laws. Encrypted backups, stored offsite or in the cloud, provide an added layer of security against ransomware attacks and insider threats, safeguarding critical information. Additionally, digital signature verification uses encryption to confirm that documents such as contracts and reports remain untampered, ensuring their authenticity—a practice especially important for finance and legal departments.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Education Institution</h5>
+								<p>Encrypted student records ensure that grades and personal information are securely stored in databases, supporting FERPA compliance and preserving academic integrity. Secure access to learning management systems (LMS) through HTTPS and encrypted logins helps prevent credential interception and enhances privacy in online learning environments. Additionally, campus Wi-Fi networks utilizing WPA3 encryption protect student and staff devices from rogue access points and data sniffing, further strengthening overall network security.</p>
+							</div>
+						</div>
+						<div class="flex justify-center">
+							<img src="../assets/school-building.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+					</div>
+
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/personal-computer.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Personal Accounts</h5>
+								<p>Using encryption on a personal level is essential for protecting your sensitive information from unauthorized access, whether it's stored on your devices or transmitted online. Encryption safeguards personal data such as emails, financial details, passwords, and private files, ensuring that even if your device is lost, stolen, or hacked, the data remains unreadable to others. It also helps maintain privacy in digital communications, prevents identity theft, and protects against cyber threats like phishing or spyware. In an age where personal data is constantly targeted, encryption provides a strong layer of defense for your digital life.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+                    <div class="space-y-2">
+                        <p>Encryption requires proper key management; lost or leaked keys can compromise the entire system. It can add processing overhead, especially for older hardware. Not all applications encrypt data by default, leading to inconsistent protection. Encrypted data cannot be scanned easily for malware or content unless decrypted. If improperly configured, encryption may provide a false sense of security. Finally, while encryption protects data, it does not prevent unauthorized access if the attacker gains valid credentials.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
