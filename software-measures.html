@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Types of Vulnerabilities</title>
+		<title>ThreatScope</title>
 		<script src='https://cdn.tailwindcss.com'></script>
-		<link rel="stylesheet" href="../assets/css/fonts.css">
+		<link rel="stylesheet" href="assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full h-dvh relative">
+		<div id="hero" class="w-full relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-2 text-left">
                         <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
+                            <img src="assets/logo.svg" class="w-14 h-14">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </li>
     
@@ -285,106 +285,86 @@
                 </div>
             </nav>
 
-			<div class="grid md:grid-cols-2 grid-cols-1 max-w-7xl mx-auto mt-8">
+			<div class="grid md:grid-cols-2 grid-cols-1 max-w-6xl mx-auto">
 				<div class="flex items-center justify-center">
                     <div class="block px-4">
-                        <h4 class="text-6xl font-medium ">Physical <span class="text-[#6366F1]">Protective Measures</span></h4>
-                        <p class="mt-4 text-gray-200">Physical protective measures involve using tangible tools and barriers to prevent unauthorized access to buildings, systems, and sensitive areas. These include surveillance cameras, locked server rooms, biometric access systems, and trained security personnel. Physical security is essential because even the most secure digital system can be compromised if an attacker gains physical access to the hardware.</p>
+                        <h4 class="text-5xl font-medium">Software Protective Measures</h4>
+                        <p class="mt-4 text-gray-200 md:text-left text-justify">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
                     </div>
 				</div>
 				<div class="flex justify-center mt-8 px-4 md:mt-0">
-					<img src="../assets/hacker.png" alt="Pic" class="md:block hidden max-w-full h-auto">
+					<img src="assets/famous-cyber-attacks.png" alt="Pic" class="md:block hidden max-w-full h-auto">
 				</div>
-                
 			</div>
 		</div>
 
 		
-		<!-- Content -->
-        <div class="">
-			<div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 max-w-6xl mx-auto py-16 gap-4">
-
-				<div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Surveillance Camera</h5>
-						<p class="my-2">Surveillance cameras are physical security tools used to monitor areas and record activities. They act as both a deterrent to criminals and a way to gather evidence after incidents. These devices are commonly found in public spaces, offices, and data centers to enhance security.</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+		<div class="md:px-2 px-4 max-w-6xl mx-auto grid grid-cols-3 gap-4 mt-36">
+            <div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Antivirus Software</h5>
+					<p class="text-sm text-gray-300">Antivirus software helps detect and remove harmful programs like viruses, worms, and trojans from your computer. It scans files and programs for known threats and prevents them from causing damage. Regular updates are important so it can catch the newest types of malware.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
+			</div>
 
-                <div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Security Guard</h5>
-						<p class="my-2">Security guards are personnel hired to protect physical spaces from unauthorized access or suspicious activity. They perform patrols, check IDs, and respond quickly to security breaches. Their presence increases the sense of safety and often helps prevent crime.</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+			<div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Encryption</h5>
+					<p class="text-sm text-gray-300">Encryption protects data by turning it into unreadable code unless you have the right key to unlock it. This keeps information safe even if someone steals it or intercepts it. It's commonly used in emails, cloud storage, and websites with HTTPS.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
+			</div>
 
-                <div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Locked Server Rooms</h5>
-						<p class="my-2">Locked server rooms restrict physical access to important IT infrastructure. Only authorized personnel with keys or access cards can enter. This helps protect sensitive equipment and data from theft, damage, or tampering.</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+			<div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Multi-Factor Authentication</h5>
+					<p class="text-sm text-gray-300">MFA adds extra steps to logging in, like entering a code from your phone after typing your password. It helps keep accounts safe even if someone steals your password. This makes it harder for hackers to break in.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
+			</div>
 
-                <div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Biometric Access Control</h5>
-						<p class="my-2">Biometric access control uses unique physical traits such as fingerprints, facial recognition, or iris scans to authenticate and allow entry to restricted areas. It offers a higher level of security than traditional keys or cards, as biometric traits are difficult to forge or steal. This method ensures that only verified individuals can access sensitive equipment or data rooms.
-</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+			<div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Firewalls</h5>
+					<p class="text-sm text-gray-300">Firewalls act like a security gate between your device and the internet, blocking harmful traffic. They help prevent hackers or viruses from accessing your system. Firewalls can be software-based, hardware-based, or both.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
+			</div>
 
-                <div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Fire Suppression Systems</h5>
-						<p class="my-2">Fire suppression systems are automated safety mechanisms designed to detect and extinguish fires, protecting critical hardware and infrastructure. Unlike traditional sprinklers, these systems often use gas-based agents to avoid damaging electronic equipment. They are essential for reducing damage and downtime during fire emergencies in server rooms and data centers.</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+			<div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Secure Network</h5>
+					<p class="text-sm text-gray-300">A secure network uses tools like strong passwords, encrypted Wi-Fi, and access controls to protect data and devices. It helps stop hackers from getting into the system through the network. Businesses often use VPNs and separate networks for different users to stay safe.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
+			</div>
 
-                <div class=" bg-[#141528] border border-indigo-900 rounded space-y-2">
-					<img src="https://placehold.co/500x500" class="w-full h-80 object-cover rounded-t" alt="">
-					<div class="p-4">
-						<h5 class=" font-medium text-2xl">Motion Detectors</h5>
-						<p class="my-2">Motion detectors sense movement in secured areas and can trigger alarms or alert security personnel. They are especially useful during off-hours or in locations where constant surveillance isn’t feasible. As part of a layered defense, they help detect unauthorized presence early and prompt immediate response.</p>
-                        <div class="text-right">
-                            <button class="mt-2 bg-indigo-500 hover:bg-indigo-600 ease duration-200 px-2 py-1 rounded">Learn More</button>
-                        </div>
-						
+			<div class="bg-[#141528] rounded text-white border border-indigo-900">
+				<img src="https://placehold.co/250x250" class="w-full h-64 object-cover rounded-t">
+				<div class="p-4 space-y-2">
+					<h5 class="text-lg font-medium">Update Programs and Systems Regularly</h5>
+					<p class="text-sm text-gray-300">Keeping your software and systems updated is important because updates fix security holes and bugs. Hackers often target outdated programs that don’t have the latest protection. Automatic updates help make sure everything stays secure.</p>
+					<div class="mt-2">
+						<a href="#" class="px-2 py-1 font-medium text-sm rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
 					</div>
 				</div>
-
-                
-	
-				
-
-            
-              
-               
-			</div> 
+			</div>
 		</div>
 		
 
@@ -392,7 +372,7 @@
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
                         <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
@@ -429,6 +409,6 @@
             </div>
         </footer>
 		</div>
-		<script src="../assets/js/main.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
