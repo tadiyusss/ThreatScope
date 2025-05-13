@@ -3,12 +3,13 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>History of Vulnerabilities</title>
 		<script src='https://cdn.tailwindcss.com'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/hero-bg.jpg')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('./assets/hero-history-of-computer-vulnerabilities.png')] bg-cover bg-center bg-no-repeat relative">
             <nav class="w-full p-4 flex items-center justify-between">
                 <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                     <div class="flex items-center space-x-4">
@@ -31,62 +32,110 @@
             </nav>
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-			<div class="relative max-w-4xl mx-auto mt-48">
+			<div class="relative max-w-4xl mx-auto mt-40">
 				<h4 class="text-6xl font-medium">History of Computer Vulnerabilities</h4>
                 <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Initial Discovery </a>
-                    <a href="">Common Early Exploits and Attacks</a>
-                    <a href="">The Development of Security Patching</a>
+                    <a href="#initial">Initial Discovery </a><p> | </p>
+                    <a href="#common">Common Early Exploits and Attacks</a><p> | </p>
+                    <a href="#development">The Development of Security Patching</a>
                 </div>
 			</div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528] pt-24 space-y-6 px-2">
-            <div class="max-w-7xl mx-auto space-y-20">
-                <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">The Initial Discovery of Software Vulnerabilities</h4>
+            <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
+                <div class="space-y-4 my-5">
+                    <h4 class="font-medium text-2xl text-[#E2C8F1]" id="initial">The Initial Discovery of Software Vulnerabilities</h4>
                     <div class="space-y-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>
+                        <p class="text-justify first-letter:text-4xl">&nbsp;&nbsp;&nbsp;&nbsp;The systematic study of software vulnerabilities began to take shape with the establishment of structured databases and scoring systems. Gueye and Mell (2021) emphasize the importance of such frameworks: "Understanding the landscape of software vulnerabilities is key for developing effective security solutions." Their analysis of data from 2005 to 2019 reveals that "the vulnerability threat landscape has been dominated by only a few vulnerability types and has changed little during the time period of the study" (Gueye & Mell, 2021). Notably, they found that "the overwhelming majority of vulnerabilities are exploitable over the network," highlighting the persistent nature of certain vulnerability types over time (Gueye & Mell, 2021). This underscores the necessity for ongoing vigilance and adaptation in cybersecurity practices.</p>
+                        <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Further exploration into the lifecycle of software vulnerabilities provides insight into their progression and management. Woo et al. (2021) discuss the phases of a vulnerability's existence, noting that "the vulnerability lifecycle model shows how a vulnerability evolves over time," encompassing stages from discovery to disclosure. Their research underscores the complexity of accurately tracing the origins of reported vulnerabilities, stating that "identifying the correct origin of publicly reported software vulnerabilities is crucial for effective mitigation" (Woo et al., 2021). This comprehensive understanding aids in developing more robust security measures and informs the creation of policies aimed at reducing software vulnerabilities.</p>
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="text-medium text-2xl text-[#E2C8F1]">Common Early Exploits and Attacks</h4>
-                    <div class="grid grid-cols-3 gap-4">
-                        <div class="p-5 bg-[#141528] border-indigo-900/50 rounded space-y-4">
+                    <h4 class="text-medium text-2xl text-[#E2C8F1]" id="common">
+                        Common Early Exploits and Attacks
+                    </h4>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+                        <div class="flex flex-col h-[450px] p-5 bg-[#141528] border border-indigo-900/50 rounded">
+                            <div class="overflow-auto flex-grow space-y-4 pr-2">
                             <h6 class="text-2xl font-medium text-[#E2C8F1]">Phishing</h6>
-                            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
-                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                              Learn More</button>
+                            <p class="text-gray-200 text-sm text-justify">
+                                Phishing attacks began in the mid-1990s, with attackers impersonating AOL employees to steal user credentials via email (Fette, 2020). These early phishing attacks exploited social engineering tactics, tricking users into entering personal information on fraudulent websites (Fette, 2020). AOL introduced anti-phishing measures in 1995 to counter the rising threat, although phishing attacks continue to evolve (Fette, 2020).
+                            </p>
+                            </div>
+                            <div class="mt-4">
+                            <button class=" bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                                Learn More
+                            </button>
+                            </div>
                         </div>
 
-                        <div class="p-5 bg-[#141528] border-indigo-900/50 rounded space-y-4">
+                        <div class="flex flex-col h-[450px] p-5 bg-[#141528] border border-indigo-900/50 rounded">
+                            <div class="overflow-auto flex-grow space-y-4 pr-2">
                             <h6 class="text-2xl font-medium text-[#E2C8F1]">Ransomware</h6>
-                            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
-                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                              Learn More</button>
+                            <p class="text-gray-200 text-sm text-justify">
+                                Ransomware first emerged in 1989 with the AIDS Trojan, also known as PS Cyborg, which encrypted files on infected systems and demanded payment to a P.O. box (Popp, 1989). The AIDS Trojan, distributed on floppy disks at a World Health Organization conference, was one of the first known attempts to extort victims through ransomware (Popp, 1989). Since then, ransomware has evolved significantly, with more sophisticated versions using encryption to lock files and demand cryptocurrency payments (Varonis, 2021).
+                            </p>
+                            </div>
+                            <div class="mt-4">
+                            <button class=" bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                                Learn More
+                            </button>
+                            </div>
                         </div>
 
-                        <div class="p-5 bg-[#141528] border-indigo-900/50 rounded space-y-4">
-                            <h6 class="text-2xl font-medium text-[#E2C8F1]">SQL Injextion</h6>
-                            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt natus eaque porro, cumque nam provident animi, adipisci voluptatem soluta laboriosam itaque laborum quas repellendus autem voluptatum placeat inventore maxime, minima dicta. Beatae obcaecati quo fugiat et nisi tempore nesciunt labore dolorum doloremque tenetur numquam, architecto vitae reprehenderit at. Saepe modi repellendus nisi assumenda earum quia eligendi, illo perferendis, ullam iure itaque sint maiores voluptatum doloremque aliquam cumque rem aperiam.</p>
-                            <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
-                              Learn More</button>
+                        <div class="flex flex-col h-[450px] p-5 bg-[#141528] border border-indigo-900/50 rounded">
+                            <div class="overflow-auto flex-grow space-y-4 pr-2">
+                            <h6 class="text-2xl font-medium text-[#E2C8F1]">SQL Injection</h6>
+                            <p class="text-gray-200 text-sm text-justify">
+                                SQL Injection attacks were first recognized in the late 1990s as a significant web application security vulnerability (Halfond, 2006). These attacks involve injecting malicious SQL queries into input fields to manipulate or extract data from databases (Halfond, 2006). Despite the recognition of the vulnerability, SQL Injection remains one of the most prevalent attacks in web application security (OWASP, 2021).
+                            </p>
+                            </div>
+                            <div class="mt-4">
+                            <button class=" bg-indigo-600 text-white text-sm px-4 py-2 rounded-md hover:bg-indigo-500 transition">
+                                Learn More
+                            </button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="space-y-4">
-                    <div class="text-medium text-2xl" id="Cybercrime">Understanding Cybercrime in the Digital Age</div>
-                  
+
+                <div class="space-y-4 my-5">
+                    <div class="text-2xl font-medium text-[#E2C8F1]" id="development">The Development of Security Patching and Updates</div>
                     <p class="text-justify">
-                        <img src="https://placehold.co/300x300" class="float-left mr-6 mb-4 w-64 rounded object-cover border" />
+                        <img src="./assets/history-of-computer-vulnerabilities-security-patching.png"class="float-left w-[360px] h-[270px] object-cover rounded mr-6 mb-4 border border-gray-700" />
                         Cybercrimes, which include illicit actions conducted via computers or the internet, have grown to be a serious threat in the digital age. These crimes, which impact people, businesses, and governments alike, can vary from identity theft and financial fraud to cyberbullying and data breaches. Cybercriminals now have more opportunity to take advantage of weaknesses due to the growing dependence on digital platforms for government, commerce, and communication. Understanding the nature of cybercrimes and the techniques used to investigate them is crucial because, as technology advances, so do the strategies used by cybercriminals.
                     </p>
                   
                     <p class="text-justify">Cybercrime investigations require a multipronged strategy that combines sophisticated digital forensics with conventional law enforcement methods. When it comes to locating, pursuing, and prosecuting cybercriminals, organizations like the FBI and the Department of Homeland Security are essential. Because cybercrimes can occur across borders, these investigations frequently call for cross-border cooperation. Additionally, because technology is developing so quickly, investigative techniques must be continuously modified to stay up with new cyberthreats. Anyone traversing the digital landscape must have a thorough understanding of the intricacies of cybercrime and the efforts being made to combat it.</p>
                 </div>
+
+                <div>
+                    <details class="rounded border shadow" open>
+                        <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                        References
+                        </summary>
+                        <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Fette, I. (2020). The History of Phishing Attacks and Their Evolution. Phishing.org. https://www.phishing.org/history-of-phishing</li>
+                            <li>Gueye, A., & Mell, P. (2021). A Historical and Statistical Study of the Software Vulnerability Landscape. The Seventh International Conference on Advances and Trends in Software Engineering (SOFTENG 2021). https://www.nist.gov/publications/historical-and-statistical-study-software-vulnerability-landscape</li>
+                            <li>OWASP. (2021). SQL Injection. OWASP Foundation. https://owasp.org/www-community/attacks/SQL_Injection</li>
+                            <li>Woo, S., Lee, D., Park, S., Lee, H., & Dietrich, S. (2021). V0Finder: Discovering the Correct Origin of Publicly Reported Software Vulnerabilities. 30th USENIX Security Symposium (USENIX Security 21). https://www.usenix.org/conference/usenixsecurity21/presentation/woo</li>
+                            <li>Varonis. (2021). A Brief History of Ransomware. https://www.varonis.com/blog/a-brief-history-of-ransomware</li>
+
+                        </ul>
+                        </div>
+                    </details>
+                </div>
+
             </div>
         </div>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 		
 
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">

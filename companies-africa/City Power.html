@@ -3,18 +3,18 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>ThreatScope</title>
+		<title>City Power</title>
 		<script src='https://cdn.tailwindcss.com'></script>
-		<link rel="stylesheet" href="assets/css/fonts.css">
+		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
-		<div id="hero" class="w-full h-[85dvh] relative">
+		<div id="hero" class="w-full h-[80dvh] relative">
             <nav class="">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
-                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <img src="../../assets/logo.svg" class="w-14 h-14 text-black">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-2 text-left">
                         <li class="flex items-center space-x-4 p-4">
-                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <img src="../assets/logo.svg" class="w-14 h-14">
                             <h4 class="text-2xl">ThreatScope</h4>
                         </li>
     
@@ -285,61 +285,66 @@
                 </div>
             </nav>
 
-			<div class="grid md:grid-cols-3 grid-cols-1 max-w-7xl mx-auto md:mt-20 mt-10">
-				<div class="md:col-span-2 col-span-1 flex items-center justify-center">
-                    <div class="block px-4">
-                        <h4 class="text-5xl font-medium">Concepts of Cybersecurity</h4>
-                        <p class="mt-4 text-gray-200 md:text-left text-justify">Welcome to the world of cybersecurity! In this topic, you'll learn how hacking and cybercrime first began. We'll explore the history of computer vulnerabilities and how attackers found ways to exploit them. You'll also see how cyber threats have changed and grown over time. Lastly, we’ll meet some ethical hackers and experts who help keep the digital world safe.</p>
+			<div class="mt-24 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <a class="text-sm" href="#">Companies Affected</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">Africa</a>
+                        <span class="text-gray-300 text-sm">/</span>
+                        <a href="#" class="text-sm">City Power</a>
                     </div>
-				</div>
-				<div class="flex justify-center mt-8 px-4 md:mt-0">
-					<img src="assets/home-page.png" alt="Pic" class="md:block hidden max-w-full h-auto">
-				</div>
+                    <h4 class="font-semibold text-5xl">City Power</h4>
+                    <div class="flex items-center space-x-6 mt-2 text-gray-300">
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
+                    </div>
+                </div>
+                <img src="https://placehold.co/500x500" class="w-full h-96 mt-10 object-cover rounded-lg ">
+                
 			</div>
 		</div>
 
+		<div class="space-y-8 max-w-5xl mx-auto mt-40">
+            
+            <div class="space-y-4" id="overview">
+                <h4 class="text-3xl font-medium text-purple-300">Overview of the Breach</h4>
+                <p>A ransomware attack was launched against Johannesburg's power provider, City Power, in July 2019. The company's activities were disrupted by the cyberattack, which encrypted its databases, apps, and network systems. Residents suffered from power outages as a result, and consumers were unable to buy electrical units. The hack brought to light how susceptible vital infrastructure is to online attacks. Service delivery was impacted by the serious compromise of City Power's IT infrastructure. The event made clear how important it is for critical services to have strong cybersecurity. Additionally, it increased public awareness of how cyberattacks may affect day-to-day living.</p>
+            </div>
+
+            <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
+                <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
+                <h1 class="text=xl font-medium">Detail 1</h1>
+                <p class="pl-4">- Phishing emails were probably utilized by the attackers to spread the ransomware payload. The infection may have been brought on by staff members unintentionally clicking on harmful attachments or URLs. This technique highlights the significance of cybersecurity awareness training by taking advantage of human weaknesses. Staff members need to be trained by their organizations to spot and report questionable communications.
+                </p>
+                <h1 class="text=xl font-medium">Detail 2</h1>
+                <p class="pl-4">- The ransomware took advantage of pre-existing flaws in City Power's software. The systems were vulnerable to assault because timely security fixes were not applied. In order to reduce such risks, regular software updates and vulnerability checks are essential. The repercussions of skipping regular cybersecurity maintenance are illustrated by this occurrence.</p>
+            </div>
+
+
+            <div class="space-y-4" id="data-compromised">
+                <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
+                <h5 class="text-xl font-medium">Info 1</h5>
+                <p class="pl-4">- Access to operational data that is necessary for controlling the distribution of energy was interfered with by the attack. This made it more difficult for City Power to efficiently monitor and manage the power supply. Long-lasting service interruptions and difficulties resuming regular operations may result from the loss of such data. For utility firms, maintaining the availability and integrity of operating data is essential.</p>
+
+                <h5 class="text-xl font-medium"> Info 2</h5>
+                <p class="pl-4">- The ransomware attack also impacted customer account and billing information. Consumers had trouble accessing their account information and buying electrical units. The possibility of financial theft and privacy issues are brought up by the compromise of this data. Utility companies need to put protections in place to keep consumer data safe from online attacks.</p>
+
+                <h5 class="text-xl font-medium">The impact of the ransomware attack on City Power and its clients was immediate and noticeable. Both residential and commercial regions experienced power outages as a result of operational interruptions. The inability of customers to buy electricity caused a great deal of discontent. The utility's IT infrastructure was reviewed after the event revealed its cybersecurity flaws. Due to service outages, City Power could lose money and suffer reputational harm. The incident acted as a warning to the utilities industry to give cybersecurity top priority. City Power responded by taking action to fortify its defenses against potential cyberattacks.
+                </p>
+            </div>
+        </div>
 		
-		<div class="md:px-2 px-4 space-y-4 max-w-6xl mx-auto">
-            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
-                <h5 class="text-xl font-medium">Origin of Hacking and Cybercrime</h5>
-                <p class="text-justify">Cybercrime and hacking have a surprisingly long history, beginning as early as 1834 when two brothers manipulated France's telegraph system to steal financial information—arguably the first recorded cyberattack. In the 1940s, René Carmille used his knowledge of punch-card computers to quietly sabotage Nazi data collection, making him one of the earliest ethical hackers. The 1960s and 70s saw the rise of more experimental hacking, like the Creeper virus that moved between computers on ARPANET and its antidote, Reaper—the first antivirus software. As personal computers became more common in the 1980s and 90s, malicious hacking increased, but so did the efforts of white hat hackers trying to protect systems. One of the most famous cases was Kevin Mitnick, who went from infiltrating major corporations to becoming a cybersecurity consultant. Over time, the fight against cybercrime has evolved into a full-blown industry, with experts working daily to defend against increasingly sophisticated digital threats.</p>
-                <div>
-                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
-                </div>
-            </div>
-
-            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
-                <h5 class="text-xl font-medium">History of Computer Vulnerabilities</h5>
-                <p class="text-justify">Cybersecurity's journey began in 1971 when Bob Thomas created "Creeper," a program that moved across ARPANET, displaying the message "I'm the creeper, catch me if you can!" Though not harmful, it revealed the potential for network vulnerabilities. Ray Tomlinson, known for inventing email, responded with "Reaper," the first antivirus software designed to eliminate Creeper, marking the inception of cybersecurity measures. The 1980s saw a surge in cyber threats, with notable breaches at institutions like AT&T and the Los Alamos National Laboratory, highlighting the need for robust security protocols. Terms like "computer virus" and "trojan horse" emerged, and antivirus solutions such as McAfee's VirusScan became essential tools. The decade also introduced the Morris Worm in 1988, one of the first worms to cause widespread disruption, emphasizing the escalating complexity of cyber threats and the critical importance of cybersecurity defenses.</p>
-                <div>
-                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
-                </div>
-            </div>
-
-            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
-                <h5 class="text-xl font-medium">Evolution of Cyber Threats</h5>
-                <p class="text-justify">The evolution of cyber threats has progressed from early computer viruses to sophisticated AI-driven attacks, reflecting the rapid advancement of technology and the increasing value of digital assets. In the 1980s, threats like the Morris Worm highlighted the potential for widespread disruption, leading to the development of antivirus software and firewalls. The 1990s and early 2000s saw the rise of more destructive malware, such as the ILOVEYOU worm, which caused billions in damages, the damage that this particular virus has caused prompted the establishment of dedicated cybersecurity divisions. By the mid-2000s, cybercriminals shifted to advanced persistent threats(APTs), exemplified by Operation Aurora, targeting corporate and government data through prolonged, stealthy intrusions. The 2010s introduced ransomware attacks like WannaCry, exploiting system vulnerabilities for financial gain, and the COVID-19 pandemic further exacerbated cyber threats, with significant breaches in organizations like the WHO. Today, AI-powered cyberattacks employ automation, deep fakes, and personalized phishing, posing significant challenges to traditional cybersecurity measures and necessitating the development of AI-driven defense mechanisms.</p>
-                <div>
-                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
-                </div>
-            </div>
-
-            <div class="bg-[#141528] p-4 rounded text-white space-y-4 border border-indigo-900">
-                <h5 class="text-xl font-medium">Prominent Ethical Hackers / Experts</h5>
-                <p class="text-justify">The field of ethical hacking involves the use of hacking skills for legal and constructive purposes, often to identify and fix vulnerabilities in systems to improve security. In the list of famous names, the most renowned ethical hackers is Kevin Mitnick, who, after a notorious hacking career, became a leading security consultant and author. Tsutomu Shimomura, a physicist and cybersecurity expert, played a critical role in capturing Mitnick with the help of the FBI. Joanna Rutkowska is known for her groundbreaking work on rootkit vulnerabilities, notably exposing flaws in Windows Vista, while Charlie Miller identified vulnerabilities in Apple products and demonstrated security risks in car systems. Jayson E. Street specializes in physical security penetration and has conducted real-world penetration tests to help organizations secure their premises. Other notable figures in this field include Richard Thieme, Chris Hadnagy, Marc Maiffret, Mohamed Elnouby, and Rafay Baloch, who have all contributed immensely to identifying vulnerabilities in major platforms and improving security standards.</p>
-                <div>
-                    <a href="#" class="px-4 py-1 rounded bg-indigo-500 hover:bg-indigo-600 ease duration-200 mt-4">Learn More</a>
-                </div>
-            </div>
-			
-		</div>
 		
 
 		<footer class="text-white w-full p-4 md:mt-24 mt-10">
             <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
                 <div>
                     <div class="flex items-center space-x-4">
-                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <img src="../assets/logo.svg" class="h-10 w-10" alt="Logo" />
                         <h4 class="text-3xl font-medium">ThreatScope</h4>
                     </div>
                     <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
@@ -376,6 +381,6 @@
             </div>
         </footer>
 		</div>
-		<script src="assets/js/main.js"></script>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
