@@ -288,23 +288,23 @@
 			<div class="mt-24 max-w-5xl mx-auto">
                 <div class="space-y-4">
                     <div class="flex items-center text-gray-300 space-x-2">
-                        <a class="text-sm" href="../companies-affected.html">Companies Affected</a>
+                        <a class="text-sm" href="../../companies-affected.html">Companies Affected</a>
                         <span class="text-gray-300 text-sm">/</span>
-                        <a href="../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
+                        <a href="../../famous-cyber-attacked-companies.html" class="text-sm">Famous Cyber Attacked Companies</a>
                         <span class="text-gray-300 text-sm">/</span>
-                        <a href="../continents/australia-oceania.html" class="text-sm">Australia/Oceania</a>
+                        <a href="../australia-oceania.html" class="text-sm">Australia/Oceania</a>
                         <span class="text-gray-300 text-sm">/</span>
-                        <a href="#" class="text-sm">Australia Broadcasting Corporation</a>
+                        <a href="#" class="text-sm">ABC</a>
                     </div>
                     <h4 class="font-semibold text-5xl">Australia Broadcasting Corporation</h4>
                     <div class="flex items-center space-x-6 mt-2 text-gray-300">
-                        <a href="#overview">Overview</a><p>|</p>
-                        <a href="#method">How it Happened</a><p>|</p>
-                        <a href="#data-compromised">Data Compromised</a><p>|</p>
+                        <a href="#overview">Overview</a>
+                        <a href="#method">How it Happened</a>
+                        <a href="#data-compromised">Data Compromised</a>
                         <a href="#impact">Impact on the Company and Customers</a>
                     </div>
                 </div>
-                <a href="./assets/abc.png" target="image-viewer"><img src="./assets/abc.png" class="w-full h-96 mt-10 object-cover rounded-lg filter grayscale-0 hover:grayscale transition duration-300"></a>
+                <a href="./assets/abc.png" target="image-viewer"><img src="./assets/abc.png" class="w-full h-96 mt-10 object-cover rounded-lg"></a>
 			</div>
 		</div>
 
@@ -318,24 +318,24 @@
             <div class="space-y-4 bg-[#111436] p-8 border border-indigo-900 rounded-lg" id="method">
                 <h4 class="text-3xl font-medium text-purple-300">How the Breach Happened</h4>
                 <h1 class="text=xl font-medium">Human Error in Configuration</h1>
-                <p class="pl-4 text-justify">- The primary cause of the breach was human error in setting access permissions on the AWS S3 storage buckets. Instead of restricting access to authorized personnel, the buckets were inadvertently configured to be publicly accessible. This misconfiguration allowed anyone with the appropriate URL to access the stored data without authentication. Such errors highlight the critical need for thorough training and oversight in managing cloud infrastructure.</p>
+                The primary cause of the breach was human error in setting access permissions on the AWS S3 storage buckets. Instead of restricting access to authorized personnel, the buckets were inadvertently configured to be publicly accessible. This misconfiguration allowed anyone with the appropriate URL to access the stored data without authentication. Such errors highlight the critical need for thorough training and oversight in managing cloud infrastructure.</p>
                 <h1 class="text=xl font-medium">Lack of Automated Security Checks</h1>
-                <p class="pl-4 text-justify">- The absence of automated security checks and alerts contributed to the prolonged exposure of sensitive data. Without systems in place to detect and notify administrators of misconfigurations, the breach went unnoticed until discovered by external cybersecurity researchers. Implementing automated tools can help identify and rectify security issues promptly. This incident emphasizes the importance of proactive monitoring and automated safeguards in cloud environments.</p>
+                The absence of automated security checks and alerts contributed to the prolonged exposure of sensitive data. Without systems in place to detect and notify administrators of misconfigurations, the breach went unnoticed until discovered by external cybersecurity researchers. Implementing automated tools can help identify and rectify security issues promptly. This incident emphasizes the importance of proactive monitoring and automated safeguards in cloud environments.</p>
                 <h1 class="text=xl font-medium">Inadequate Access Controls</h1>
-                <p class="pl-4 text-justify">- The breach also revealed shortcomings in ABC's access control policies. Properly implemented access controls would have limited data exposure even in the event of misconfigurations. The lack of granular permissions and role-based access increased the risk of unauthorized data access. Strengthening access control measures is essential to protect sensitive information.</p>
+                The breach also revealed shortcomings in ABC's access control policies. Properly implemented access controls would have limited data exposure even in the event of misconfigurations. The lack of granular permissions and role-based access increased the risk of unauthorized data access. Strengthening access control measures is essential to protect sensitive information.</p>
             </div>
 
 
             <div class="space-y-4" id="data-compromised">
                 <h4 class="text-3xl font-medium text-purple-300">Data Compromised</h4>
                 <h5 class="text-xl font-medium">Customer Login Credentials</h5>
-                <p class="pl-4 text-justify">- The exposed data included customer login information, such as usernames and passwords. This information could be exploited by malicious actors to gain unauthorized access to user accounts. The breach underscores the necessity of encrypting sensitive data and enforcing strong password policies. Users affected by the breach were advised to change their passwords and monitor their accounts for suspicious activity.</p>
+                The exposed data included customer login information, such as usernames and passwords. This information could be exploited by malicious actors to gain unauthorized access to user accounts. The breach underscores the necessity of encrypting sensitive data and enforcing strong password policies. Users affected by the breach were advised to change their passwords and monitor their accounts for suspicious activity.</p>
 
                 <h5 class="text-xl font-medium">Licensed Content Requests</h5>
-                <p class="pl-4 text-justify">- Requests for licensed content were among the data exposed in the breach. This information could reveal proprietary content interests and business relationships. Unauthorized access to such data might lead to intellectual property concerns and competitive disadvantages. Protecting business-sensitive information is crucial for maintaining organizational integrity.</p>
+                Requests for licensed content were among the data exposed in the breach. This information could reveal proprietary content interests and business relationships. Unauthorized access to such data might lead to intellectual property concerns and competitive disadvantages. Protecting business-sensitive information is crucial for maintaining organizational integrity.</p>
 
                 <h5 class="text-xl font-medium">Daily Database Backups</h5>
-                <p class="pl-4 text-justify">- The breach included exposure of 1,800 daily database backups dating back to 2015. These backups potentially contained a wide range of sensitive information, including historical data and internal communications. Access to such comprehensive data sets could facilitate extensive data mining and misuse. Regular audits and secure storage practices are vital for safeguarding backup data.</p>
+                The breach included exposure of 1,800 daily database backups dating back to 2015. These backups potentially contained a wide range of sensitive information, including historical data and internal communications. Access to such comprehensive data sets could facilitate extensive data mining and misuse. Regular audits and secure storage practices are vital for safeguarding backup data.</p>
             </div>
 
             <div class="space-y-4" id="impact">
@@ -345,7 +345,7 @@
 
             <!-- REFERENCES -->
             <div>
-                <details class="rounded border shadow" open>
+                <details class="rounded border border-indigo-900 shadow" open>
                     <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
                     References
                     </summary>
