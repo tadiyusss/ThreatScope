@@ -3,445 +3,421 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>ThreatScope</title>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/bio.jpeg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
-                    </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="#" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
-                        
-
-                    </ul>
-                </div>
-            </nav>
-
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Biometric Access Control</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
-                </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-      <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
-        
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-          <p>
-            Biometric access control uses unique physical characteristics like fingerprints, facial recognition, or iris scans to grant or deny entry. This system ensures that only authorized personnel can access restricted areas or systems. Unlike keycards or passwords, biometric traits are difficult to steal or duplicate. These systems are often used in high-security areas like data centers or research labs. The technology relies on sensors and databases to compare live input with stored templates. Biometric access improves accountability by tying access logs to specific individuals. It is a modern and secure alternative to traditional access methods.
-          </p>
-          <p>
-            Biometric access control offers enhanced security by eliminating the risks associated with lost or stolen keycards and passwords. Since biometric traits are unique to each individual, they provide a reliable method of authentication that significantly reduces unauthorized access. Advanced encryption and secure databases ensure that stored biometric data remains protected from cyber threats. Additionally, these systems can be integrated with multi-factor authentication for even greater security, combining biometrics with PINs or access tokens. As biometric technology continues to evolve, its applications expand to various industries, including healthcare, banking, and government facilities, further reinforcing the need for robust identity verification systems.
-          </p>
-        </div>
-    
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How Good is This Measure</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-            <h6 class="font-medium text-lg">Identity Verification</h6>
-              <p class="p-3">
-                Biometric identification relies on unique physical traits that are nearly impossible to replicate, ensuring each individual is authenticated based on their distinct characteristics and significantly reducing the risk of impersonation. Unlike access cards or passwords, biometric credentials cannot be shared, borrowed, or stolen, strengthening the integrity of access control systems by guaranteeing strictly personal authentication. Additionally, biometric systems are known for their high accuracy rates, minimizing false acceptance or rejection errors and reducing human mistakes in verifying identities. This level of precision enhances security measures and ensures reliable access verification, making biometrics an effective and trustworthy solution for controlled entry.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Entry Logging</h6>
-              <p class="p-3">
-               Biometric access control systems provide automatic recordkeeping by logging every access attempt with time and identity details, enabling organizations to track access patterns and detect anomalies that may indicate security risks. These logs are essential for audits and investigations, supporting transparency and accountability. Additionally, behavior analysis features can flag unusual access patterns for review, strengthening security by facilitating the early detection of insider threats and enabling proactive decision-making. Biometric logs also play a crucial role in policy enforcement, ensuring that only authorized personnel adhere to defined schedules and security protocols. This level of access control is vital for maintaining regulatory compliance and safeguarding critical assets.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Misuse Prevention</h6>
-              <p class="p-3">
-                Biometric access control eliminates the need for badges or keycards, reducing the risk of misplaced or stolen access tools and simplifying overall access management. This shift minimizes administrative burdens, as IT and HR departments no longer need to issue, replace, or deactivate physical credentials, leading to improved operational efficiency. Additionally, biometric systems offer strong tamper resistance, utilizing liveness detection and encryption to prevent unauthorized access and counter spoofing techniques. These advanced security measures make biometrics a reliable and secure alternative to traditional access control methods, reinforcing an organization's defense against potential intrusions.
-              </p>
-            </div>
-  
-    
-          </div>
-        </div>
+		<div class="bg-gradient-to-b from-black to-[#141528]">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<div class="space-y-2">
+						<p>Biometric access control uses unique physical characteristics like fingerprints, facial recognition, or iris scans to grant or deny entry. This system ensures that only authorized personnel can access restricted areas or systems. Unlike keycards or passwords, biometric traits are difficult to steal or duplicate. These systems are often used in high-security areas like data centers or research labs. The technology relies on sensors and databases to compare live input with stored templates. Biometric access improves accountability by tying access logs to specific individuals. It is a modern and secure alternative to traditional access methods.</p>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Identity Verification</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Unique Identification</h6>
+							<p class="">Biometrics use unique traits that are nearly impossible to replicate. This ensures each individual is authenticated based on their physical characteristics. It significantly reduces the risk of impersonation.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Non-transferable Credentials</h6>
+							<p class="">Unlike access cards or passwords, biometric features cannot be shared, borrowed, or stolen. This enhances the integrity of the access control system. It guarantees that access is strictly personal.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Authentication Accuracy</h6>
+							<p class="">Biometric systems have high accuracy rates and low false acceptance or rejection rates. They reduce the chances of human error in identifying individuals. This provides reliable access verification.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Entry Logging</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Automatic Recordkeeping</h6>
+							<p class=""> Every biometric access attempt is logged with time and identity details. These records can be used to track access patterns and detect anomalies. Logs support audits and investigations.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Behavior Analysis</h6>
+							<p class="">Unusual access patterns can be flagged for review. This proactive feature strengthens security through early detection of insider threats. It enables better decision-making.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Policy Enforcement</h6>
+							<p class="">Biometric logs ensure that only authorized personnel follow defined schedules and rules. It supports enforcement of security policies. This is crucial for regulatory compliance.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Misuse Prevention</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Credential Elimination</h6>
+							<p class="">Biometrics reduce dependency on badges or keycards. This minimizes the chances of misplaced or stolen access tools. It simplifies access management.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Reduced Administration</h6>
+							<p>There's less need to issue, replace, or deactivate cards or passwords. IT and HR departments spend less time managing access. This leads to operational efficiency.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Tamper-Resistance</h6>
+							<p> Biometric systems are hard to fool or bypass due to liveness detection and encryption. This adds an extra layer of defense against intrusion. The system resists spoofing techniques.</p>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/bio1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Government Buildings</h5>
+								<p>High-security zones are strictly monitored to ensure that only verified individuals gain access to sensitive areas such as intelligence or defense rooms. Biometric checks, including fingerprint and facial recognition, play a vital role in maintaining security and protecting national data from unauthorized breaches. Visitor verification is another crucial aspect, where guests can be scanned and temporarily enrolled for tracking purposes, preventing tailgating or impersonation while enhancing overall building control. Additionally, biometric-based timekeeping systems automatically record employee attendance, eliminating buddy-punching and time fraud, which improves accuracy in HR and payroll management. These security measures collectively reinforce a controlled and secure environment.</p>
+							</div>
+						</div>
+					</div>
 
-        <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
-        
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Government Buildings</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Biometric access control plays a crucial role in securing high-security zones by ensuring that only verified individuals can enter sensitive areas, such as intelligence or defense rooms. These checks provide strict monitoring, protecting national security data from unauthorized access. Additionally, visitor verification systems allow temporary enrollment of guests, preventing tailgating or impersonation while improving building security. Biometric technology also enhances timekeeping by automatically recording employee attendance through fingerprint or facial recognition, eliminating fraudulent practices like buddy-punching and time theft. This streamlined approach supports HR and payroll accuracy while reinforcing operational integrity.
-            </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Center</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Biometric technology enhances security and efficiency in airport operations through passenger verification, customs control, and restricted access measures. Facial recognition ensures that travelers are accurately matched to their passports, streamlining the check-in and boarding process while preventing identity fraud. At customs, biometric checks serve as an additional security layer beyond document verification, helping to prevent illegal entry and exit while reinforcing immigration enforcement. Restricted airport zones rely on biometric scans to verify staff and crew identities, ensuring that only authorized personnel gain access. These security measures collectively strengthen aviation safety while improving operational effectiveness.
-            </div>
-          </details>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Airports and Border Control</h5>
+								<p>Facial recognition enhances passenger verification by matching travelers to their passports, streamlining the check-in and boarding process while preventing identity fraud. At customs, biometric checks serve as a secondary security layer beyond traditional document verification, effectively stopping illegal entry and exit while strengthening immigration enforcement. Additionally, restricted airport zones require biometric scans for access, ensuring that only verified staff and crew can enter, thereby reducing the risk of insider threats and enhancing overall security.</p>
+							</div>
+						</div>
+						<div class="flex justify-center">
+							<img src="../assets/bio2.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+					</div>
 
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Corporate and Financial Offices</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Biometric security plays a crucial role in protecting sensitive areas and ensuring secure access control. In data centers, entry to server rooms is safeguarded through biometric scans, allowing only authorized IT staff to access critical infrastructure, thereby preventing unauthorized breaches. Similarly, confidential meeting rooms employ biometric locks to maintain privacy, preventing leaks and unauthorized eavesdropping, ensuring that sensitive business discussions remain within trusted circles. Additionally, remote authentication using biometric login helps companies verify genuine logins for remote workers, reinforcing cybersecurity in hybrid work environments. By integrating these biometric measures, organizations enhance their security posture while supporting efficiency and data protection.
-            </div>
-          </details>
-        </div>
-        
-        <div class="space-y-4">
-            <h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
-            <p>
-                While secure, biometric systems have their flaws. They can be expensive to install and maintain. If the system fails to recognize a valid user, it can delay access or cause frustration. Hygiene concerns may arise with shared fingerprint scanners. Privacy concerns also exist, as storing biometric data comes with its own security risks. If biometric data is stolen, it can’t be changed like a password. Physical injuries or changes (e.g., cuts, aging) can affect recognition accuracy. Despite these issues, it remains a strong access control method.
-            </p>
-        </div>
-        
-    
-      </div>
-    </div>
-    
-		
-		
-
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/server1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Data Center</h5>
+								<p>Biometric security plays a crucial role in safeguarding access to sensitive areas and systems. In data centers, entry to server rooms is restricted to authorized IT staff through biometric scans, ensuring the protection of critical data infrastructure. Similarly, confidential meeting rooms utilize biometric locks to prevent unauthorized access or eavesdropping, keeping sensitive business decisions secure. Additionally, remote authentication through biometric login helps verify user identities, ensuring genuine logins and reinforcing security in hybrid work environments. These measures collectively enhance data protection and operational security.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+                    <div class="space-y-2">
+                        <p>While secure, biometric systems have their flaws. They can be expensive to install and maintain. If the system fails to recognize a valid user, it can delay access or cause frustration. Hygiene concerns may arise with shared fingerprint scanners. Privacy concerns also exist, as storing biometric data comes with its own security risks. If biometric data is stolen, it can’t be changed like a password. Physical injuries or changes (e.g., cuts, aging) can affect recognition accuracy. Despite these issues, it remains a strong access control method.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
-            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
-                    </div>
-                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="../assets/js/main.js"></script>
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>

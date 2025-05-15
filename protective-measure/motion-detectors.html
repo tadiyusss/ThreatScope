@@ -3,445 +3,422 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>ThreatScope</title>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/detector.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
-                    </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="#" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
-                        
-
-                    </ul>
-                </div>
-            </nav>
-
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
-				<h4 class="text-6xl font-medium">Motion Detectors</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
-                </div>
+				<h4 class="text-6xl font-medium">Motion Detector</h4>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-      <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
-        
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-          <p>
-            Motion detectors are devices that sense movement within a specific range or area. They are used in physical security to detect unauthorized presence, especially after hours. These sensors work using infrared, ultrasonic, or microwave technology. When motion is detected, they can trigger alarms, cameras, or lights. Motion detectors are often installed in hallways, server rooms, or near restricted zones. They help secure spaces without needing constant human supervision. Their use improves reaction time and adds another layer to physical security
-          </p>
-          <p>
-            Motion detectors play a vital role in enhancing security by providing automated surveillance without requiring constant human monitoring. They utilize infrared, ultrasonic, or microwave technology to detect movement within a designated area, making them particularly effective in securing hallways, server rooms, and restricted zones. When triggered, these sensors can activate alarms, cameras, or lighting systems, allowing for immediate response to unauthorized activity. Their integration into security networks improves reaction time, helping prevent security breaches before they escalate. By adding an extra layer of protection, motion detectors contribute to a robust and efficient security system for both commercial and residential spaces.
-          </p>
-        </div>
-    
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How Good is This Measure</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-            <h6 class="font-medium text-lg">Detection Technology</h6>
-              <p class="p-3">
-                Infrared sensors detect body heat emitted by intruders, triggering alarms to enhance security, especially in low-light conditions, making them a common choice for homes and offices. Microwave sensors, on the other hand, operate by emitting and receiving radio waves to detect movement through reflection changes, allowing them to cover larger areas than infrared sensors, making them suitable for outdoor spaces and expansive indoor environments. To improve accuracy and minimize false alarms, dual technology systems combine infrared and microwave sensing, ensuring reliable detection under diverse conditions. This added verification layer strengthens security, making these systems highly effective in monitoring and protecting various spaces. By integrating these sensor technologies, organizations and homeowners can optimize their security measures for different environments.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Alarm Activation</h6>
-              <p class="p-3">
-               Sound alarms play a crucial role in security by emitting loud sirens that immediately alert nearby personnel, deterring intruders from proceeding and prompting swift action. Notification systems complement alarms by sending real-time alerts through mobile apps or control centers, keeping security teams informed and improving overall situational awareness. Additionally, lighting triggers activate floodlights or interior lights when motion is detected, increasing visibility of potential threats while enhancing camera footage quality for better identification. Together, these systems create a comprehensive security approach that strengthens response capabilities and prevents unauthorized access. By integrating alarms, notifications, and lighting mechanisms, security teams can ensure rapid detection and intervention in critical situations.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Monitoring Integration</h6>
-              <p class="p-3">
-                Motion detection technology integrates seamlessly with broader security systems to enhance real-time protection and incident response. CCTV connectivity ensures that motion events are visually verified and recorded for evidence, reducing response time and aiding investigations. Access control synchronization enables automated security actions, such as locking doors or activating alarms when unauthorized movement is detected, reinforcing layered protection against intrusions. Additionally, remote monitoring allows security personnel to oversee facilities off-site, enabling instant responses and ensuring round-the-clock coverage for large or multiple locations. By combining these features, motion detection systems significantly improve security efficiency and threat mitigation.
-              </p>
-            </div>
-  
-    
-          </div>
-        </div>
+		<div class="bg-gradient-to-b from-black to-[#141528]">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<div class="space-y-2">
+						<p>Motion detectors are devices that sense movement within a specific range or area. They are used in physical security to detect unauthorized presence, especially after hours. These sensors work using infrared, ultrasonic, or microwave technology. When motion is detected, they can trigger alarms, cameras, or lights. Motion detectors are often installed in hallways, server rooms, or near restricted zones. They help secure spaces without needing constant human supervision. Their use improves reaction time and adds another layer to physical security.</p>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Detection Technology</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Infrared Sensors</h6>
+							<p class="">Detect body heat emitted by intruders, triggering alarms. Operate efficiently in the dark. Common in homes and offices.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Microwave Sensors</h6>
+							<p class="">Emit and receive radio waves to detect movement through reflection changes. Cover larger areas than infrared. Suitable for outdoor and large indoor space.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Dual Technology</h6>
+							<p class="">Combines infrared and microwave to reduce false alarms. Ensures reliable detection under various conditions. Adds a verification layer.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Alarm Activation</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl"></h6>Sound Alarms</h6>
+							<p class="">Trigger loud sirens to alert nearby personnel. Deter intruders from proceeding. Encourage immediate response..</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Notification Systems</h6>
+							<p class=""> Send alerts via mobile apps or control centers. Enable real-time updates to security teams. Improves situational awareness</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Lighting Triggers</h6>
+							<p class="">Turn on floodlights or interior lights when motion is detected. Increases visibility of intruders. Supports camera footage quality.</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Monitoring Integration</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">CCTV Connectivity</h6>
+							<p class="">Links to surveillance cameras for visual verification. Records the event for evidence. Reduces response time.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Access Control Synchronization</h6>
+							<p>Can lock doors or activate other systems upon motion detection. Provides layered security. Prevents unauthorized movement</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Remote Monitoring</h6>
+							<p>Allows off-site security staff to respond instantly. Enhances protection for large or multiple facilities. Supports 24/7 coverage.</p>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/detector1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Residential Homes</h5>
+								<p>Motion detection technology enhances home security and convenience by providing real-time alerts, automation, and intelligent monitoring. Intruder detection systems notify homeowners of unauthorized movement, increasing personal and family safety while deterring potential burglaries. Light automation adds security and energy efficiency by illuminating outdoor areas when motion is detected at night, offering both convenience and enhanced visibility. Additionally, pet monitoring systems distinguish between human and animal movement, preventing unnecessary alarms and ensuring a pet-friendly security setup. Together, these features create a smarter and safer home environment.</p>
+							</div>
+						</div>
+					</div>
 
-        <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
-        
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Residential Homes</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Motion detection technology enhances home security by providing real-time alerts about unauthorized movement, helping homeowners protect their property and deter potential burglaries. Light automation adds another layer of safety and convenience by turning on lights when motion is detected at night, improving visibility while saving energy. Additionally, advanced motion sensors can differentiate between human and animal movement, reducing false alarms and supporting pet-friendly settings. These features collectively strengthen security while ensuring seamless integration with daily routines, making modern surveillance systems more efficient and adaptable to various household needs.
-            </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Office Buildings</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Motion detection systems play a vital role in maintaining security across various settings. After-hours security ensures continuous monitoring of property, detecting movement outside of business hours to signal potential break-ins and reduce the risk of theft. Restricted area monitoring strengthens access control by allowing only authorized personnel to enter secure zones while alerting staff to any breaches, supporting compliance with company policies. In parking lots, surveillance systems detect suspicious activity, triggering lights and cameras to improve visibility and enhance employee safety. By integrating motion detection with broader security protocols, businesses can create a safer environment for their assets and personnel.
-            </div>
-          </details>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Office Buildings</h5>
+								<p>Motion detection technology enhances security across various settings by providing continuous monitoring and automated responses. After-hours security systems detect movement outside regular work hours, alerting property owners to potential break-ins and reducing theft risks. Restricted area monitoring ensures only authorized personnel access secure zones, immediately notifying staff of any breaches to support policy compliance. In parking lots, surveillance systems detect suspicious activity, automatically activating lights and cameras to enhance employee safety and deter unauthorized behavior. These technologies work together to strengthen security and operational efficiency.</p>
+							</div>
+						</div>
+						<div class="flex justify-center">
+							<img src="../assets/detector2.webp" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+					</div>
 
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Warehouses and Storage</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Motion detection systems play a crucial role in safeguarding inventory by identifying unauthorized access near valuable stock, helping prevent shrinkage, losses, and assisting with audits. They also contribute to workplace safety by monitoring unusual movements in hazardous areas, allowing supervisors to intervene early and support accident prevention while reinforcing compliance with safety regulations. Additionally, these systems enhance night security by maintaining surveillance during closed hours, ensuring 24/7 site protection, and improving incident response. By integrating these measures, businesses can strengthen security protocols while fostering a safer and more efficient environment.
-            </div>
-          </details>
-        </div>
-        
-        <div class="space-y-4">
-            <h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
-            <p>
-                Motion detectors can produce false alarms due to animals, air vents, or environmental changes. If sensitivity is too low, they may miss real threats. Some types are affected by temperature or interference. They do not identify who is moving—only that something is. Without proper integration, they may trigger alerts without action. In large or complex spaces, multiple sensors are required to eliminate blind spots. Despite these issues, they remain a valuable tool in multi-layered security systems.
-            </p>
-        </div>
-        
-    
-      </div>
-    </div>
-    
-		
-		
-
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/detector3.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Warehouses and Storage</h5>
+								<p>Motion detection plays a crucial role in inventory protection by identifying unauthorized access near valuable stock, helping prevent shrinkage and losses while assisting in audits. Additionally, safety monitoring alerts supervisors to unusual movement in hazardous areas, supporting accident prevention and encouraging compliance with safety regulations. During non-operational hours, night security ensures continuous surveillance, providing 24/7 site protection and improving incident response capabilities. These integrated security measures collectively enhance asset safety and workplace security.
+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+                    <div class="space-y-2">
+                        <p>Motion detectors can produce false alarms due to animals, air vents, or environmental changes. If sensitivity is too low, they may miss real threats. Some types are affected by temperature or interference. They do not identify who is moving only that something is. Without proper integration, they may trigger alerts without action. In large or complex spaces, multiple sensors are required to eliminate blind spots. Despite these issues, they remain a valuable tool in multi-layered security systems.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
-            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
-                    </div>
-                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="../assets/js/main.js"></script>
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>

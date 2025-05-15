@@ -3,445 +3,421 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>ThreatScope</title>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/server.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
-                    </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="#" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
-                        
-
-                    </ul>
-                </div>
-            </nav>
-
-			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Locked Server Room</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
-                </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-      <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
-        
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-          <p>
-           Locked server rooms are secured spaces that store critical IT infrastructure like servers, networking equipment, and backup systems. These rooms are protected using keys, access cards, biometric readers, or a combination of these. They are designed to prevent unauthorized physical access to sensitive data systems. Restricted access helps avoid tampering, theft, or damage to hardware. Physical separation also limits the chance of insider threats reaching core systems. Such rooms often include climate control and fire suppression to protect equipment. Overall, locked server rooms are essential in maintaining strong physical cybersecurity.
-          </p>
-          <p>
-            Locked server rooms are strategically designed to support operational efficiency and resilience. Many facilities implement monitoring systems, such as security cameras and environmental sensors, to track any unauthorized access attempts or fluctuations in temperature and humidity. Regular maintenance and audits ensure that security protocols remain effective and that hardware remains in optimal condition. Organizations also enforce strict policies on who can enter these spaces, minimizing the risk of accidental misconfigurations or equipment failures. By integrating both physical and procedural safeguards, locked server rooms provide a strong foundation for protecting an organization’s critical IT infrastructure.
-          </p>
-        </div>
-    
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How Good is This Measure</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-            <h6 class="font-medium text-lg">Restricts Unauthorized Access</h6>
-              <p class="p-3">
-                Locked server rooms are physically isolated from other office spaces, ensuring that only authorized personnel can access sensitive IT equipment and data. This separation acts as a fundamental barrier against tampering, unauthorized exposure, or potential intrusions. To enhance security further, entry into these rooms is tracked using keycard or PIN systems that log who enters and when, maintaining a detailed audit trail for investigating suspicious activity. These access logs are essential in upholding accountability and traceability, providing valuable insights in case of security incidents. If an intrusion or unauthorized action occurs, logs and access records help identify potential culprits, allowing for swift and accurate investigations. The knowledge that all entries are recorded also acts as a deterrent, reinforcing adherence to security protocols and minimizing unauthorized access attempts.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Reduces Risk of Tampering and Theft</h6>
-              <p class="p-3">
-                Locked server rooms play a crucial role in protecting sensitive IT infrastructure, ensuring that servers and network devices remain secure behind locked doors. This physical barrier helps mitigate risks such as damage, unauthorized modifications, or theft, safeguarding both valuable hardware and critical data. Controlled entry further strengthens security by limiting access to select personnel, ensuring that only skilled IT staff can make system modifications. This restriction reduces the chances of tampering from unqualified individuals or malicious actors, reinforcing a multilayered security strategy. Additionally, for companies handling financial data, locked server rooms provide an added layer of protection for customer and transaction information. By preventing unauthorized access to systems managing payment or identity data, these secure environments help organizations meet compliance standards like PCI, contributing to overall data integrity and cybersecurity resilience
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Enhances Environmental Security</h6>
-              <p class="p-3">
-                Locked server rooms incorporate climate control systems, including air conditioning and humidity regulation, to preserve hardware by preventing overheating and moisture-related damage. These environmental safeguards contribute to prolonged equipment lifespan and minimize hardware failures. Additionally, physical isolation helps reduce the accumulation of dust and debris, creating a cleaner and more stable environment for machines. By limiting exposure to external contaminants, these rooms improve operational stability and overall system reliability. Furthermore, restricting entry to trained personnel prevents accidental damage caused by untrained users, reducing the likelihood of unintentional disconnections or misconfigurations. A controlled space ensures both equipment and personnel remain safe, reinforcing the integrity of critical IT infrastructure.
-              </p>
-            </div>
-  
-    
-          </div>
-        </div>
+		<div class="bg-gradient-to-b from-black to-[#141528]">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<div class="space-y-2">
+						<p>Locked server rooms are secured spaces that store critical IT infrastructure like servers, networking equipment, and backup systems. These rooms are protected using keys, access cards, biometric readers, or a combination of these. They are designed to prevent unauthorized physical access to sensitive data systems. Restricted access helps avoid tampering, theft, or damage to hardware. Physical separation also limits the chance of insider threats reaching core systems. Such rooms often include climate control and fire suppression to protect equipment. Overall, locked server rooms are essential in maintaining strong physical cybersecurity.</p>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Restricts Unauthorized Access</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Physical Isolation</h6>
+							<p class="">Locked server rooms are physically separated from other office spaces, restricting access to only authorized personnel. This helps ensure that sensitive IT equipment and data remain protected from tampering or exposure. It acts as a basic but essential barrier against intrusions. </p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Access Logging  </h6>
+							<p class="">Entry to the room is tracked using keycard or PIN systems that log who enters and when. This helps maintain an audit trail that can be used to investigate suspicious activity. These logs are vital in maintaining accountability and traceability.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Incident Tracing</h6>
+							<p class="">If a security incident occurs, logs and access records help identify potential culprits. This improves the speed and accuracy of investigations. It also acts as a deterrent, since individuals know their entry is being recorded. </p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Reduces Risk of Tampering and Theft</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Hardware Protection</h6>
+							<p class="">Sensitive IT infrastructure like servers and network devices are stored securely behind locked doors. This reduces the risk of damage, unauthorized changes, or physical theft. The measure safeguards both data and hardware investments.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Controlled Entry</h6>
+							<p class=""> Access is restricted to select personnel, reducing the possibility of tampering from unqualified or malicious actors. This ensures only skilled IT staff can make modifications to the systems. Limiting physical access is a critical layer in multilayered security.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Financial Data Security</h6>
+							<p class="">In companies handling financial data, these rooms add another security layer for protecting customer and transaction information. A secured environment prevents unauthorized access to systems managing payment or identity data. It helps in meeting compliance standards like PCI</p>
+						</div>
+					</div>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Enhances Environmental Security</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Climate Control</h6>
+							<p class="">Locked rooms often have air conditioning and humidity controls to preserve hardware. These environmental controls prevent overheating and moisture damage. This contributes to longer equipment lifespan and fewer hardware failures.<p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Dust and Debris Reduction</h6>
+							<p>Physical separation prevents accumulation of dust and contaminants that could harm hardware. It maintains a cleaner and more stable environment for the machines. Reduced exposure to external elements improves operational stability.</p>
+						</div>
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+							<h6 class="font-medium text-xl">Reduced Accidental Damage</h6>
+							<p>Restricting entry to trained personnel prevents accidents by untrained users. This reduces the chances of accidental disconnection or damage. A controlled space ensures safety for both people and equipment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/server1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Data Centers and IT Departments</h5>
+								<p>Server rooms are secured spaces with controlled entry, ensuring that only essential IT staff have access to critical hardware. This restriction prevents unauthorized personnel from tampering with sensitive systems and guarantees that only trained professionals manage them. Additionally, every access event is logged, allowing for audits that trace who entered, when, and for how long, thus supporting accountability in high-security environments. By limiting access even within the organization, companies can reduce insider threats, minimizing risks of intentional sabotage or accidental damage while reinforcing trust boundaries and security protocols.</p>
+							</div>
+						</div>
+					</div>
 
-        <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
-        
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Centers and IT Departments</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Server rooms are secured through controlled entry, allowing only essential IT staff to access critical hardware. This restriction prevents unauthorized personnel from tampering with sensitive systems and ensures that only trained professionals manage vital infrastructure. To maintain security and accountability, every access is logged and can be audited, providing a detailed record of who entered, when, and for how long. These logs help trace any irregularities and reinforce security measures in high-risk environments. Additionally, limiting access within the organization minimizes internal threats, reducing the likelihood of intentional sabotage or accidental damage. By enforcing strict entry protocols, companies establish trust boundaries that safeguard both equipment and data integrity.
-            </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Educational Institutions and Libraries</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Securing student records, library systems, and academic assessments is crucial for maintaining data integrity and confidentiality. Servers that store student grades, records, and personal data are restricted to authorized personnel, preventing unauthorized changes or leaks and ensuring that sensitive information remains protected. Similarly, digital catalog and borrowing systems in libraries are hosted on secured servers, safeguarding data from loss or tampering while ensuring continuous access to public and academic services. Additionally, storing exams and assessments in locked server rooms minimizes the risk of leaks and cheating, as only authorized academic staff can access these materials. This controlled access upholds academic honesty and fairness in educational institutions, reinforcing trust in the integrity of academic processes.
-            </div>
-          </details>
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Educational Institutions and Libraries</h5>
+								<p>Servers play a crucial role in securing academic data, ensuring the integrity and confidentiality of student records, library systems, and examinations. Restricted access to student records prevents unauthorized modifications or leaks, safeguarding data accuracy and privacy. Similarly, protected servers hosting digital catalogs and borrowing systems help maintain uninterrupted academic and public services while preventing data loss or tampering. Additionally, securely storing exams and assessments minimizes risks of leaks and cheating, allowing only authorized academic staff to handle sensitive materials and uphold academic honesty. These security measures collectively strengthen the reliability of educational institutions.</p>
+							</div>
+						</div>
+						<div class="flex justify-center">
+							<img src="../assets/school-building.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+					</div>
 
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Corporate and Financial Offices</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Restricting server room access plays a key role in preventing insider threats by minimizing opportunities for data theft or tampering by staff. This security measure acts as a critical barrier against internal breaches, ensuring the protection of both infrastructure and sensitive data. Surveillance integration further strengthens security by employing cameras and biometric logs to maintain detailed records of who enters secure areas. These tools support real-time monitoring and forensic investigations, increasing employee accountability. Additionally, clear access policies and logging systems reinforce accountability by holding individuals responsible for their actions, reducing instances of negligent or malicious behavior. The transparency provided by these security practices helps foster a strong security culture within the organization.
-            </div>
-          </details>
-        </div>
-        
-        <div class="space-y-4">
-            <h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
-            <p>
-                Locked server rooms are only as effective as their access control system. If keys or cards are lost or stolen, unauthorized entry becomes possible. Biometric systems may fail or be bypassed if not maintained. Guards or cameras may still be needed to watch the room's entrance. If the room lacks fire suppression or environmental controls, equipment damage is still a risk. There's also a risk of staff forgetting to lock the door after entry. These rooms are secure but not infallible, and they must be part of a larger security strategy.
-            </p>
-        </div>
-        
-    
-      </div>
-    </div>
-    
-		
-		
-
+					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+						<div class="flex justify-center">
+							<img src="../assets/server3.webp" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+						</div>
+						<div class="flex items-center justify-center">
+							<div class="space-y-4">
+								<h5 class="text-xl font-medium">Corporate and Financial Offices</h5>
+								<p>Restricting server room access is a crucial security measure that helps prevent insider threats by limiting opportunities for data theft or tampering. This added barrier safeguards both the infrastructure and sensitive information from internal breaches. Surveillance integration, including cameras and biometric logs, provides detailed entry records, supporting real-time monitoring and forensic investigations while enhancing employee accountability. Additionally, clear access policies and logs improve accountability by ensuring individuals can be held responsible for their actions, discouraging negligent or malicious behavior. This transparency fosters a stronger security culture within the organization.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+                    <div class="space-y-2">
+                        <p>Locked server rooms are only as effective as their access control system. If keys or cards are lost or stolen, unauthorized entry becomes possible. Biometric systems may fail or be bypassed if not maintained. Guards or cameras may still be needed to watch the room's entrance. If the room lacks fire suppression or environmental controls, equipment damage is still a risk. There's also a risk of staff forgetting to lock the door after entry. These rooms are secure but not infallible, and they must be part of a larger security strategy.</p>
+                    </div>
+				</div>
+			</div>
+		</div>
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
-            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
-                    </div>
-                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="../assets/js/main.js"></script>
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
