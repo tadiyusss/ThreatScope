@@ -320,104 +320,82 @@
         </div>
     
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">MySpace Worm (2005)</h6>
-              <p class="p-3">
-                In 2008, attackers exploited an SQL injection vulnerability in Heartland Payment Systems, compromising over 100 million credit card records. The breach resulted in significant financial losses and highlighted the dangers of inadequate input validation. This incident remains one of the largest data breaches in history
-              </p>
+            <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <img src="../assets/samy-kamkar.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="MySpace Worm" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">MySpace Worm</h6>
+                        <small class="text-gray-200">2005</small>
+                    </div>
+                    <p class="text-left">
+                        In 2008, attackers exploited an SQL injection vulnerability in Heartland Payment Systems, compromising over 100 million credit card records. The breach resulted in significant financial losses and highlighted the dangers of inadequate input validation. This incident remains one of the largest data breaches in history
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">British Airways Data Breach (2018)</h6>
-              <p class="p-3">
-                In 2018, attackers exploited a third-party script on British Airways' website to inject malicious code, capturing payment details of approximately 380,000 transactions. This form of XSS attack, known as a supply chain attack, underscored the risks associated with external scripts. The breach led to significant financial and reputational damage for the airline.
-              </p>
+            <div>
+                <img src="../assets/british-airways.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="British Airways Data Breach" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">British Airways Data Breach</h6>
+                        <small class="text-gray-200">2018</small>
+                    </div>
+                    <p class="text-left">
+                        In 2018, attackers exploited a third-party script on British Airways' website to inject malicious code, capturing payment details of approximately 380,000 transactions. This form of XSS attack, known as a supply chain attack, underscored the risks associated with external scripts. The breach led to significant financial and reputational damage for the airline.
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Yahoo! Mail Vulnerability (2006)</h6>
-              <p class="p-3">
-                A reflected XSS vulnerability in Yahoo! Mail allowed attackers to execute scripts by sending specially crafted emails. This flaw enabled unauthorized actions, such as sending emails on behalf of users. The issue emphasized the need for rigorous input sanitization in webmail 
-              </p>
+            <div>
+                <img src="../assets/yahoo-mail.png" class="rounded bg-white shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Yahoo! Mail Vulnerability" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Yahoo! Mail Vulnerability</h6>
+                        <small class="text-gray-200">2006</small>
+                    </div>
+                    <p class="text-left">
+                        A reflected XSS vulnerability in Yahoo! Mail allowed attackers to execute scripts by sending specially crafted emails. This flaw enabled unauthorized actions, such as sending emails on behalf of users. The issue emphasized the need for rigorous input sanitization in webmail 
+                    </p>
+                </div>
             </div>
-          </div>
+        </div>
         </div>
 
         <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+            <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Session Hijacking</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                XSS can be used to steal session cookies, enabling attackers to impersonate users and gain unauthorized access to their accounts. This compromises user privacy and can lead to unauthorized transactions or data exposure. Implementing HttpOnly flags on cookies can mitigate this risk. Regular monitoring for unusual session activities is also advisable.
+        <div class="space-y-8 mt-8">
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Session Hijacking</h5>
+                <p>
+                    XSS can be used to steal session cookies, enabling attackers to impersonate users and gain unauthorized access to their accounts. This compromises user privacy and can lead to unauthorized transactions or data exposure. Implementing HttpOnly flags on cookies can mitigate this risk. Regular monitoring for unusual session activities is also advisable.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Credential Theft</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Attackers can craft XSS payloads that mimic login forms, tricking users into entering their credentials. These credentials are then sent to the attacker, facilitating unauthorized access. Educating users about phishing tactics and implementing two-factor authentication can reduce this threat. Regular security audits can help identify and fix such vulnerabilities.​
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Credential Theft</h5>
+                <p>
+                    Attackers can craft XSS payloads that mimic login forms, tricking users into entering their credentials. These credentials are then sent to the attacker, facilitating unauthorized access. Educating users about phishing tactics and implementing two-factor authentication can reduce this threat. Regular security audits can help identify and fix such vulnerabilities.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Malware Distribution</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Through XSS, attackers can inject scripts that redirect users to malicious websites or download malware. This can lead to widespread infections and further exploitation. Employing Content Security Policies (CSP) can help prevent the execution of unauthorized scripts. Keeping browsers and plugins up to date is also crucial.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Malware Distribution</h5>
+                <p>
+                    Through XSS, attackers can inject scripts that redirect users to malicious websites or download malware. This can lead to widespread infections and further exploitation. Employing Content Security Policies (CSP) can help prevent the execution of unauthorized scripts. Keeping browsers and plugins up to date is also crucial.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 4 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Defacement and Misinformation</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                XSS vulnerabilities can be exploited to alter the content of web pages, leading to defacement or the spread of false information. This can damage an organization's reputation and erode user trust. Implementing proper input validation and output encoding can prevent such attacks. Regular content reviews can also help detect unauthorized changes.​
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Defacement and Misinformation</h5>
+                <p>
+                    XSS vulnerabilities can be exploited to alter the content of web pages, leading to defacement or the spread of false information. This can damage an organization's reputation and erode user trust. Implementing proper input validation and output encoding can prevent such attacks. Regular content reviews can also help detect unauthorized changes.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 5 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Exploitation of Other Users</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Stored XSS can be used to create self-propagating worms that affect all users accessing a particular page. This can lead to large-scale compromises and data breaches. Limiting user-generated content and employing strict content moderation can mitigate this risk. Regular penetration testing can help identify and address such vulnerabilities.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Exploitation of Other Users</h5>
+                <p>
+                    Stored XSS can be used to create self-propagating worms that affect all users accessing a particular page. This can lead to large-scale compromises and data breaches. Limiting user-generated content and employing strict content moderation can mitigate this risk. Regular penetration testing can help identify and address such vulnerabilities.
+                </p>
             </div>
-          </details>
+        </div>
         </div>
       </div>
     </div>

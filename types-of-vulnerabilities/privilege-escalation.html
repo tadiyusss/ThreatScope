@@ -321,103 +321,81 @@
     
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Windows "EternalBlue" Exploit (2017) </h6>
-              <p class="p-3">
-                This SMBv1 vulnerability, famously exploited by the WannaCry ransomware and NotPetya malware, allowed attackers to achieve remote code execution and escalate privileges on vulnerable Windows systems dating back to Windows XP.
-              </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <img src="../assets/metasploit.png" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="EternalBlue Exploit" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Windows "EternalBlue" Exploit</h6>
+                        <small class="text-gray-200">2017</small>
+                    </div>
+                    <p class="text-left">
+                        This SMBv1 vulnerability, famously exploited by the WannaCry ransomware and NotPetya malware, allowed attackers to achieve remote code execution and escalate privileges on vulnerable Windows systems dating back to Windows XP.
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Dirty COW (2016)<h6>
-              <p class="p-3">
-                A critical vulnerability in the Linux kernel allowed unprivileged users to gain write access to read-only memory mappings, leading to potential privilege escalation to root.
-              </p>
+            <div>
+                <img src="../assets/dirty-cow.png" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Dirty COW" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Dirty COW</h6>
+                        <small class="text-gray-200">2016</small>
+                    </div>
+                    <p class="text-left">
+                        A critical vulnerability in the Linux kernel allowed unprivileged users to gain write access to read-only memory mappings, leading to potential privilege escalation to root.
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Local Privilege Escalation via Sudo (Ongoing)</h6>
-              <p class="p-3">
-                Misconfigurations or vulnerabilities in the sudo utility, which allows users to run commands with elevated privileges, have been exploited in various instances to gain root access on Unix-like systems.
-              </p>
+            <div>
+                <img src="../assets/sudo.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Sudo Local Privilege Escalation" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Local Privilege Escalation via Sudo</h6>
+                        <small class="text-gray-200">Ongoing</small>
+                    </div>
+                    <p class="text-left">
+                        Misconfigurations or vulnerabilities in the sudo utility, which allows users to run commands with elevated privileges, have been exploited in various instances to gain root access on Unix-like systems.
+                    </p>
+                </div>
             </div>
-          </div>
+        </div>
         </div>
 
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Complete System Compromise</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Successful vertical privilege escalation can grant attackers full administrative or root-level control over a compromised system. This allows them to perform any action they desire, including installing malware, deleting files, creating new accounts, and disabling security controls.
+            <div class="space-y-8 mt-8">
+                <div class="space-y-2">
+                    <h5 class="text-xl font-medium">Complete System Compromise</h5>
+                    <p>
+                        Successful vertical privilege escalation can grant attackers full administrative or root-level control over a compromised system. This allows them to perform any action they desire, including installing malware, deleting files, creating new accounts, and disabling security controls.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="text-xl font-medium">Lateral Movement and Network Penetration</h5>
+                    <p>
+                        Once an attacker has escalated privileges on one system, they can use these elevated credentials to move laterally across the network to other systems and resources. This allows them to expand their reach and potentially gain access to critical assets and sensitive data.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="text-xl font-medium">Data Breaches and Exfiltration</h5>
+                    <p>
+                        With elevated privileges, attackers can bypass access controls and gain access to sensitive data stored on the compromised system or network. They can then exfiltrate this data, leading to significant financial losses, reputational damage, and regulatory penalties.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="text-xl font-medium">Installation of Persistent Backdoors</h5>
+                    <p>
+                        Attackers with administrative privileges can install persistent backdoors on compromised systems, allowing them to regain access even if the initial vulnerability is patched. These backdoors can be used for long-term surveillance, data theft, or launching future attacks.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h5 class="text-xl font-medium">Manipulation and Destruction of Data</h5>
+                    <p>
+                        Elevated privileges enable attackers to modify or delete critical system files, application data, or audit logs. This can lead to system instability, data loss, and hinder forensic investigations, making it difficult to understand the scope and impact of the attack.
+                    </p>
+                </div>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Lateral Movement and Network Penetration</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Once an attacker has escalated privileges on one system, they can use these elevated credentials to move laterally across the network to other systems and resources. This allows them to expand their reach and potentially gain access to critical assets and sensitive data.
-            </div>
-          </details>
-
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Breaches and Exfiltration</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                With elevated privileges, attackers can bypass access controls and gain access to sensitive data stored on the compromised system or network. They can then exfiltrate this data, leading to significant financial losses, reputational damage, and regulatory penalties.
-            </div>
-          </details>
-
-          <!-- Accordion Item 4 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Installation of Persistent Backdoors</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Attackers with administrative privileges can install persistent backdoors on compromised systems, allowing them to regain access even if the initial vulnerability is patched. These backdoors can be used for long-term surveillance, data theft, or launching future attacks.
-            </div>
-          </details>
-
-          <!-- Accordion Item 5 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Manipulation and Destruction of Data</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Elevated privileges enable attackers to modify or delete critical system files, application data, or audit logs. This can lead to system instability, data loss, and hinder forensic investigations, making it difficult to understand the scope and impact of the attack.
-            </div>
-          </details>
         </div>
       </div>
     </div>

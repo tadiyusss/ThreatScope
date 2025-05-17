@@ -320,104 +320,82 @@
         </div>
     
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Instagram (2018)</h6>
-              <p class="p-3">
-                In 2018, an IDOR flaw in Instagram’s mobile API allowed hackers to access private profile information. By modifying user IDs in the request, attackers could scrape email addresses and phone numbers. The issue was reported responsibly and patched soon after.
-              </p>
+            <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="../assets/instagram.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Instagram IDOR" />
+                    <div class="space-y-2 py-4">
+                        <div>
+                            <h6 class="font-medium text-lg">Instagram</h6>
+                            <small class="text-gray-200">2018</small>
+                        </div>
+                        <p class="text-left">
+                            In 2018, an IDOR flaw in Instagram’s mobile API allowed hackers to access private profile information. By modifying user IDs in the request, attackers could scrape email addresses and phone numbers. The issue was reported responsibly and patched soon after.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../assets/facebook.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Facebook IDOR" />
+                    <div class="space-y-2 py-4">
+                        <div>
+                            <h6 class="font-medium text-lg">Facebook</h6>
+                            <small class="text-gray-200">2012</small>
+                        </div>
+                        <p class="text-left">
+                            In 2012, a security researcher discovered an IDOR vulnerability in Facebook's mobile interface. It allowed users to delete photos uploaded by other users by manipulating photo IDs. Facebook quickly patched the issue after being notified.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../assets/uber.png" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Uber IDOR" />
+                    <div class="space-y-2 py-4">
+                        <div>
+                            <h6 class="font-medium text-lg">Uber</h6>
+                            <small class="text-gray-200">2016</small>
+                        </div>
+                        <p class="text-left">
+                            In 2016, a security researcher exploited an IDOR vulnerability in Uber’s driver portal. By changing user IDs, he could access and retrieve personal trip history and data of other users. Uber fixed the issue and rewarded the researcher through their bug bounty program.
+                        </p>
+                    </div>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Facebook (2012)<h6>
-              <p class="p-3">
-                In 2012, a security researcher discovered an IDOR vulnerability in Facebook's mobile interface. It allowed users to delete photos uploaded by other users by manipulating photo IDs. Facebook quickly patched the issue after being notified.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Uber (2016)</h6>
-              <p class="p-3">
-                In 2016, a security researcher exploited an IDOR vulnerability in Uber’s driver portal. By changing user IDs, he could access and retrieve personal trip history and data of other users. Uber fixed the issue and rewarded the researcher through their bug bounty program.
-              </p>
-            </div>
-          </div>
         </div>
 
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Unauthorized Data Access</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                IDOR allows attackers to access confidential information that they are not permitted to view. This could include personal details, financial records, or internal company documents. Such access violates data privacy laws and regulations. It can lead to serious legal and reputational consequences.
+        <div class="space-y-8 mt-8">
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Unauthorized Data Access</h5>
+                <p>
+                    IDOR allows attackers to access confidential information that they are not permitted to view. This could include personal details, financial records, or internal company documents. Such access violates data privacy laws and regulations. It can lead to serious legal and reputational consequences.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Account Takeover</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Through IDOR, attackers might gain access to user settings or authentication tokens. This can lead to partial or full account compromise without the need for login credentials. It undermines user trust in the application. In severe cases, it may expose administrative or privileged functionality.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Account Takeover</h5>
+                <p>
+                    Through IDOR, attackers might gain access to user settings or authentication tokens. This can lead to partial or full account compromise without the need for login credentials. It undermines user trust in the application. In severe cases, it may expose administrative or privileged functionality.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Tampering</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Some IDOR vulnerabilities permit attackers not only to view but also to modify data. For example, an attacker could alter another user’s shipping address or subscription settings. This poses a serious integrity risk for any system that processes transactions or stores user data. It can disrupt services and damage customer relationships.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Data Tampering</h5>
+                <p>
+                    Some IDOR vulnerabilities permit attackers not only to view but also to modify data. For example, an attacker could alter another user’s shipping address or subscription settings. This poses a serious integrity risk for any system that processes transactions or stores user data. It can disrupt services and damage customer relationships.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 4 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Regulatory and Legal Consequences</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Exploitation of IDOR can result in breaches of data protection laws such as GDPR, HIPAA, or CCPA. Organizations found negligent in protecting user data may face fines and lawsuits. Regulatory bodies take unauthorized data exposure seriously. Maintaining compliance requires strict access control implementations.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Regulatory and Legal Consequences</h5>
+                <p>
+                    Exploitation of IDOR can result in breaches of data protection laws such as GDPR, HIPAA, or CCPA. Organizations found negligent in protecting user data may face fines and lawsuits. Regulatory bodies take unauthorized data exposure seriously. Maintaining compliance requires strict access control implementations.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 5 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Reputation Damage</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Publicly known breaches due to IDOR vulnerabilities can harm a company’s brand and credibility. Customers may lose confidence in the security of the platform. It may result in user churn and lost revenue. Rebuilding trust can be costly and time-consuming.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Reputation Damage</h5>
+                <p>
+                    Publicly known breaches due to IDOR vulnerabilities can harm a company’s brand and credibility. Customers may lose confidence in the security of the platform. It may result in user churn and lost revenue. Rebuilding trust can be costly and time-consuming.
+                </p>
             </div>
-          </details>
+        </div>
         </div>
       </div>
     </div>
