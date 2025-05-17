@@ -10,473 +10,400 @@
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/softbug.jpeg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
-                    </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="#" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        
-                        
-
-                    </ul>
-                </div>
-            </nav>
-
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Software bugs</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
-                </div>
+				<div class="flex items-center space-x-4 mt-4 justify-center">
+					<a href="">Emergance of Hacking </a>
+					<a href="">Milesstone Incidents</a>
+					<a href="">Cybercrime in Digital Age</a>
+				</div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-      <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
-        
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-          <p>
-            Software bugs are inadvertent defects or mistakes in computer programs that lead to unexpected behavior, crashes, or inaccurate output. Usually, these problems result from errors made in the software development process during the design, coding, or testing stages. Logic errors, syntax errors, and integration problems are common bug types that can jeopardize the dependability and functionality of software applications. SonarSource claims that these bugs frequently arise from coding mistakes that cause unexpected runtime behavior. Since these bugs have the potential to cause serious operational disruptions and security vulnerabilities, fixing them is essential.
+		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<p> Software bugs are inadvertent defects or mistakes in computer programs that lead to unexpected behavior, crashes, or inaccurate output. Usually, these problems result from errors made in the software development process during the design, coding, or testing stages. Logic errors, syntax errors, and integration problems are common bug types that can jeopardize the dependability and functionality of software applications. SonarSource claims that these bugs frequently arise from coding mistakes that cause unexpected runtime behavior. Since these bugs have the potential to cause serious operational disruptions and security vulnerabilities, fixing them is essential. </p>
+					<p> Besides just being technical issues, software bugs can have a significant negative impact on an organization's finances and reputation. For example, millions of users may be impacted by a small bug in a popular application, which could result in a decline in trust and possible legal ramifications. Furthermore, software defects can present significant safety hazards in vital systems like healthcare or aviation. To find and fix bugs early in the development cycle, it is crucial to implement strict testing and quality assurance procedures. SonarQube and other tools help developers identify and fix these problems quickly, guaranteeing the delivery of dependable and secure software. </p>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+					<p> Human error during the software development lifecycle is usually the source of software bugs. Misunderstandings of the requirements, improper logic implementation, or insufficient testing can all lead to these mistakes. Unexpected behavior or system failures may result from a bug that is dormant until it is triggered by particular conditions during runtime. By looking for patterns in the codebase that frequently result in errors, static code analysis tools like SonarQube assist in finding these bugs. Developers can avoid possible problems before the software goes into production by identifying bugs early. </p>
+					<p> Attackers frequently use software flaws to access systems or data without authorization. A buffer overflow bug, for instance, can compromise system security by enabling an attacker to run arbitrary code. Such flaws have been exploited in real-world situations to compromise systems, steal confidential data, or interfere with services. Because of the notorious Heartbleed flaw in the OpenSSL library, hackers were able to read protected memory and reveal private information. As a result, identifying and fixing software bugs affects both functionality and security. </p>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+					<div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+						<div class="">
+                            <img src="../assets/heartbleed.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Heartbleed Bug" />
+                            <div class="space-y-2 py-4">
+                                <div>
+                                    <h6 class="font-medium text-lg">Heartbleed Bug</h6>
+                                    <small class="text-gray-200">2014</small>
+                                </div>
+                                <p class="text-left">The OpenSSL cryptographic software library was found to have the Heartbleed bug in 2014. This flaw compromised the security of millions of websites by enabling attackers to read private information from the memory of compromised systems. The bug had far-reaching effects, causing many organizations to suffer severe financial and reputational harm.</p>
+                            </div>
+						</div>
+                        <div class="">
+                            <img src="../assets/uber.png" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Uber" />
+                            <div class="space-y-2 py-4">
+                                <div>
+                                    <h6 class="font-medium text-lg">Uber App Bug</h6>
+                                    <small class="text-gray-200">2017</small>
+                                </div>
+                                <p class="text-left">An Uber app bug unintentionally revealed a man's affair to his wife by sending notifications to a user's device even after they had logged out. The unintended personal consequences of software bugs were brought to light by this incident, which resulted in a divorce and a lawsuit against Uber. The error highlighted how crucial comprehensive testing is, particularly when it comes to user privacy.</p>
+                            </div>
+						</div>
 
-          </p>
-          <p>
-            Besides just being technical issues, software bugs can have a significant negative impact on an organization's finances and reputation. For example, millions of users may be impacted by a small bug in a popular application, which could result in a decline in trust and possible legal ramifications. Furthermore, software defects can present significant safety hazards in vital systems like healthcare or aviation. To find and fix bugs early in the development cycle, it is crucial to implement strict testing and quality assurance procedures. SonarQube and other tools help developers identify and fix these problems quickly, guaranteeing the delivery of dependable and secure software.
+                        <div class="">
+                            <img src="../assets/knight-capital-group.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Knight Capital Group" />
+                            <div class="space-y-2 py-4">
+                                <div>
+                                    <h6 class="font-medium text-lg">Knight Capital Group</h6>
+                                    <small class="text-gray-200">2012</small>
+                                </div>
+                                <p class="text-left">In 2012, a software bug in Knight Capital Group’s trading system caused the company to lose $440 million in just 45 minutes. The bug led to a series of unintended trades that disrupted the stock market and resulted in significant financial losses for the company.</p>
+                            </div>
+						</div>
 
-          </p>
-        </div>
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
-          <p>
-            Human error during the software development lifecycle is usually the source of software bugs. Misunderstandings of the requirements, improper logic implementation, or insufficient testing can all lead to these mistakes. Unexpected behavior or system failures may result from a bug that is dormant until it is triggered by particular conditions during runtime. By looking for patterns in the codebase that frequently result in errors, static code analysis tools like SonarQube assist in finding these bugs. Developers can avoid possible problems before the software goes into production by identifying bugs early.
-          </p>
-          <p>
-            Attackers frequently use software flaws to access systems or data without authorization. A buffer overflow bug, for instance, can compromise system security by enabling an attacker to run arbitrary code. Such flaws have been exploited in real-world situations to compromise systems, steal confidential data, or interfere with services. Because of the notorious Heartbleed flaw in the OpenSSL library, hackers were able to read protected memory and reveal private information. As a result, identifying and fixing software bugs affects both functionality and security.
-          </p>
-        </div>
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Heartbleed Bug (2014)</h6>
-              <p class="p-3">
-                The OpenSSL cryptographic software library was found to have the Heartbleed bug in 2014. This flaw compromised the security of millions of websites by enabling attackers to read private information from the memory of compromised systems. The bug had far-reaching effects, causing many organizations to suffer severe financial and reputational harm.
-            </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Uber App Glitch (2017)</h6>
-              <p class="p-3">
-                An Uber app bug unintentionally revealed a man's affair to his wife by sending notifications to a user's device even after they had logged out. The unintended personal consequences of software bugs were brought to light by this incident, which resulted in a divorce and a lawsuit against Uber. The error highlighted how crucial comprehensive testing is, particularly when it comes to user privacy.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">The Knight Capital Group Trading Glitch (2012)
-            </h6>
-              <p class="p-3">
-                In 2012, a software bug in Knight Capital Group’s trading system caused the company to lose $440 million in just 45 minutes. The bug led to a series of unintended trades that disrupted the stock market and resulted in significant financial losses for the company. This incident demonstrates how software bugs in financial systems can lead to rapid and devastating economic consequences. The bug in Knight Capital Group’s trading system was a functional bug that led to significant financial losses.
+					</div>
+				</div>
+				<div class="text-white mt-8">
+					<h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+                    <div class="space-y-8 mt-8">
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-medium">Financial Losses</h5>
+                            <p>Businesses may suffer large financial losses as a result of software bugs. For example, a trading company lost $440 million in 2012 as a result of a software error that resulted in unauthorized trades. These kinds of incidents draw attention to the financial risks that come with undetected bugs. These monetary risks can be lessened by making investments in thorough testing and quality control.</p>
+                        </div>
 
-              </p>
-            </div>
-  
-    
-          </div>
-        </div>
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-medium">Security Vulnerabilities</h5>
+                            <p>Software systems may have exploitable security flaws due to bugs. These flaws can be used by attackers to obtain illegal access, steal information, or interfere with services. One excellent example is the Heartbleed bug, in which a straightforward coding mistake resulted in extensive data breaches. To find and address such vulnerabilities, regular code reviews and security assessments are crucial</p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-medium">Reputational Damage</h5>
+                            <p>Can occur when software defects result in well-publicized malfunctions or security breaches. Consumers may stop trusting you, which would hurt your business and brand. For instance, the Horizon software problems seriously harmed the UK Post Office's reputation. Preserving public trust requires maintaining high software quality.</p>
+                        </div>
 
-        <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
-        
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Financial Losses</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Businesses may suffer large financial losses as a result of software bugs. For example, a trading company lost $440 million in 2012 as a result of a software error that resulted in unauthorized trades. These kinds of incidents draw attention to the financial risks that come with undetected bugs. These monetary risks can be lessened by making investments in thorough testing and quality control.
-            </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Security Vulnerabilities</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Software systems may have exploitable security flaws due to bugs. These flaws can be used by attackers to obtain illegal access, steal information, or interfere with services. One excellent example is the Heartbleed bug, in which a straightforward coding mistake resulted in extensive data breaches. To find and address such vulnerabilities, regular code reviews and security assessments are crucial.​ 
-            </div>
-          </details>
-            
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Reputational damage</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Can occur when software defects result in well-publicized malfunctions or security breaches. Consumers may stop trusting you, which would hurt your business and brand. For instance, the Horizon software problems seriously harmed the UK Post Office's reputation. Preserving public trust requires maintaining high software quality.
-​ 
-            </div>
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-medium">Legal consequences</h5>
+                            <p>When software defects cause damage or data breaches, the parties involved may face legal action. Lawsuits, fines from the government, or other legal repercussions could befall businesses. The legal ramifications of software errors were illustrated by the Uber app bug that resulted in a lawsuit and exposed personal information. Thorough testing is essential to guaranteeing adherence to legal requirements.</p>
+                        </div>
 
-          <!-- Accordion Item 4 -->
-          </details>
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Legal consequences</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                When software defects cause damage or data breaches, the parties involved may face legal action. Lawsuits, fines from the government, or other legal repercussions could befall businesses. The legal ramifications of software errors were illustrated by the Uber app bug that resulted in a lawsuit and exposed personal information. Thorough testing is essential to guaranteeing adherence to legal requirements.
-            </div>
+                        <div class="space-y-2">
+                            <h5 class="text-xl font-medium">Operational Disruptions</h5>
+                            <p>When critical systems malfunction, it can result in service interruptions and operational downtime. A worldwide IT outage that affected banks, airlines, and healthcare providers occurred in 2024 as a result of a bug in CrowdStrike's software. The necessity of dependable software systems is highlighted by the potential for such disruptions to have a domino effect on multiple industries. Such risks can be managed by putting rapid response plans and ongoing monitoring into practice.</p>
+                        </div>
+                        
+                    </div>
 
-          <!-- Accordion Item 5 -->
-          </details>
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Operational Disruptions</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                When critical systems malfunction, it can result in service interruptions and operational downtime. A worldwide IT outage that affected banks, airlines, and healthcare providers occurred in 2024 as a result of a bug in CrowdStrike's software. The necessity of dependable software systems is highlighted by the potential for such disruptions to have a domino effect on multiple industries. Such risks can be managed by putting rapid response plans and ongoing monitoring into practice.
-
-            </div>
-          </details>
-
-        </div>
-      </div>
-    </div>
-    
-		
-		
-
+				</div>
+			</div>
+		</div>
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
-            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
-                    </div>
-                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="../assets/js/main.js"></script>
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>

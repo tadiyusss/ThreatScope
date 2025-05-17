@@ -10,459 +10,392 @@
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/inject.jpg')] bg-cover bg-center bg-no-repeat relative">
-            <nav class="absolute inset-0 z-10">
-                <div class="w-full p-4 flex items-center justify-between">
-                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
-                        <div class="flex items-center space-x-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </div>
-                    </div>
-                    <ul class="md:flex items-center space-x-4">
-                        <li>
-                            <a href="#" class="hidden md:block">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Recent News</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Learn Now</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hidden md:block">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>                  
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+			<nav class="absolute inset-0 z-10">
+				<div class="w-full p-4 flex items-center justify-between">
+					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+						<div class="flex items-center space-x-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</div>
+					</div>
+					<ul class="md:flex items-center space-x-4">
+						<li>
+							<a href="#" class="hidden md:block">Home</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Recent News</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Learn Now</a>
+						</li>
+						<li>
+							<a href="#" class="hidden md:block">Contact Us</a>
+						</li>
+						<li>
+							<button class="cursor-pointer p-2 rounded" id="menu-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-zinc-950 text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-gray-100
                 [&::-webkit-scrollbar-thumb]:bg-gray-300
                 dark:[&::-webkit-scrollbar-track]:bg-neutral-700
                 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
-                    <ul class="space-y-2 text-left">
-                        <li class="flex items-center space-x-4 p-4">
-                            <img src="../assets/logo.svg" class="w-14 h-14">
-                            <h4 class="text-2xl">ThreatScope</h4>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Navigations</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Recent News</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Learn Now</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Concepts</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Famous Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Recent Attacks</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Companies Affected</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Protective Measures</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Future Threats</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Gallery</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">About Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Contact Us</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="px-2">
-                            <ul class="space-y-2">
-                                <li class="text-lg font-medium px-2">Vulnerabilities</li>
-                                <li>
-                                    <ul class="">
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 1</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 2</a>
-                                        </li>
-                                        <li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
-                                            <a href="#">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-
+					<ul class="space-y-2 text-left">
+						<li class="flex items-center space-x-4 p-4">
+							<img src="../assets/logo.svg" class="w-14 h-14">
+							<h4 class="text-2xl">ThreatScope</h4>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Navigations</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Home</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Recent News</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Learn Now</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Concepts</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Famous Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Recent Attacks</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Companies Affected</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Protective Measures</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Future Threats</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Gallery</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">About Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Contact Us</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="px-2">
+							<ul class="space-y-2">
+								<li class="text-lg font-medium px-2">Vulnerabilities</li>
+								<li>
+									<ul class="">
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 1</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 2</a>
+										</li>
+										<li class="text-gray-300 text-sm hover:bg-zinc-800 ease duration-200 p-1 px-6 rounded">
+											<a href="#">Item 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">SQL Injection</h4>
-                <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
-                </div>
+				<div class="flex items-center space-x-4 mt-4 justify-center">
+					<a href="">Emergance of Hacking </a>
+					<a href="">Milesstone Incidents</a>
+					<a href="">Cybercrime in Digital Age</a>
+				</div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-      <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
-        
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
-          <p>
-          A serious web security flaw known as SQL Injection (SQLi) enables hackers to tamper with the database queries that an application submits. Attackers can run arbitrary SQL commands and possibly obtain sensitive data without authorization by tampering with input fields. When user-supplied data is not adequately sanitized, malicious code can be run within the database context, creating this vulnerability. Search boxes, URL parameters, and login forms are typical targets. Successful SQL injection attacks can have serious repercussions, from compromised systems to data breaches.
-          </p>
-          <p>
-          Due to outdated coding techniques and insufficient input validation, SQL injection is still a common problem even though it is well known. Automated tools are frequently used by attackers to take advantage of these vulnerabilities, which makes it simpler to find and target vulnerable systems. The persistence of SQL injection emphasizes how crucial secure coding guidelines and frequent security audits are. To reduce the risk, organizations should use web application firewalls, parameterized queries, and input validation as top priorities. Fighting this persistent threat also requires ongoing education and awareness.
-          </p>
-        </div>
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
-          <p>
-            When malicious SQL statements are inserted into an application's input fields, the backend database executes them. This is how SQL injection works. To get around authentication, an attacker could, for instance, enter "OR '1'='1" into a login form, changing the SQL query to always return true. This method allows the attacker to control the behavior of the database by taking advantage of the application's inability to adequately sanitize user inputs. Attackers can retrieve, alter, or remove data once they have access to it. In certain situations, they can also increase their privileges within the system. Advanced attacks could use UNION statements to extract data from other tables or take advantage of blind SQL injection flaws that suppress error messages.
-          </p>
-          <p>
-            SQL injection has been used by attackers in real-world situations to obtain private data, interfere with services, and even take over whole systems. For example, an attacker could obtain all customer data, including credit card information, by taking advantage of a weak search feature on an e-commerce website. Even in situations where direct feedback is not given, blind SQL injection techniques enable attackers to deduce information by watching application responses or using time delays. These techniques show how effective and adaptable SQL injection is as an attack vector. To identify and stop such exploits, organizations need to put strong security measures in place.
-          </p>
-        </div>
-    
-        <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Heartland Payment Systems Breach (2008)</h6>
-              <p class="p-3">
-                In 2008, attackers exploited an SQL injection vulnerability in Heartland Payment Systems, compromising over 100 million credit card records. The breach resulted in significant financial losses and highlighted the dangers of inadequate input validation. This incident remains one of the largest data breaches in history
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">VTech Data Breach (2015)</h6>
-              <p class="p-3">
-                In 2015, toy manufacturer VTech suffered a breach where attackers used SQL injection to access personal data of over 6 million children and 4.8 million parents. The compromised information included names, email addresses, and home addresses. The breach raised concerns about data security in children's products.Discovered in December 2021, the Log4Shell vulnerability in the Log4j library allowed remote code execution on affected systems. Due to Log4j's widespread use, this zero-day flaw posed a significant risk across various industries. Attackers quickly exploited it, leading to numerous security breaches.
-              </p>
-            </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Lee County Elections Website Hack (2016)</h6>
-              <p class="p-3">
-                In 2016, security researcher David Levin used SQL injection to access the Lee County Elections website in Florida. He exposed vulnerabilities that allowed unauthorized access to sensitive data. Levin's actions sparked debates on ethical hacking and vulnerability disclosure
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
-        
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Unauthorized Data Access</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                SQL injection can grant attackers access to sensitive information, including personal data, financial records, and proprietary business information. This unauthorized access can lead to identity theft, financial fraud, and competitive disadvantages. Organizations may face legal consequences for failing to protect user data. Implementing strict access controls and input validation is essential to mitigate this risk.
-            </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Manipulation and Deletion</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Attackers can use SQL injection to alter or delete data, compromising the integrity of the database. This manipulation can disrupt business operations, lead to loss of critical information, and damage customer trust. Regular backups and database activity monitoring can help detect and recover from such incidents. Ensuring proper user permissions can also limit potential damage.
-            </div>
-          </details>
-
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Authentication Bypass</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                By exploiting SQL injection vulnerabilities, attackers can bypass authentication mechanisms, gaining unauthorized access to user accounts. This breach can lead to further exploitation, including privilege escalation and data exfiltration. Employing multi-factor authentication and secure coding practices can reduce this risk. Regular security audits are also crucial in identifying and fixing vulnerabilities.
-            </div>
-          </details>
-
-          <!-- Accordion Item 4 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">System Compromise</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Advanced SQL injection attacks can lead to complete system compromise, allowing attackers to execute arbitrary commands or install malicious software. This level of access can be used to launch further attacks within the network. Implementing least privilege principles and network segmentation can limit the impact of such breaches. Continuous monitoring and intrusion detection systems are also vital defenses.​
-            </div>
-          </details>
-
-          <!-- Accordion Item 5 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Reputational Damage</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Organizations that fall victim to SQL injection attacks may suffer significant reputational harm. Customers and partners may lose trust, leading to decreased business opportunities and revenue loss. Public disclosure of breaches can attract negative media attention and scrutiny from regulators. Proactive communication and transparent incident response can help mitigate reputational impacts.
-            </div>
-          </details>
-        </div>
-      </div>
-    </div>
-    
-
+		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<p> A serious web security flaw known as SQL Injection (SQLi) enables hackers to tamper with the database queries that an application submits. Attackers can run arbitrary SQL commands and possibly obtain sensitive data without authorization by tampering with input fields. When user-supplied data is not adequately sanitized, malicious code can be run within the database context, creating this vulnerability. Search boxes, URL parameters, and login forms are typical targets. Successful SQL injection attacks can have serious repercussions, from compromised systems to data breaches. </p>
+					<p> Due to outdated coding techniques and insufficient input validation, SQL injection is still a common problem even though it is well known. Automated tools are frequently used by attackers to take advantage of these vulnerabilities, which makes it simpler to find and target vulnerable systems. The persistence of SQL injection emphasizes how crucial secure coding guidelines and frequent security audits are. To reduce the risk, organizations should use web application firewalls, parameterized queries, and input validation as top priorities. Fighting this persistent threat also requires ongoing education and awareness. </p>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+					<p> When malicious SQL statements are inserted into an application's input fields, the backend database executes them. This is how SQL injection works. To get around authentication, an attacker could, for instance, enter "OR '1'='1" into a login form, changing the SQL query to always return true. This method allows the attacker to control the behavior of the database by taking advantage of the application's inability to adequately sanitize user inputs. Attackers can retrieve, alter, or remove data once they have access to it. In certain situations, they can also increase their privileges within the system. Advanced attacks could use UNION statements to extract data from other tables or take advantage of blind SQL injection flaws that suppress error messages. </p>
+					<p> SQL injection has been used by attackers in real-world situations to obtain private data, interfere with services, and even take over whole systems. For example, an attacker could obtain all customer data, including credit card information, by taking advantage of a weak search feature on an e-commerce website. Even in situations where direct feedback is not given, blind SQL injection techniques enable attackers to deduce information by watching application responses or using time delays. These techniques show how effective and adaptable SQL injection is as an attack vector. To identify and stop such exploits, organizations need to put strong security measures in place. </p>
+				</div>
+				<div class="space-y-4">
+					<h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="">
+							<img src="../assets/heartland.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Heartbleed Bug" />
+							<div class="space-y-2 py-4">
+								<div>
+									<h6 class="font-medium text-lg">Heartland Payment Systems Breach</h6>
+									<small class="text-gray-200">2008</small>
+								</div>
+								<p class="text-left">Attackers exploited an SQL injection vulnerability in Heartland Payment Systems, compromising over 100 million credit card records. The breach resulted in significant financial losses and highlighted the dangers of inadequate input validation. This incident remains one of the largest data breaches in history.</p>
+							</div>
+						</div>
+						<div class="">
+							<img src="../assets/vtech.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Heartbleed Bug" />
+							<div class="space-y-2 py-4">
+								<div>
+									<h6 class="font-medium text-lg">VTech Data Breach</h6>
+									<small class="text-gray-200">2015</small>
+								</div>
+								<p class="text-left">In 2015, attackers used SQL injection to access personal data of over 6 million children and 4.8 million parents. The compromised information included names, email addresses, and home addresses. The breach raised concerns about data security in children's products.</p>
+							</div>
+						</div>
+						<div class="">
+							<img src="../assets/lee-county.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Heartbleed Bug" />
+							<div class="space-y-2 py-4">
+								<div>
+									<h6 class="font-medium text-lg">Lee County Elections Website Hack</h6>
+									<small class="text-gray-200">2016</small>
+								</div>
+								<p class="text-left">Security researcher David Levin used SQL injection to access the Lee County Elections website in Florida. He exposed vulnerabilities that allowed unauthorized access to sensitive data, sparking debates on ethical hacking and vulnerability disclosure.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-white mt-8">
+					<h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+					<div class="space-y-8 mt-8">
+						<div class="space-y-2">
+							<h5 class="text-xl font-medium">Unauthorized Data Access</h5>
+							<p> SQL injection can grant attackers access to sensitive information, including personal data, financial records, and proprietary business information. This unauthorized access can lead to identity theft, financial fraud, and competitive disadvantages. Organizations may face legal consequences for failing to protect user data. Implementing strict access controls and input validation is essential to mitigate this risk. </p>
+						</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-medium">Data Manipulation and Deletion</h5>
+							<p> Attackers can use SQL injection to alter or delete data, compromising the integrity of the database. This manipulation can disrupt business operations, lead to loss of critical information, and damage customer trust. Regular backups and database activity monitoring can help detect and recover from such incidents. Ensuring proper user permissions can also limit potential damage. </p>
+						</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-medium">Authentication Bypass</h5>
+							<p> By exploiting SQL injection vulnerabilities, attackers can bypass authentication mechanisms, gaining unauthorized access to user accounts. This breach can lead to further exploitation, including privilege escalation and data exfiltration. Employing multi-factor authentication and secure coding practices can reduce this risk. Regular security audits are also crucial in identifying and fixing vulnerabilities. </p>
+						</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-medium">System Compromise</h5>
+							<p> Advanced SQL injection attacks can lead to complete system compromise, allowing attackers to execute arbitrary commands or install malicious software. This level of access can be used to launch further attacks within the network. Implementing least privilege principles and network segmentation can limit the impact of such breaches. Continuous monitoring and intrusion detection systems are also vital defenses. </p>
+						</div>
+						<div class="space-y-2">
+							<h5 class="text-xl font-medium">Reputational Damage</h5>
+							<p> Organizations that fall victim to SQL injection attacks may suffer significant reputational harm. Customers and partners may lose trust, leading to decreased business opportunities and revenue loss. Public disclosure of breaches can attract negative media attention and scrutiny from regulators. Proactive communication and transparent incident response can help mitigate reputational impacts. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
-            <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
-                <div>
-                    <div class="flex items-center space-x-4">
-                        <img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
-                        <h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
-                    </div>
-                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-medium">Quick Links</h4>
-                        <ul class="mt-2">
-                            <li class="text-gray-300 text-sm">Page 1</li>
-                            <li class="text-gray-300 text-sm">Page 2</li>
-                            <li class="text-gray-300 text-sm">Page 3</li>
-                            <li class="text-gray-300 text-sm">Page 4</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="../assets/js/main.js"></script>
+			<div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
+				<div>
+					<div class="flex items-center space-x-4">
+						<img src="../assets/logo.png" class="h-10 w-10" alt="Logo" />
+						<h4 class="text-3xl font-medium text-indigo-400">ThreatScope</h4>
+					</div>
+					<p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-medium">Quick Links</h4>
+						<ul class="mt-2">
+							<li class="text-gray-300 text-sm">Page 1</li>
+							<li class="text-gray-300 text-sm">Page 2</li>
+							<li class="text-gray-300 text-sm">Page 3</li>
+							<li class="text-gray-300 text-sm">Page 4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>

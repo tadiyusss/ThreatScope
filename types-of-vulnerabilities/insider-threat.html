@@ -321,103 +321,81 @@
     
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Edward Snowden (2013)</h6>
-              <p class="p-3">
-                As a National Security Agency (NSA) contractor, Snowden copied and leaked highly classified information, revealing details of global surveillance programs. His actions sparked a global debate about privacy and government surveillance.
-              </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <img src="../assets/edward-snowden.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Edward Snowden" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Edward Snowden</h6>
+                        <small class="text-gray-200">2013</small>
+                    </div>
+                    <p class="text-left">
+                        As a National Security Agency (NSA) contractor, Snowden copied and leaked highly classified information, revealing details of global surveillance programs. His actions sparked a global debate about privacy and government surveillance.
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Maradix Case (2019)<h6>
-              <p class="p-3">
-                A former employee of Maradix, a healthcare technology company, intentionally deleted patient data from the company's servers after being fired, causing significant disruption and potential harm to patients.
-              </p>
+            <div>
+                <img src="../assets/hospital.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Maradix Case" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Maradix Case</h6>
+                        <small class="text-gray-200">2019</small>
+                    </div>
+                    <p class="text-left">
+                        A former employee of Maradix, a healthcare technology company, intentionally deleted patient data from the company's servers after being fired, causing significant disruption and potential harm to patients.
+                    </p>
+                </div>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Tesla Insider Theft (2018)</h6>
-              <p class="p-3">
-                A Tesla employee stole confidential information and trade secrets related to the company's battery production and attempted to share it with competitors. Tesla took legal action to prevent the dissemination of this information.
-              </p>
+            <div>
+                <img src="../assets/tesla.avif" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Tesla Insider Theft" />
+                <div class="space-y-2 py-4">
+                    <div>
+                        <h6 class="font-medium text-lg">Tesla Insider Theft</h6>
+                        <small class="text-gray-200">2018</small>
+                    </div>
+                    <p class="text-left">
+                        A Tesla employee stole confidential information and trade secrets related to the company's battery production and attempted to share it with competitors. Tesla took legal action to prevent the dissemination of this information.
+                    </p>
+                </div>
             </div>
-          </div>
+        </div>
         </div>
 
         <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+            <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Data Breaches and Intellectual Property Theft</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Insiders with access to sensitive data and intellectual property can easily copy and exfiltrate this information, leading to significant financial losses, competitive disadvantages, and reputational damage for the organization.
+        <div class="space-y-8 mt-8">
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Data Breaches and Intellectual Property Theft</h5>
+                <p>
+                    Insiders with access to sensitive data and intellectual property can easily copy and exfiltrate this information, leading to significant financial losses, competitive disadvantages, and reputational damage for the organization.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Financial Fraud and Sabotage</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Malicious insiders can manipulate financial records, commit fraud, or sabotage critical systems and infrastructure, causing direct financial losses, operational disruptions, and potential safety hazards.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Financial Fraud and Sabotage</h5>
+                <p>
+                    Malicious insiders can manipulate financial records, commit fraud, or sabotage critical systems and infrastructure, causing direct financial losses, operational disruptions, and potential safety hazards.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 3 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Reputational Damage and Loss of Trust</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                When insider threats result in data breaches or other security incidents, the organization's reputation and customer trust can be severely damaged, leading to long-term negative consequences.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Reputational Damage and Loss of Trust</h5>
+                <p>
+                    When insider threats result in data breaches or other security incidents, the organization's reputation and customer trust can be severely damaged, leading to long-term negative consequences.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 4 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Operational Disruptions and Business Interruption</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Intentional sabotage by insiders can disrupt critical business processes, leading to system downtime, loss of productivity, and significant financial impact.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Operational Disruptions and Business Interruption</h5>
+                <p>
+                    Intentional sabotage by insiders can disrupt critical business processes, leading to system downtime, loss of productivity, and significant financial impact.
+                </p>
             </div>
-          </details>
-
-          <!-- Accordion Item 5 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Legal and Regulatory Consequences</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Organizations that fail to adequately protect sensitive data from insider threats may face legal action, regulatory fines, and compliance violations, further exacerbating the financial and reputational damage.
+            <div class="space-y-2">
+                <h5 class="text-xl font-medium">Legal and Regulatory Consequences</h5>
+                <p>
+                    Organizations that fail to adequately protect sensitive data from insider threats may face legal action, regulatory fines, and compliance violations, further exacerbating the financial and reputational damage.
+                </p>
             </div>
-          </details>
+        </div>
         </div>
       </div>
     </div>
