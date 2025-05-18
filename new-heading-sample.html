@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>ThreatScope</title>
+		<script src='https://cdn.tailwindcss.com'></script>
+		<link rel="stylesheet" href="assets/css/fonts.css">
+	</head>
+	<body class="text-white text-roboto">
+		<div class="min-h-screen bg-[#0b0f2a] bg-[radial-gradient(circle_at_top_right,_rgba(0,159,183,0.3)_0%,_transparent_60%),_radial-gradient(circle_at_bottom_left,_rgba(0,159,183,0.3)_0%,_transparent_60%)]">
+		<div id="hero" class="w-full">
+            <nav class="">
+                <div class="w-full p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/logo.svg" class="w-14 h-14 text-black">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </div>
+                    </div>
+                    <ul class="md:flex items-center space-x-4">
+                        <li>
+                            <a href="./index.html" class="hidden md:block">Home</a>
+                        </li>
+                        <li>
+                            <a href="./recent-attacks.html" class="hidden md:block">Recent News</a>
+                        </li>
+                        <li>
+                            <a href="./concepts-of-cybersecurity.html" class="hidden md:block">Learn Now</a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="hidden md:block">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="cursor-pointer p-2 rounded" id="menu-toggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>                  
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SIDEBAR -->
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
+                [&::-webkit-scrollbar-track]:bg-gray-100
+                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                    <ul class="space-y-6 text-left">
+                        <li class="flex items-center space-x-4 p-4">
+                            <img src="assets/logo.svg" class="w-14 h-14">
+                            <h4 class="text-2xl">ThreatScope</h4>
+                        </li>
+    
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <li class="text-lg font-medium">Navigations</li>
+                                <li class="">
+                                    <ul class="">
+                                        <a href="./index.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Home</li></a>
+                                            
+                                        <a href="./recent-attacks.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Recent News</li></a>
+
+                                        <a href="./concepts-of-cybersecurity.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Learn Now</li></a>
+
+                                        <a href="#"></a><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Contact Us</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- CONCEPTS OF CYBERSECURITY -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./concepts-of-cybersecurity.html"><li class="text-lg font-medium">Concepts of Cybersecurity</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./concept-of-cybersecurity/origin-of-hacking-and-cybercrime.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Origin of Hacking and Cybercrime</li>
+                                        </a>
+                                        <a href="./concept-of-cybersecurity/history-of-computer-vulnerabilities.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">History of Computer Vulnerabilities</li>
+                                        </a>
+                                        <a href="./concept-of-cybersecurity/evolution-of-cyberthreats.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Evolution of Cyber Threats</li>
+                                        </a>
+                                        <a href="./concept-of-cybersecurity/prominent-hackers.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Prominent Ethical Hackers</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- TYPES OF VULNERABILITIES -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./types-of-vulnerability.html"><li class="text-lg font-medium">Types of Vulnerabilities</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./types-of-vulnerabilities/software-bugs.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Software Bugs</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/phishing.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Phishing</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/ransomware.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Ransomware</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/sql-injection.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">
+                                            SQL Injection</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/cross-site-scripting.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">
+                                            Cross-Site Scripting (XSS)</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/man-in-the-middle-attacks.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">
+                                            Man-in-the-Middle Attacks (MITM)</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/denial-of-service.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Denial-of-Service (DoS) and Distributed DoS</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/privilege-escalation.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Privilege Escalation</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/insider-threat.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Insider Threats</li>
+                                        </a>
+                                        <a href="./types-of-vulnerabilities/insecure-direct-object-reference.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">IDOR</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- FAMOUS CYBER ATTACKS -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./famous-cyber-attacks.html"><li class="text-lg font-medium">Famous Attacks</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./famous-cyber-attacks/wannacry-ransomware-attack.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">WannaCry Ransomware Attack</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/Yahoo-Data-Breaches.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Yahoo Data Breaches</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/i-love-you-virus.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">I LOVE YOU Virus</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/sony-picture-hack.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Sony Pictures Hack</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/lockbit-ransom.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">LockBit Ransomware</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/not-petya.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">NotPetya</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/pegasus-spyware.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Pegasus Spyware</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/2016-comelec-data-breach.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">2016 COMELEC Data Breach</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/myspace-xss.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">MySpace XSS</li>
+                                        </a>
+                                        <a href="./famous-cyber-attacks/The AWS DDoS Attack"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">The AWS DDoS Attack</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- RECENT CYBER ATTACKS -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./recent-attacks.html"><li class="text-lg font-medium">Recent Attacks</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./recent-cyber-attacks/change-healthcare.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Change Healthcare Ransomware Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/loan-depot.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">LoanDepot Ransomware Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/kawasaki-motors.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Kawasaki Motors Europe Cyber Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/crowdstrike-incident.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Crowdstrike Incident</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/salt-typhoon.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Salt Typhoon Cyber Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/scheneider-electric.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Scheneider Electric Ransomware Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/icbc-financial-services.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">ICBC Financial Services Ransomware Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/mgm-resorts.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">MGM Resorts Phishing Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/boeing-ransomware.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Boeing Ransomware Attack</li>
+                                        </a>
+                                        <a href="./recent-cyber-attacks/truepill-data-breach.html"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">TruePill Data Breach</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- CYBER-AFFECTED STAKEHOLDERS -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./companies-affected.html"><li class="text-lg font-medium">Cyber-Affected Stakeholders</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./famous-cyber-attacked-companies.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Famous Cyber Attacked Companies</li>
+                                        </a>
+                                        <a href="./financial-impact-of-breaches.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Financial Impact of Breaches</li>
+                                        </a>
+                                        <a href="./recovery-mitigation-measures.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Recovery & Mitigation Measures</li>
+                                        </a>
+                                        <a href="./legal-and-ethical-consequences.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Legal & Ethical Consequences</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- PROTECTIVE MEASURES -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./protective-measure.html"><li class="text-lg font-medium">Protective Measures</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./protective-measure/physical-protective-measure.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Physical Protective Measure</li>
+                                        </a>
+                                        <a href="./protective-measure/software-protective-measures.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Software Protective Measures</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- FUTURE CYBER THREATS -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./future-cyber-threats.html"><li class="text-lg font-medium">Future Threats</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="./future-cyber-threats/ai-in-hacking.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">AI in Hacking</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/quantum-computing-risks.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Quantum Computing Risks</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/decentralized-finance.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Decentralized Finance (DeFi) and Blockchain Exploits</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/exploitation-of-the-metaverse.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Exploitation of the Metaverse</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/biohacking.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Biohacking</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/5g-and-beyond.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">5G and Beyond: Hyperconnected Threat Vectors</li>
+                                        </a>
+                                        <a href="./future-cyber-threats/smart-city.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Smart City Infrastructure Attacks</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- ABOUT US -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./about-us.html"><li class="text-lg font-medium">About the Authors</li></a>
+                                <li>
+                                    <ul class="">
+                                        <a href="https://elaborate-paprenjak-b3b1e1.netlify.app/">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Cuenco, John Louie</li>
+                                        </a>
+                                        <a href="https://biybow.github.io/purtfoillio/portfolio.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Laugo, Cyril Marius</li>
+                                        </a>
+                                        <a href="https://ltshmarciano.github.io/Personal-Website/"><li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Marciano, Latisha</li>
+                                        </a>
+                                        <a href="https://sylvie7503.github.io/LandingPage/home.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Moya, Patrick Christopher</li>
+                                        </a>
+                                        <a href="https://freakest.github.io/janart.github.io/LandingPage/index.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Pagaduan, Jan Art</li>
+                                        </a>
+                                        <a href="https://je-sp.github.io/jesshub/index.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Paguel, Jess Patrick</li>
+                                        </a>
+                                        <a href="https://joaquinpangilinan.github.io/MPortfolio/">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Pangilinan, Myles Joaquin</li>
+                                        </a>
+                                        <a href="https://edwardallen-ricafranca.github.io/TheTarnishEd/">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Ricafranca, Edward Allen<li>
+                                        </a>
+                                        <a href="https://cyieie.github.io/MTerm-Project/index.html">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Songodanan, Cyrus</li>
+                                        </a>
+                                        <a href="https://tadiyusss.github.io/integrative-portfolio/">
+                                            <li class="text-gray-300 hover:bg-[#171c57] ease duration-200 py-1 px-4 rounded">Toledo, Thaddeus</li>
+                                        </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- PHOTO GALLERY -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="./gallery.html"><li class="text-lg font-medium">Photo Gallery</li></a>
+                            </ul>
+                        </li>
+
+                        <!-- CONTACT US -->
+                        <li class="px-4">
+                            <ul class="space-y-2">
+                                <a href="#"><li class="text-lg font-medium">Contact Us</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END OF SIDE BAR -->
+            </nav>
+
+            <div>
+                
+            </div>
+		</div>
+        <div class="space-y-20 mt-10 md:px-2 px-4">
+            <div class="grid md:grid-cols-2 grid-cols-1 grid-rows-3 gap-4 max-w-7xl mx-auto">
+                <div class="col-span-1 row-span-3 space-y-4">
+                    
+                    <img src="assets/famous-cyber-attacks/data-breach-comelec (1).jpg" alt="" class="w-full h-72 object-cover rounded">
+                    <h2 class="text-2xl font-bold">2016 COMELEC Data Breach Exposes 55 Million Voters in Massive Philippine Cyberattack</h2>
+                    <div class="flex items-center space-x-4">
+                        <p class="text-purple-300 text-sm">SQL Injection</p>
+                        <p class="text-gray-300 text-sm">5 minute read</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="assets/profile-picture/toledo.jpg" alt="" class="w-10 h-10 rounded">
+                        <div>
+                            <h6 class="text-sm">Thaddeus Toledo</h6>
+                            <small class="text-gray-300">Author</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 row-span-1 flex items-center space-x-4">
+                    <img src="assets/famous-cyber-attacks/i-love-you(1).webp" alt="" class="w-40 h-full object-cover rounded">
+                    <div class="space-y-2">
+                        
+                        <h6 class="text-md font-medium">ILOVEYOU Virus: Infamous Email Worm from the Philippines Causes Global Chaos</h6>
+                        <div class="flex items-center space-x-4">
+                            <p class="text-purple-300 text-sm">SQL Injection</p>
+                            <p class="text-gray-300 text-sm">5 minute read</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/profile-picture/laugo.png" class="w-10 h-10 rounded" alt="">
+                            
+                            <div>
+                                <h6 class="text-sm font-medium">Cyril Marius Laugo</h6>
+                                <small class="text-gray-300">Author</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 row-span-1 flex items-center space-x-4">
+                    <img src="assets/famous-cyber-attacks/i-love-you(1).webp" alt="" class="w-40 h-full object-cover rounded">
+                    <div class="space-y-2">
+                        
+                        <h6 class="text-md font-medium">ILOVEYOU Virus: Infamous Email Worm from the Philippines Causes Global Chaos</h6>
+                        <div class="flex items-center space-x-4">
+                            <p class="text-purple-300 text-sm">SQL Injection</p>
+                            <p class="text-gray-300 text-sm">5 minute read</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/profile-picture/laugo.png" class="w-10 h-10 rounded" alt="">
+                            
+                            <div>
+                                <h6 class="text-sm font-medium">Cyril Marius Laugo</h6>
+                                <small class="text-gray-300">Author</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 row-span-1 flex items-center space-x-4">
+                    <img src="assets/famous-cyber-attacks/i-love-you(1).webp" alt="" class="w-40 h-full object-cover rounded">
+                    <div class="space-y-2">
+                        
+                        <h6 class="text-md font-medium">ILOVEYOU Virus: Infamous Email Worm from the Philippines Causes Global Chaos</h6>
+                        <div class="flex items-center space-x-4">
+                            <p class="text-purple-300 text-sm">SQL Injection</p>
+                            <p class="text-gray-300 text-sm">5 minute read</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <img src="assets/profile-picture/laugo.png" class="w-10 h-10 rounded" alt="">
+                            
+                            <div>
+                                <h6 class="text-sm font-medium">Cyril Marius Laugo</h6>
+                                <small class="text-gray-300">Author</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center justify-between">
+                    <h5 class="text-2xl font-medium text-purple-300">Recent Cyber Attacks</h5>
+                    <div class="flex items-center space-x-2 text-gray-300">
+                        <a href="recent-attacks.html" class="">Read More</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+                        <div class="space-y-2">
+                            <img src="assets/picture-recent-cyber-attacks/boeing-read-more.png" class="w-full object-cover rounded" alt="">
+                            <div class="my-3 space-x-2">
+                                <div class="text-purple-300 text-sm font-medium">
+                                    <p>Recent Cyber Attacks</p>
+                                </div>
+                            </div>
+                            <h6 class="font-medium text-md">Boeing Hit by Ransomware: 43GB of Data Leaked After Refusing to Pay</h6>
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/profile-picture/moyaa.jpg" alt="" class="h-5 w-5 object-cover rounded-full">
+                                <small>Patrick Christopher Moya</small>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <img src="assets/picture-recent-cyber-attacks/boeing-read-more.png" class="w-full object-cover rounded" alt="">
+                            <div class="my-3 space-x-2">
+                                <div class="text-purple-300 text-sm font-medium">
+                                    <p>Recent Cyber Attacks</p>
+                                </div>
+                            </div>
+                            <h6 class="font-medium text-md">Boeing Hit by Ransomware: 43GB of Data Leaked After Refusing to Pay</h6>
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/profile-picture/moyaa.jpg" alt="" class="h-5 w-5 object-cover rounded-full">
+                                <small>Patrick Christopher Moya</small>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <img src="assets/picture-recent-cyber-attacks/boeing-read-more.png" class="w-full object-cover rounded" alt="">
+                            <div class="my-3 space-x-2">
+                                <div class="text-purple-300 text-sm font-medium">
+                                    <p>Recent Cyber Attacks</p>
+                                </div>
+                            </div>
+                            <h6 class="font-medium text-md">Boeing Hit by Ransomware: 43GB of Data Leaked After Refusing to Pay</h6>
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/profile-picture/moyaa.jpg" alt="" class="h-5 w-5 object-cover rounded-full">
+                                <small>Patrick Christopher Moya</small>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <img src="assets/picture-recent-cyber-attacks/boeing-read-more.png" class="w-full object-cover rounded" alt="">
+                            <div class="my-3 space-x-2">
+                                <div class="text-purple-300 text-sm font-medium">
+                                    <p>Recent Cyber Attacks</p>
+                                </div>
+                            </div>
+                            <h6 class="font-medium text-md">Boeing Hit by Ransomware: 43GB of Data Leaked After Refusing to Pay</h6>
+                            <div class="flex items-center space-x-4">
+                                <img src="assets/profile-picture/moyaa.jpg" alt="" class="h-5 w-5 object-cover rounded-full">
+                                <small>Patrick Christopher Moya</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+		<footer class="text-white w-full p-4 md:mt-24 mt-10">
+            <div class="max-w-6xl mx-auto border p-6 rounded md:flex block justify-between bg-indigo-950 border-indigo-900">
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <img src="assets/logo.svg" class="h-10 w-10" alt="Logo" />
+                        <h4 class="text-3xl font-medium">ThreatScope</h4>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-2">© 2024 | All rights reserved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-0 mt-8">
+                    <div>
+                        <h4 class="font-medium">Quick Links</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm"><a href="./index.html">Home</a></li>
+                            <li class="text-gray-300 text-sm"><a href="./recent-attacks.html">Recent News</a></li>
+                            <li class="text-gray-300 text-sm"><a href="./concepts-of-cybersecurity.html">Learn Now</a></li>
+                            <li class="text-gray-300 text-sm"><a href="./about-us.html">About Us</a></li>
+                            <li class="text-gray-300 text-sm"><a href="./contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Members</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm"><a href="https://elaborate-paprenjak-b3b1e1.netlify.app/">Cuenco, John Louie</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://biybow.github.io/purtfoillio/portfolio.html">Laugo, Cyril Marius</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://ltshmarciano.github.io/Personal-Website/">Marciano, Latisha***</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://sylvie7503.github.io/LandingPage/home.html">Moya, Patrick Christopher</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://freakest.github.io/janart.github.io/LandingPage/index.html">Pagaduan, Jan Art</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Members</h4>
+                        <ul class="mt-2">
+                            <li class="text-gray-300 text-sm"><a href="https://je-sp.github.io/jesshub/index.html">Paguel, Jess Patrick</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://joaquinpangilinan.github.io/MPortfolio/">Pangilinan, Myles</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://edwardallen-ricafranca.github.io/TheTarnishEd/">Ricafranca, Edward Allen</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://cyieie.github.io/MTerm-Project/index.html">Songodanan, Cyrus</a></li>
+                            <li class="text-gray-300 text-sm"><a href="https://tadiyusss.github.io/integrative-portfolio/">Toledo, Thaddeus</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#hero" class="fixed bottom-5 right-5 bg-indigo-700 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>              
+        </a>
+		</div>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
