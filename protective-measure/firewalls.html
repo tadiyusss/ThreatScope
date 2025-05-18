@@ -327,6 +327,14 @@
 					<a href="#" class="text-sm">Firewalls</a>
                 </div>
                 <h4 class="text-6xl font-medium text-center mt-20">Firewalls</h4>
+                <div class="flex items-center space-x-6 text-gray-300">
+                    <a href="#overview">Overview</a><span>|</span>
+                    <a href="#detection">Identity Verification</a><span>|</span>
+                    <a href="#removal">Entry Logging</a><span>|</span>
+                    <a href="#management">Misuse Prevention</a><span>|</span>
+                    <a href="#practical">Practical Usage</a><span>|</span>
+                    <a href="#limitations">Limitations</a>
+                </div>
             </div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528]">
@@ -340,15 +348,15 @@
 				<div class="space-y-4">
 					<h4 class="font-medium text-2xl text-[#E2C8F1]">Packet-Based Firewalls</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Static Rules Filtering</h6>
 							<p>Blocks or allows traffic based on IP addresses, ports, and protocols. Simple but effective against basic threats. Used in early network security systems.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Inbound and Outbound Control</h6>
 							<p class="">Separates rules for traffic coming in and out of the network. Prevents unauthorized access and data exfiltration. Helps monitor suspicious activities.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Port Blocking</h6>
 							<p class="">Closes unused or vulnerable ports. Reduces chances of entry by malicious software. Common in both home and business routers.</p>
 						</div>
@@ -356,15 +364,15 @@
 
 					<h4 class="font-medium text-2xl text-[#E2C8F1]">Stateful Firewalls</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Session Tracking</h6>
 							<p>Keeps track of established connections and only allows return traffic. Prevents spoofed packets that don't belong to valid sessions. More secure than stateless filtering.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Connection Timeouts</h6>
 							<p>Terminates idle connections to reduce risk of misuse. Saves system resources and improves response. Useful in high-traffic networks.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Traffic Pattern Analysis</h6>
 							<p>Monitors how data flows over time to detect unusual behavior. Alerts for possible DDoS or scanning attempts. Adds intelligence to security operations.</p>
 						</div>
@@ -372,15 +380,15 @@
 
 					<h4 class="font-medium text-2xl text-[#E2C8F1]">Next-Generation Firewalls (NGFW)</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Deep Packet Inspection (DPI)</h6>
 							<p>Scans the actual content inside data packets. Detects malware or dangerous commands even if ports are allowed. Used in detecting application-layer threats.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Application Awareness</h6>
 							<p>Understands specific apps like Skype, Facebook, or Dropbox. Allows granular control over how apps are used. Important for productivity and risk management.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Intrusion Prevention Systems (IPS)</h6>
 							<p>Built-in IPS blocks known attack patterns in real time. Helps defend against zero-day and signature-based threats. Adds a proactive defense layer.</p>
 						</div>
