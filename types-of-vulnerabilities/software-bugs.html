@@ -10,7 +10,7 @@
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/types-of-vulnerabilities-hero/softbug.jpeg')] bg-cover bg-center bg-no-repeat relative">
-			<nav class="absolute inset-0 z-10">
+			<nav class="relative z-50">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
@@ -44,11 +44,11 @@
                     </ul>
                 </div>
                 <!-- SIDEBAR -->
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
-                [&::-webkit-scrollbar-track]:bg-gray-100
-                [&::-webkit-scrollbar-thumb]:bg-gray-300
-                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 z-[60] [&::-webkit-scrollbar]:w-1
+                                [&::-webkit-scrollbar-track]:bg-gray-100
+                                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-6 text-left">
                         <li class="flex items-center space-x-4 p-4">
                             <img src="../assets/logo.svg" class="w-14 h-14">
@@ -316,7 +316,7 @@
                 <!-- END OF SIDE BAR -->
             </nav>
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
-			<div class="relative max-w-6xl mx-auto mt-20 text-left z-10">
+			<div class="relative max-w-6xl mx-auto mt-20 text-left">
                 <div class="flex items-center text-gray-300 md:px-2 px-4 space-x-2">
                     <a class="text-sm" href="../types-of-vulnerability.html">Types of Vulnerabilities</a>
                     <span class="text-gray-300 text-sm">/</span>
