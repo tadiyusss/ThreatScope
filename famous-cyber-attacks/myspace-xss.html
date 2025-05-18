@@ -291,32 +291,38 @@
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 
-            <div class="relative mt-48 max-w-4xl mx-auto">
-                
-				<h4 class="text-6xl font-medium">MySpace XSS</h4>
-                    <div class="flex items-center space-x-4 mt-4 justify-center">
-                        <a href="">Overview </a>
-                        <a href="">Method of Attack</a>
-                        <a href="">Impact and Consequences</a>
-                    </div>
-			</div>
+            
+
+            <div class="relative max-w-6xl mx-auto mt-20 text-left z-10">
+                <div class="flex items-center text-gray-300 md:px-2 px-4 space-x-2">
+                    <a class="text-sm" href="../famous-cyber-attacks.html">Famous Cyber Attacks</a>
+                    <span class="text-gray-300 text-sm">/</span>
+                    <a href="#" class="text-sm">MySpace XSS</a>
+                </div>
+                <h4 class="text-6xl font-medium text-center mt-20">MySpace XSS</h4>
+                <div class="flex items-center space-x-4 mt-4 justify-center">
+                    <a href="#overview">Overview </a>
+                    <a href="#method-of-attack">Method of Attack</a>
+                    <a href="#impact-and-consequences">Impact and Consequences</a>
+                </div>
+            </div>
 
 			
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+                    <h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
                     <p>A major cyberattack against MySpace occurred in October 2005 as a result of a Cross-Site Scripting (XSS) vulnerability. Samy Kamkar, a MySpace member, developed a worm that quickly propagated over user profiles. In under 20 hours, the worm gained Samy a million pals by self-replicating with just 4 KB of JavaScript. By taking advantage of vulnerabilities in MySpace's profile input sanitization, the worm enabled the execution of malicious code. MySpace had to briefly stop down in order to clean up the attack as the worm spread out of hand. The event showed the potential dangers of XSS vulnerabilities. Samy later had to deal with legal repercussions despite his innocent statement. One of the first and most well-known instances of an XSS worm in history was this incident.
                     </p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
+                    <h4 id="method-of-attack" class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
                     <p>The attack made use of a vulnerability in MySpace's input sanitization procedure that made it possible to add JavaScript to a profile page. When Samy added malicious JavaScript to his own profile, it sent friend requests automatically and spread to other profiles that saw it. Without any human engagement, this process turned the worm into a self-spreading piece of malware that infected millions of individuals. The threat type that was employed was Cross-Site Scripting (XSS), a flaw that lets hackers insert malicious scripts into websites that other people are viewing. Within a few hours, the worm had taken over MySpace due to its exponential growth.
                     </p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Impact and Consequences</h4>
+                    <h4 id="impact-and-consequences" class="font-medium text-2xl text-[#E2C8F1]">Impact and Consequences</h4>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
                             <h6 class="font-medium text-lg">Impact 1</h6>

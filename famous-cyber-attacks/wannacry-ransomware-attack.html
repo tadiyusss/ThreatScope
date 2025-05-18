@@ -291,30 +291,34 @@
 
 			<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
 
-            <div class="relative mt-48 max-w-4xl mx-auto">
-                
-            
-				<h4 class="text-6xl font-medium">WannaCry Ransomaware Attack</h4>
-                    <div class="flex items-center space-x-4 mt-4 justify-center">
-                        <a href="">Overview </a>
-                        <a href="">Method of Attack</a>
-                        <a href="">Impact and Consequences</a>
-                    </div>
-			</div>
+
+            <div class="relative max-w-6xl mx-auto mt-20 text-left z-10">
+                <div class="flex items-center text-gray-300 md:px-2 px-4 space-x-2">
+                    <a class="text-sm" href="../famous-cyber-attacks.html">Famous Cyber Attacks</a>
+                    <span class="text-gray-300 text-sm">/</span>
+                    <a href="#" class="text-sm">WannaCry Ransomware Attack</a>
+                </div>
+                <h4 class="text-6xl font-medium text-center mt-20">WannaCry Ransomware Attack</h4>
+                <div class="flex items-center space-x-4 mt-4 justify-center">
+                    <a href="#overview">Overview </a>
+                    <a href="#method-of-attack">Method of Attack</a>
+                    <a href="#impact-and-consequences">Impact and Consequences</a>
+                </div>
+            </div>
 
 			
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+                    <h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
                     <p>The WannaCry ransomware attack occurred in May 2017 and quickly became one of the largest cyberattacks in history. It targeted Microsoft Windows systems, spreading rapidly across over 150 countries. Victims included major hospitals, corporations, and government agencies, leading to critical disruptions. The attack exploited a vulnerability known as EternalBlue, which had been leaked from U.S. intelligence services. Although a security patch had been released before the attack, many organizations had not applied it. The ransomware encrypted files and demanded Bitcoin payments for decryption keys. The attack highlighted the severe risks posed by outdated systems. It also demonstrated how cyberweapons developed by nation-states could be repurposed by criminals.</p>
                 </div>
                 <div class="space-y-4">
-                    <h4 class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
+                    <h4 id="method-of-attack" class="font-medium text-2xl text-[#E2C8F1]">Method of Attack</h4>
                     <p>The attackers used a wormable ransomware that leveraged the EternalBlue vulnerability in the Windows SMBv1 protocol to spread across networks. Once a system was infected, WannaCry encrypted important files and displayed a ransom note demanding Bitcoin payment. The malware also attempted to spread itself laterally to other vulnerable systems automatically. Although ransomware was the primary threat, the worm-like behavior made it particularly devastating. A "kill switch" domain was accidentally discovered, which helped slow the spread.</p>
                 </div>
-                <div class="space-y-4">
+                <div id="impact-and-consequences" class="space-y-4">
                     <h4 class="font-medium text-2xl text-[#E2C8F1]">Impact and Consequences</h4>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
