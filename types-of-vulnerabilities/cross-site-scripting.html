@@ -9,7 +9,7 @@
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/scrip.webp')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/types-of-vulnerabilities-hero/scrip-hero.jpg')] bg-cover bg-center bg-no-repeat relative">
             <nav class="absolute inset-0 z-10">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
@@ -290,9 +290,10 @@
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Cross-Site Scripting</h4>
                 <div class="flex items-center space-x-4 mt-4 justify-center">
-                    <a href="">Emergance of Hacking </a>
-                    <a href="">Milesstone Incidents</a>
-                    <a href="">Cybercrime in Digital Age</a>
+                    <a href="#overview">Overview</a>
+                    <a href="#how-it-works">How it Works </a>
+                    <a href="#example">Real World Examples</a>
+                    <a href="#risk-impact">Risks and Impacts</a>
                 </div>
 			</div>
 		</div>
@@ -300,7 +301,7 @@
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+          <h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
           <p>
           A common web security flaw called Cross-Site Scripting (XSS) allows hackers to insert malicious scripts into websites that other users are viewing. This vulnerability allows attackers to run arbitrary JavaScript within a user's browser when web applications include untrusted data in their output without adequate validation or escaping. By enabling attackers to assume user identities, take over sessions, vandalize websites, or reroute users to malicious websites, XSS jeopardizes the integrity of web applications. The delivery and persistence mechanisms of the three main categories of XSS reflected, stored, and DOM-based vary. Because of the intricacy of contemporary web applications and the difficulties in guaranteeing thorough input validation, XSS is still common even though it is well-known.
           </p>
@@ -310,7 +311,7 @@
         </div>
     
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+          <h4 id="how-it-works" class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
           <p>
             By inserting malicious scripts into web pages that are subsequently run in the user's browser, cross-site scripting (XSS) attacks take advantage of the trust that users have in a specific website. When reflected XSS occurs, the malicious script is included in the request that is sent to the server and is instantly reflected back in the response, frequently in the form of error messages or search results. In stored cross-site scripting (XSS), malicious scripts are injected into a website's database, for example, through comment fields, and are subsequently displayed to users when they visit the compromised page. The vulnerability in client-side scripts that handle data from the browser's Document Object Model (DOM) is the sole source of DOM-based XSS. Different strategies are needed for each type's mitigation and detection.
           </p>
@@ -320,7 +321,7 @@
         </div>
     
         <div class="space-y-4">
-            <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+            <h4 id="example" class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <img src="../assets/samy-kamkar.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="MySpace Worm" />
@@ -362,7 +363,7 @@
         </div>
 
         <div class="text-white mt-8">
-            <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+            <h3 id="risk-impact" class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
         <div class="space-y-8 mt-8">
             <div class="space-y-2">
@@ -397,8 +398,24 @@
             </div>
         </div>
         </div>
-      </div>
+        <!-- REFERENCES ACCORDION -->
+        <div>
+            <details class="rounded border shadow" open>
+                <summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+                References
+                </summary>
+                <div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+                <ul class="list-disc list-inside space-y-1">
+                    <li>What is reflected XSS (cross-site scripting)? Tutorial & Examples | Web Security Academy. (n.d.). https://portswigger.net/web-security/cross-site-scripting/reflected</li>
+                    <li>Exploiting cross-site scripting vulnerabilities | Web Security Academy. (n.d.). https://portswigger.net/web-security/cross-site-scripting/exploiting</li>
+                </ul>
+                </div>
+            </details>
+        </div>
     </div>
+    </div>
+
+    
     
 
 		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">

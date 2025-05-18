@@ -3,13 +3,13 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<title>Tailwind</title>
+		<title>Denial of Service (DoS)</title>
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="../assets/css/fonts.css">
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/dos.jpg')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/types-of-vulnerabilities-hero/dos.jpg')] bg-cover bg-center bg-no-repeat relative">
 			<nav class="absolute inset-0 z-10">
 				<div class="w-full p-4 flex items-center justify-between">
 					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
@@ -276,26 +276,27 @@
 			<div class="relative max-w-4xl mx-auto mt-48">
 				<h4 class="text-6xl font-medium">Denial of Service (DoS)</h4>
 				<div class="flex items-center space-x-4 mt-4 justify-center">
-					<a href="">Emergance of Hacking </a>
-					<a href="">Milesstone Incidents</a>
-					<a href="">Cybercrime in Digital Age</a>
+					<a href="#overview">Overview</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#example">Real World Examples</a>
+                    <a href="#risk-impact">Risks and Impacts</a>
 				</div>
 			</div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
-			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
+			<div  class="max-w-6xl mx-auto px-6 py-32 space-y-4">
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
 					<p> Denial-of-Service (DoS) attacks aim to disrupt the normal functioning of a network resource or service, rendering it unavailable to its legitimate users. This is typically achieved by overwhelming the target system with a flood of malicious requests or traffic, consuming its resources like bandwidth, processing power, and memory. The result is that the targeted server or network becomes slow, unresponsive, or completely crashes, effectively denying service to those who need it. While a single source often characterizes a basic DoS attack, a Distributed Denial of Service (DDoS) attack involves a multitude of compromised systems launching the attack simultaneously, making it significantly more challenging to mitigate. </p>
 					<p> DDoS attacks leverage a network of compromised computers or devices, often referred to as a botnet, which are controlled by a single attacker. Each compromised device, without the owner's knowledge, sends a stream of malicious requests towards the target. The sheer volume of traffic originating from numerous distinct sources makes it difficult to differentiate legitimate user traffic from the attack traffic. </p>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+					<h4 id="how-it-works" class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
 					<p> The basic mechanism of a DoS attack involves overwhelming a target system with more requests or traffic than it can handle. This can be achieved through various methods that exploit limitations in the target's resources or the network infrastructure. For example, a SYN flood attack exploits the TCP handshake process by sending a large number of SYN (synchronize) requests without completing the handshake, leaving the server waiting for responses that never arrive and exhausting its connection resources. </p>
 					<p> Attackers employ DoS and DDoS attacks for a variety of motivations and in diverse real-world scenarios. One common use is to disrupt the services of competitors or organizations with whom they have a conflict, causing financial losses and reputational damage. For instance, e-commerce websites can be targeted during peak shopping periods to prevent customers from making purchases. DDoS attacks are also frequently used as a form of cyber extortion, where attackers demand a ransom to cease the attack and restore normal service. Organizations that rely heavily on online presence and availability are particularly vulnerable to this type of coercion. </p>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+					<h4 id="example" class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div>
 							<img src="../assets/mirai.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Mirai Botnet Attack" />
@@ -330,7 +331,7 @@
 					</div>
 				</div>
 				<div class="text-white mt-8">
-					<h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+					<h3 id="risk-impact" class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
 					<div class="space-y-8 mt-8">
 						<div class="space-y-2">
 							<h5 class="text-xl font-medium">Service Disruption and Downtime</h5>
@@ -353,6 +354,20 @@
 							<p> DDoS attacks can sometimes be used as a smokescreen for other malicious activities. While security teams are focused on mitigating the denial-of-service, attackers may simultaneously attempt to exploit other vulnerabilities or exfiltrate sensitive data from the compromised systems. </p>
 						</div>
 					</div>
+				</div>
+				<!-- REFERENCES ACCORDION -->
+				<div>
+					<details class="rounded border shadow" open>
+						<summary class="cursor-pointer px-4 py-3 bg-[#141528] border border-indigo-900 rounded font-medium">
+						References
+						</summary>
+						<div class="px-4 py-2 bg-[#141528] border border-indigo-900">
+						<ul class="list-disc list-inside space-y-1">
+							<li>What is a DDoS Attack? DDoS Meaning, Definition & Types | Fortinet. (n.d.). Fortinet. https://www.fortinet.com/resources/cyberglossary/ddos-attack</li>
+							<li>Habte, F. (2022, May 11). What is DDoS Attack? Check Point Software. https://www.checkpoint.com/cyber-hub/cyber-security/what-is-ddos/</li>
+						</ul>
+						</div>
+					</details>
 				</div>
 			</div>
 		</div>
