@@ -10,7 +10,7 @@
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
 		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/types-of-vulnerabilities-hero/dos.jpg')] bg-cover bg-center bg-no-repeat relative">
-			<nav class="absolute inset-0 z-10">
+			<nav class="relative z-50">
                 <div class="w-full p-4 flex items-center justify-between">
                     <div class="flex items-center space-x-4 md:w-auto w-full justify-between">
                         <div class="flex items-center space-x-4">
@@ -44,11 +44,11 @@
                     </ul>
                 </div>
                 <!-- SIDEBAR -->
-                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 [&::-webkit-scrollbar]:w-1
-                [&::-webkit-scrollbar-track]:bg-gray-100
-                [&::-webkit-scrollbar-thumb]:bg-gray-300
-                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
-                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
+                <div id="sidebar" class="fixed inset-y-0 overflow-y-auto left-0 w-64 bg-[#111436] text-white transform -translate-x-full transition-transform duration-300 z-[60] [&::-webkit-scrollbar]:w-1
+                                [&::-webkit-scrollbar-track]:bg-gray-100
+                                [&::-webkit-scrollbar-thumb]:bg-gray-300
+                                dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                                dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 pb-10">
                     <ul class="space-y-6 text-left">
                         <li class="flex items-center space-x-4 p-4">
                             <img src="../assets/logo.svg" class="w-14 h-14">
