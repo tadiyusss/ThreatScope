@@ -336,7 +336,7 @@
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+          <h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
           <p>
             Insecure Direct Object Reference (IDOR) is a common web security vulnerability that falls under the broader category of Broken Access Control. It occurs when a web application uses user-supplied input to access objects directly, such as files, database records, or URLs, without proper authorization checks. This flaw allows attackers to manipulate input parameters, like IDs or filenames, to gain unauthorized access to data. IDOR is especially dangerous in APIs and web applications that rely on predictable object references. When exploited, it can lead to unauthorized information disclosure, data manipulation, or even complete account takeovers.
           </p>
@@ -346,7 +346,7 @@
         </div>
     
         <div class="space-y-4">
-          <h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+          <h4 id="how-it-works" class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
           <p>
             The basic mechanism behind IDOR involves a user input—like an account ID or document number—being sent to the server to retrieve specific resources. If the application does not verify whether the user has permission to access the requested object, an attacker can simply modify the input to reference a different object. For instance, changing a URL from /invoice/102 to /invoice/103 might allow access to someone else’s invoice. The vulnerability is often hidden in plain sight and can be discovered through careful inspection of URL patterns or API request parameters. Without server-side authorization checks, any authenticated user can exploit these references to access data they shouldn't see.
           </p>
@@ -356,7 +356,7 @@
         </div>
     
         <div class="space-y-4">
-            <h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+            <h4 id="example" class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <img src="../assets/instagram.webp" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Instagram IDOR" />
@@ -398,7 +398,7 @@
         </div>
 
         <div class="text-white mt-8">
-          <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+          <h3 id="risk-impact" class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
         
         <div class="space-y-8 mt-8">
             <div class="space-y-2">

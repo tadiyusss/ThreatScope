@@ -334,17 +334,17 @@
 		<div class="bg-gradient-to-b from-black to-[#141528] text-justify">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<h4 id="overview" class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
 					<p> A serious web security flaw known as SQL Injection (SQLi) enables hackers to tamper with the database queries that an application submits. Attackers can run arbitrary SQL commands and possibly obtain sensitive data without authorization by tampering with input fields. When user-supplied data is not adequately sanitized, malicious code can be run within the database context, creating this vulnerability. Search boxes, URL parameters, and login forms are typical targets. Successful SQL injection attacks can have serious repercussions, from compromised systems to data breaches. </p>
 					<p> Due to outdated coding techniques and insufficient input validation, SQL injection is still a common problem even though it is well known. Automated tools are frequently used by attackers to take advantage of these vulnerabilities, which makes it simpler to find and target vulnerable systems. The persistence of SQL injection emphasizes how crucial secure coding guidelines and frequent security audits are. To reduce the risk, organizations should use web application firewalls, parameterized queries, and input validation as top priorities. Fighting this persistent threat also requires ongoing education and awareness. </p>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
+					<h4 id="how-it-works" class="font-medium text-2xl text-[#E2C8F1]">How it Works</h4>
 					<p> When malicious SQL statements are inserted into an application's input fields, the backend database executes them. This is how SQL injection works. To get around authentication, an attacker could, for instance, enter "OR '1'='1" into a login form, changing the SQL query to always return true. This method allows the attacker to control the behavior of the database by taking advantage of the application's inability to adequately sanitize user inputs. Attackers can retrieve, alter, or remove data once they have access to it. In certain situations, they can also increase their privileges within the system. Advanced attacks could use UNION statements to extract data from other tables or take advantage of blind SQL injection flaws that suppress error messages. </p>
 					<p> SQL injection has been used by attackers in real-world situations to obtain private data, interfere with services, and even take over whole systems. For example, an attacker could obtain all customer data, including credit card information, by taking advantage of a weak search feature on an e-commerce website. Even in situations where direct feedback is not given, blind SQL injection techniques enable attackers to deduce information by watching application responses or using time delays. These techniques show how effective and adaptable SQL injection is as an attack vector. To identify and stop such exploits, organizations need to put strong security measures in place. </p>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
+					<h4 id="example" class="font-medium text-2xl text-[#E2C8F1]">Real World Examples</h4>
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div class="">
 							<img src="../assets/heartland.jpg" class="rounded shadow shadow-indigo-900/50 w-full h-64 object-cover" alt="Heartbleed Bug" />
@@ -379,7 +379,7 @@
 					</div>
 				</div>
 				<div class="text-white mt-8">
-					<h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
+					<h3 id="risk-impact" class="text-2xl font-medium text-[#E2C8F1] mb-3">Risks and Impacts</h3>
 					<div class="space-y-8 mt-8">
 						<div class="space-y-2">
 							<h5 class="text-xl font-medium">Unauthorized Data Access</h5>
