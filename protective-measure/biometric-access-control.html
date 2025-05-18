@@ -9,7 +9,7 @@
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/bio.jpeg')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('./assets/bio.jpeg')] bg-cover bg-center bg-no-repeat relative">
 			<nav class="absolute inset-0 z-10">
 				<div class="w-full p-4 flex items-center justify-between">
 					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
@@ -283,68 +283,78 @@
 					<a href="#" class="text-sm">Biometric Access Control</a>
                 </div>
                 <h4 class="text-6xl font-medium text-center mt-20">Biometric Access Control</h4>
+				<div class="flex justify-center mt-8">
+					<div class="flex items-center space-x-6 text-gray-300">
+						<a href="#overview">Overview</a><span>|</span>
+						<a href="#detection">Identity Verification</a><span>|</span>
+						<a href="#removal">Entry Logging</a><span>|</span>
+						<a href="#management">Misuse Prevention</a><span>|</span>
+						<a href="#practical">Practical Usage</a><span>|</span>
+						<a href="#limitations">Limitations</a>
+					</div>
+				</div>
             </div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528]">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="overview">Overview</h4>
 					<div class="space-y-2">
 						<p>Biometric access control uses unique physical characteristics like fingerprints, facial recognition, or iris scans to grant or deny entry. This system ensures that only authorized personnel can access restricted areas or systems. Unlike keycards or passwords, biometric traits are difficult to steal or duplicate. These systems are often used in high-security areas like data centers or research labs. The technology relies on sensors and databases to compare live input with stored templates. Biometric access improves accountability by tying access logs to specific individuals. It is a modern and secure alternative to traditional access methods.</p>
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Identity Verification</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="detection">Identity Verification</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Unique Identification</h6>
 							<p class="">Biometrics use unique traits that are nearly impossible to replicate. This ensures each individual is authenticated based on their physical characteristics. It significantly reduces the risk of impersonation.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Non-transferable Credentials</h6>
 							<p class="">Unlike access cards or passwords, biometric features cannot be shared, borrowed, or stolen. This enhances the integrity of the access control system. It guarantees that access is strictly personal.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Authentication Accuracy</h6>
 							<p class="">Biometric systems have high accuracy rates and low false acceptance or rejection rates. They reduce the chances of human error in identifying individuals. This provides reliable access verification.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Entry Logging</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="removal">Entry Logging</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Automatic Recordkeeping</h6>
 							<p class=""> Every biometric access attempt is logged with time and identity details. These records can be used to track access patterns and detect anomalies. Logs support audits and investigations.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Behavior Analysis</h6>
 							<p class="">Unusual access patterns can be flagged for review. This proactive feature strengthens security through early detection of insider threats. It enables better decision-making.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Policy Enforcement</h6>
 							<p class="">Biometric logs ensure that only authorized personnel follow defined schedules and rules. It supports enforcement of security policies. This is crucial for regulatory compliance.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Misuse Prevention</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="management">Misuse Prevention</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Credential Elimination</h6>
 							<p class="">Biometrics reduce dependency on badges or keycards. This minimizes the chances of misplaced or stolen access tools. It simplifies access management.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Reduced Administration</h6>
 							<p>There's less need to issue, replace, or deactivate cards or passwords. IT and HR departments spend less time managing access. This leads to operational efficiency.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Tamper-Resistance</h6>
 							<p> Biometric systems are hard to fool or bypass due to liveness detection and encryption. This adds an extra layer of defense against intrusion. The system resists spoofing techniques.</p>
 						</div>
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<h3 class="text-2xl font-medium text-[#E2C8F1]" id="practical">Practical Usage</h3>
 					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
 						<div class="flex justify-center">
-							<img src="../assets/bio1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/bio1.jpeg" target="image-viewer"><img src="../assets/bio1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 						<div class="flex items-center justify-center">
 							<div class="space-y-4">
@@ -362,13 +372,13 @@
 							</div>
 						</div>
 						<div class="flex justify-center">
-							<img src="../assets/bio2.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/bio2.jpg" target="image-viewer"><img src="../assets/bio2.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 					</div>
 
 					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
 						<div class="flex justify-center">
-							<img src="../assets/server1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/server1.jpeg" target="image-viewer"><img src="../assets/server1.jpeg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 						<div class="flex items-center justify-center">
 							<div class="space-y-4">
@@ -379,7 +389,7 @@
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="limitations">Limitations</h4>
                     <div class="space-y-2">
                         <p>While secure, biometric systems have their flaws. They can be expensive to install and maintain. If the system fails to recognize a valid user, it can delay access or cause frustration. Hygiene concerns may arise with shared fingerprint scanners. Privacy concerns also exist, as storing biometric data comes with its own security risks. If biometric data is stolen, it can’t be changed like a password. Physical injuries or changes (e.g., cuts, aging) can affect recognition accuracy. Despite these issues, it remains a strong access control method.</p>
                     </div>

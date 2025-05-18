@@ -9,7 +9,7 @@
 	</head>
 	<body class="text-white text-roboto">
 		<!-- NAVIGATION -->
-		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('../assets/antivirus-software.jpg')] bg-cover bg-center bg-no-repeat relative">
+		<div id="hero" class="w-full p-2 pb-72 text-center bg-[url('./assets/antivirus-software.jpg')] bg-cover bg-center bg-no-repeat relative">
 			<nav class="absolute inset-0 z-10">
 				<div class="w-full p-4 flex items-center justify-between">
 					<div class="flex items-center space-x-4 md:w-auto w-full justify-between">
@@ -279,71 +279,81 @@
                     <span class="text-gray-300 text-sm">/</span>
                     <a href="software-protective-measures.html" class="text-sm">Software Protective Measures</a>
 					<span class="text-gray-300 text-sm">/</span>
-					<a href="#" class="text-sm">Antivirus Software</a>
+					<a href="./antivirus-software.html" class="text-sm">Antivirus Software</a>
                 </div>
                 <h4 class="text-6xl font-medium text-center mt-20">Antivirus Software</h4>
+				<div class="flex justify-center mt-8">
+					<div class="flex items-center space-x-6 text-gray-300">
+						<a href="#overview">Overview</a><span>|</span>
+						<a href="#detection">Malware Detection</a><span>|</span>
+						<a href="#removal">Threat Removal</a><span>|</span>
+						<a href="#management">System Management</a><span>|</span>
+						<a href="#practical">Practical Usage</a><span>|</span>
+						<a href="#limitations">Limitations</a>
+					</div>
+				</div>
             </div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-[#141528]">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="overview">Overview</h4>
 					<div class="space-y-2">
 						<p>Antivirus software is designed to detect, prevent, and remove malicious software like viruses, worms, trojans, and ransomware from a computer system. It works by scanning files and programs for known malware signatures and suspicious behavior. Most antivirus programs offer real-time protection that monitors activity and blocks threats instantly. They also provide features like automatic updates, quarantine, and scheduled scans. Antivirus is one of the most basic and essential tools in cybersecurity. It plays a key role in defending individual and corporate systems from infection. Regular use of antivirus reduces the chances of data loss or corruption.</p>
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Malware Detection</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="detection">Malware Detection</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Signature-Based Scanning</h6>
 							<p class="">Identifies known malware using virus definitions. This method ensures quick and accurate threat identification. It's a fundamental feature of most antivirus tools.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Heuristic Analysis</h6>
 							<p class="">Detects suspicious behavior and code patterns to uncover new or modified threats. Helps in identifying zero-day attacks. Complements signature scanning.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Real-Time Protection</h6>
 							<p class="">Constantly monitors files and processes as they operate. Blocks threats before they execute. Maintains continuous system defense.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Threat Removal</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="removal">Threat Removal</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Quarantine Feature</h6>
 							<p class="">Moves detected threats to a secure, isolated location. Prevents further damage or spread. Allows safe analysis before removal.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Auto-Repair</h6>
 							<p class="">Attempts to fix infected files and restore them to original state. Minimizes data loss. Enhances user experience.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Rootkit Removal</h6>
 							<p class="">Targets deeply embedded malware in system files. Protects against advanced persistent threats. Ensures system-level integrity.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">System Management</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="management">System Management</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Scheduled Scanning</h6>
 							<p class="">Allows routine scans at set intervals. Ensures regular system checks without user input. Increases long-term protection.</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Resource Optimization</h6>
 							<p>Runs efficiently without heavily impacting performance. Balances security with usability. Important for older or less</p>
 						</div>
-						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2">
+						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Update Automation</h6>
 							<p>Keeps virus definitions up to date. Responds quickly to new threats. Ensures software remains effective.</p>
 						</div>
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<h3 class="text-2xl font-medium text-[#E2C8F1]" id="practical">Practical Usage</h3>
 					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
 						<div class="flex justify-center">
-							<img src="../assets/personal-computer.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/personal-computer.jpg" target="image-viewer"><img src="../assets/personal-computer.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 						<div class="flex items-center justify-center">
 							<div class="space-y-4">
@@ -361,13 +371,13 @@
 							</div>
 						</div>
 						<div class="flex justify-center">
-							<img src="../assets/datacenter.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/datacenter.jpg" target="image-viewer"><img src="../assets/datacenter.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 					</div>
 
 					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
 						<div class="flex justify-center">
-							<img src="../assets/school-building.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" />
+							<a href="../assets/school-building.jpg" target="image-viewer"><img src="../assets/school-building.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
 						</div>
 						<div class="flex items-center justify-center">
 							<div class="space-y-4">
@@ -378,7 +388,7 @@
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="limitations">Limitations</h4>
                     <div class="space-y-2">
                         <p>Antivirus software isn’t foolproof. It may not detect zero-day or sophisticated attacks. If users ignore alerts or disable protection, threats can still enter. Antivirus software can slow down a system, especially during full scans. Some programs may conflict with other security tools. It also can't protect against human error like clicking phishing links. Antivirus should be combined with other layers like firewalls and user awareness training.</p>
                     </div>
