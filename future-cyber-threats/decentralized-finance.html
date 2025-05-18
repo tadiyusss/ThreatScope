@@ -300,7 +300,7 @@
                 </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+    <div class="bg-gradient-to-b from-black to-[#141528]">
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
@@ -310,36 +310,60 @@
           </p>
           
         </div>
-    
-        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
+
+        <div class="space-y-4">
             <h2 class="text-xl font-semibold mb-4">How do these work?</h2>
-          
-            <table class="table-auto w-full border-separate border-spacing-y-2 p-4">
-              <tbody>
-                <tr class="align-top mb-10">
-                  <td class="pr-4 font-medium w-20">Smart Contract Bugs</td>
-                  <td class="mb-52">
-                    Poorly written or unaudited code can have logic errors or loopholes. Hackers exploit these to manipulate token balances or drain liquidity pools. Once exploited, the damage is often irreversible.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Oracle Manipulation</td>
-                  <td>
-                    Oracles supply DeFi apps with real-world data, such as asset prices. If attackers control or influence an oracle, they can trick smart contracts into misbehaving. This can result in unfair trades or liquidation of collateral.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                    <td class="pr-4 font-medium w-20">Flash Loan Attacks</td>
-                    <td>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>document</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="document" fill="currentColor" transform="translate(106.666667, 64.000000)">
+                                    <path d="M192,0 L-1.42108547e-14,0 L-1.42108547e-14,384 L298.666667,384 L298.666667,106.666667 L192,0 Z M256,341.333333 L42.6666667,341.333333 L42.6666667,42.6666667 L128,42.6666667 L128,170.666667 L256,170.666667 L256,341.333333 Z M256,128 L170.666667,128 L170.666667,42.6666667 L174.293333,42.6666667 L256,124.373333 L256,128 Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Smart Contract Bugs</h4>
+                    <p class="text-left">
+                        Poorly written or unaudited code can have logic errors or loopholes. Hackers exploit these to manipulate token balances or drain liquidity pools. Once exploited, the damage is often irreversible.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>rename</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Combined-Shape" fill="currentColor" transform="translate(42.666667, 64.000000)">
+                                    <path d="M362.666667,1.42108547e-14 L362.666667,21.3333333 L320,21.333 L320,362.666 L362.666667,362.666667 L362.666667,384 L320,383.999 L320,384 L298.666667,384 L298.666,383.999 L256,384 L256,362.666667 L298.666,362.666 L298.666,21.333 L256,21.3333333 L256,1.42108547e-14 L362.666667,1.42108547e-14 Z M426.666667,64 L426.666667,320 L341.333333,320 L341.333333,277.333333 L384,277.333333 L384,106.666667 L341.333333,106.666667 L341.333333,64 L426.666667,64 Z M277.333333,64 L277.333333,320 L3.55271368e-14,320 L3.55271368e-14,64 L277.333333,64 Z M179.2,89.6 L149.333333,89.6 L149.333333,234.666667 C149.333333,248 148.5,256.333333 147.875,264.354167 L147.792993,265.422171 L147.792993,265.422171 L147.714003,266.48894 C147.417695,270.579012 147.2,274.696296 147.2,279.466667 L147.2,279.466667 L177.066667,279.466667 L177.066667,260.266667 C184.941497,273.926888 199.708077,282.130544 215.466667,281.6 C229.540046,281.805757 242.921593,275.508559 251.733333,264.533333 C263.162478,248.989677 269.832496,230.461848 270.933333,211.2 C270.933333,170.666667 249.6,142.933333 217.6,142.933333 C202.507405,142.999748 188.308689,150.099106 179.2,162.133333 L179.2,162.133333 L179.2,89.6 Z M119.466667,162.133333 C107.961824,149.843793 91.4322333,143.546807 74.6666667,145.066667 C57.6785115,144.485924 40.8138255,148.15216 25.6,155.733333 L25.6,155.733333 L34.1333333,177.066667 C45.3979052,171.147831 57.7246848,167.522308 70.4,166.4 C78.5613135,165.511423 86.6853595,168.371259 92.4903835,174.176283 C98.2954074,179.981307 101.155244,188.105353 100.266667,196.266667 L100.266667,196.266667 L100.266667,198.4 L78.9333333,198.4 C65.8181975,197.679203 52.705771,199.864608 40.5333333,204.8 C26.2806563,210.950309 17.6507691,225.621117 19.2,241.066667 C19.0625857,252.057651 23.6679763,262.574827 31.8381493,269.927982 C40.0083223,277.281138 50.9508304,280.757072 61.8666667,279.466667 C77.2795695,280.291768 92.2192911,274.001359 102.4,262.4 L102.4,262.4 L102.4,277.333333 L130.133333,277.333333 C128.292479,266.054406 127.577851,254.620365 128,243.2 L128,243.2 L128,204.8 C129.999138,190.023932 126.995128,175.003882 119.466667,162.133333 Z M98.1333333,213.333333 L98.1333333,238.933333 C92.082572,249.988391 80.836024,257.218314 68.2666667,258.133333 C63.0655139,258.520242 57.9538681,256.621996 54.2659359,252.934064 C50.5780036,249.246132 48.6797582,244.134486 49.0666667,238.933333 C49.0666667,224 59.7333333,215.466667 85.3333333,213.333333 L85.3333333,213.333333 L98.1333333,213.333333 Z M209.066667,166.4 C226.133333,166.4 238.933333,183.466667 238.933333,211.2 C238.933333,238.933333 228.266667,256 211.2,256 C197.298049,255.69869 184.825037,247.383349 179.2,234.666667 L179.2,234.666667 L179.2,187.733333 C185.154203,176.240507 196.263981,168.304951 209.066667,166.4 Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Oracle Manipulation</h4>
+                    <p class="text-left">
+                        Oracles supply DeFi apps with real-world data, such as asset prices. If attackers control or influence an oracle, they can trick smart contracts into misbehaving. This can result in unfair trades or liquidation of collateral.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>quality-report</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="add" fill="currentColor" transform="translate(32.000000, 64.000000)">
+                                    <path d="M352,21.3333333 L437.333333,106.666667 L437.333333,362.666667 L10.6666667,362.666667 L10.6666667,118.113333 L53.3326667,167.890333 L53.3333333,320 L394.666667,320 L394.666667,117.333333 L341.333333,64 L294.347667,63.9993333 L260.007667,21.3333333 L352,21.3333333 Z M352,256 L352,288 L96,288 L96,256 L352,256 Z M224,1.42108547e-14 L277.333333,74.6666667 L138.666667,234.666667 L7.10542736e-15,74.6666667 L53.3333333,1.42108547e-14 L224,1.42108547e-14 Z M203.335667,191.999333 L352,192 L352,224 L202.666667,224 L202.666667,192.780333 L203.335667,191.999333 Z M161.673,85.333 L115.64,85.333 L138.666667,176.810667 L161.673,85.333 Z M82.614,85.333 L49.86,85.333 L108.23,165.383 L82.614,85.333 Z M227.453,85.333 L194.719,85.333 L169.108,165.366 L227.453,85.333 Z M258.192667,127.999333 L352,128 L352,160 L230.764667,159.999333 L258.192667,127.999333 Z M105.214,32 L69.7813333,32 L46.928,64 L83.881,64 L105.214,32 Z M144.52,32 L132.775,32 L119.166,64 L158.14,64 L144.52,32 Z M207.530667,32 L172.118,32 L193.452,64 L230.383,64 L207.530667,32 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Flash Loan Attacks</h4>
+                    <p class="text-left">
                         These allow users to borrow large amounts without collateral, provided the loan is repaid within one transaction. Hackers combine flash loans with other exploits to manipulate DeFi protocols. This enables draining of funds without prior access or ownership.
-                    </td>
-                  </tr>
-              </tbody>
-            </table>
+                    </p>
+                </div>
+            </div>
         </div>
-
-          
-
 
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
@@ -369,44 +393,38 @@
 
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">How Can We Prepare?</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 1: Perform Regular Smart Contract Audits</h6>
-              <p class="p-3">
-                Independent experts should review contract code for vulnerabilities. Audits identify logic flaws and unsafe practices. This reduces the chance of exploitation.
-              </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded">
+                <h6 class="font-medium text-lg">Perform Regular Smart Contract Audits</h6>
+                <p class="text-gray-200">
+                    Independent experts should review contract code for vulnerabilities. Audits identify logic flaws and unsafe practices. This reduces the chance of exploitation.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 2: Use Decentralized and Redundant Oracles</h6>
-              <p class="p-3">
-                Rely on multiple data sources to prevent single-point failures. This helps guard against manipulation. Services like Chainlink provide verified, tamper-resistant data.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded">
+                <h6 class="font-medium text-lg">Use Decentralized and Redundant Oracles</h6>
+                <p class="text-gray-200">
+                    Rely on multiple data sources to prevent single-point failures. This helps guard against manipulation. Services like Chainlink provide verified, tamper-resistant data.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 3: Implement Timelocks and Governance</h6>
-              <p class="p-3">
-                Adding delay mechanisms allows intervention before major changes take effect. Community governance ensures greater transparency. This protects user assets.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded">
+                <h6 class="font-medium text-lg">Implement Timelocks and Governance</h6>
+                <p class="text-gray-200">
+                    Adding delay mechanisms allows intervention before major changes take effect. Community governance ensures greater transparency. This protects user assets.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-                <h6 class="font-medium text-lg">Step 4: Monitor Transactions in Real-Time</h6>
-                <p class="p-3">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded">
+                <h6 class="font-medium text-lg">Monitor Transactions in Real-Time</h6>
+                <p class="text-gray-200">
                     Use blockchain analytics tools to flag suspicious activity. Early detection can limit damage. Continuous monitoring boosts response times.
                 </p>
-              </div>
-
-              <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-                <h6 class="font-medium text-lg">Step 5: Educate Users on Risks</h6>
-                <p class="p-3">
+            </div>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded">
+                <h6 class="font-medium text-lg">Educate Users on Risks</h6>
+                <p class="text-gray-200">
                     Provide training and alerts about phishing, rug pulls, and suspicious apps. Informed users make safer decisions. Public awareness is a critical defense.
                 </p>
-              </div>
-    
-          </div>
+            </div>
+        </div>
         </div>
 
         <div>
