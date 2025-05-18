@@ -300,7 +300,7 @@
                 </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+    <div class="bg-gradient-to-b from-black to-[#141528]">
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
@@ -310,33 +310,55 @@
           </p>
           
         </div>
-    
-        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
+        <div class="space-y-4">
             <h2 class="text-xl font-semibold mb-4">How do these work?</h2>
-          
-            <table class="table-auto w-full border-separate border-spacing-y-2 p-4">
-              <tbody>
-                <tr class="align-top mb-10">
-                  <td class="pr-4 font-medium w-20">Shor’s Algorithm</td>
-                  <td class="mb-52">
-                    This quantum algorithm can factor large prime numbers exponentially faster than classical computers. It undermines the mathematical foundation of RSA encryption. Once operational, quantum computers could break widely used encryption in minutes.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Quantum Key Search</td>
-                  <td>
-                    Grover’s Algorithm accelerates brute-force key searches. While it does not break symmetric encryption outright, it reduces the effective key strength significantly. This requires longer keys and updated algorithms to maintain security.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                    <td class="pr-4 font-medium w-20">Harvest Now, Decrypt Later Attacks</td>
-                    <td>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>logic-diagram</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="drop" fill="currentColor" transform="translate(42.666667, 85.333333)">
+                                    <path d="M426.666667,1.42108547e-14 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,1.42108547e-14 L426.666667,1.42108547e-14 Z M384,42.6666667 L42.6666667,42.6666667 L42.6666667,298.666667 L384,298.666667 L384,42.6666667 Z M213.333333,149.333333 L234.666667,149.333333 L234.666667,234.666667 L213.333333,234.666667 L213.333333,149.333333 Z M213.333333,128 L298.666667,128 L298.666667,149.333333 L213.333333,149.333333 L213.333333,128 Z M149.333333,213.333333 L213.333333,213.333333 L213.333333,234.666667 L149.333333,234.666667 L149.333333,213.333333 Z M149.333333,170.666667 L149.333333,277.333333 L64,277.333333 L64,170.666667 L149.333333,170.666667 Z M149.333333,64 L149.333333,85.3333333 L298.666667,85.3333333 L298.666667,64 L362.666667,64 L362.666667,170.666667 L298.666667,170.666667 L298.666667,106.666667 L149.333333,106.666667 L149.333333,128 L64,128 L64,64 L149.333333,64 Z" id="Combined-Shape" transform="translate(213.333333, 170.666667) scale(1, -1) translate(-213.333333, -170.666667) "></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Shor's Algorithm</h4>
+                    <p class="text-left">
+                        This quantum algorithm can factor large prime numbers exponentially faster than classical computers. It undermines the mathematical foundation of RSA encryption. Once operational, quantum computers could break widely used encryption in minutes.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>document</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="document" fill="currentColor" transform="translate(106.666667, 64.000000)">
+                                    <path d="M192,0 L-1.42108547e-14,0 L-1.42108547e-14,384 L298.666667,384 L298.666667,106.666667 L192,0 Z M256,341.333333 L42.6666667,341.333333 L42.6666667,42.6666667 L128,42.6666667 L128,170.666667 L256,170.666667 L256,341.333333 Z M256,128 L170.666667,128 L170.666667,42.6666667 L174.293333,42.6666667 L256,124.373333 L256,128 Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Quantum Key Research</h4>
+                    <p class="text-left">
+                        Grover’s Algorithm accelerates brute-force key searches. While it does not break symmetric encryption outright, it reduces the effective key strength significantly. This requires longer keys and updated algorithms to maintain security.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg fill="currentColor" class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M298.666667,3.55271368e-14 L298.666667,426.666667 L4.26325641e-14,426.666667 L4.26325641e-14,3.55271368e-14 L298.666667,3.55271368e-14 Z M258.133333,213.333333 L44.8,213.333333 L44.8,384 L258.133333,384 L258.133333,213.333333 Z M170.666667,256 L170.666667,298.666667 L128,298.666667 L128,256 L170.666667,256 Z M256,128 L42.6666667,128 L42.6666667,170.666667 L256,170.666667 L256,128 Z M256,42.6666667 L42.6666667,42.6666667 L42.6666667,85.3333333 L256,85.3333333 L256,42.6666667 Z" transform="translate(106.667 42.667)" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Harvest Now Decrypt Later</h4>
+                    <p class="text-left">
                         Adversaries may collect encrypted data today with the intent to decrypt it once quantum technology matures. This threatens long-term confidentiality for sensitive communications. Data stored for years could suddenly become readable.
-                    </td>
-                  </tr>
-              </tbody>
-            </table>
+                    </p>
+                </div>
+            </div>
         </div>
+        
 
           
 
@@ -344,89 +366,61 @@
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Financial Institutions</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Banks and stock exchanges rely heavily on public key infrastructure. A quantum-enabled breach could allow unauthorized transactions or tampering with digital signatures. The consequences include fraud, financial loss, and trust erosion.
+        <div class="space-y-4">
+            <div class="space-y-2">
+                <h5 class="text-xl">Financial Institutions</h5>
+                <p class="text-gray-200 text-justify">
+                    Banks and stock exchanges rely heavily on public key infrastructure. A quantum-enabled breach could allow unauthorized transactions or tampering with digital signatures. The consequences include fraud, financial loss, and trust erosion.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Government and Defense</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Encrypted diplomatic and military communications are high-value targets. Compromise of these systems could impact national security. Preparing for quantum resilience is a top priority.
+            <div class="space-y-2">
+                <h5 class="text-xl">Government and Defense</h5>
+                <p class="text-gray-200 text-justify">
+                    Encrypted diplomatic and military communications are high-value targets. Compromise of these systems could impact national security. Preparing for quantum resilience is a top priority.
+                </p>
             </div>
-          </details>
-
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Cloud Service Providers</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-                Many cloud services manage encrypted data for clients across industries. If quantum computers break traditional encryption, cloud-stored data could be exposed en masse. Providers must adopt quantum-safe standards to protect client data. Encrypted diplomatic and military communications are high-value targets. Compromise of these systems could impact national security. Preparing for quantum resilience is a top priority.
+            <div class="space-y-2">
+                <h5 class="text-xl">Cloud Service Providers</h5>
+                <p class="text-gray-200 text-justify">
+                    Many cloud services manage encrypted data for clients across industries. If quantum computers break traditional encryption, cloud-stored data could be exposed en masse. Providers must adopt quantum-safe standards to protect client data.
+                </p>
             </div>
-          </details>
+        </div>
         </div>
 
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">How Can We Prepare?</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 1: Transition to Post-Quantum Cryptography</h6>
-              <p class="p-3">
-                Adopt NIST-recommended quantum-resistant algorithms. These are designed to withstand both classical and quantum attacks. Migration should start as early as possible.
-              </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Transition to Post-Quantum Cryptography</h6>
+                <p class="text-gray-200 text-justify">
+                    Adopt NIST-recommended quantum-resistant algorithms. These are designed to withstand both classical and quantum attacks. Migration should start as early as possible.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 2: Conduct Cryptographic Audits</h6>
-              <p class="p-3">
-                Review all systems using public key encryption. Identify vulnerabilities and prioritize upgrades. This helps manage transition risks effectively.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Conduct Cryptographic Audits</h6>
+                <p class="text-gray-200 text-justify">
+                    Review all systems using public key encryption. Identify vulnerabilities and prioritize upgrades. This helps manage transition risks effectively.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 3: Conduct Cryptographic Audits</h6>
-              <p class="p-3">
-                Combine classical and post-quantum algorithms during the transition. This approach balances security with compatibility. It allows gradual adoption without sacrificing protection.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Use Hybrid Cryptography</h6>
+                <p class="text-gray-200 text-justify">
+                    Combine classical and post-quantum algorithms during the transition. This approach balances security with compatibility. It allows gradual adoption without sacrificing protection.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-                <h6 class="font-medium text-lg">Step 4: Secure Long-Term Data Storage</h6>
-                <p class="p-3">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Secure Long-Term Data Storage</h6>
+                <p class="text-gray-200 text-justify">
                     Encrypt sensitive archives using quantum-resistant methods. Consider the future exposure of today's confidential data. Safeguard high-value assets immediately.
                 </p>
-              </div>
-
-              <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-                <h6 class="font-medium text-lg">Step 5: Collaborate on Quantum Research</h6>
-                <p class="p-3">
+            </div>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Collaborate on Quantum Research</h6>
+                <p class="text-gray-200 text-justify">
                     Join industry and academic initiatives focused on quantum-safe technologies. Staying informed ensures faster adaptation. Sharing threat intelligence strengthens collective security.
                 </p>
-              </div>
-  
-    
-          </div>
+            </div>
         </div>
         
         <div>
@@ -449,7 +443,7 @@
 		
 		
 
-		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
+		<footer class="text-white w-full p-4 pt-24">
             <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
                 <div>
                     <div class="flex items-center space-x-4">

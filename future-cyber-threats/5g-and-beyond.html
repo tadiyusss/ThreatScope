@@ -300,7 +300,7 @@
                 </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+    <div class="bg-gradient-to-b from-black to-[#141528]">
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
@@ -310,33 +310,65 @@
           </p>
           
         </div>
-    
-        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
+        <div class="space-y-4">
             <h2 class="text-xl font-semibold mb-4">How do these work?</h2>
-          
-            <table class="table-auto w-full border-separate border-spacing-y-2 p-4">
-              <tbody>
-                <tr class="align-top mb-10">
-                  <td class="pr-4 font-medium w-20">Exploitation of Network Slicing</td>
-                  <td class="mb-52">
-                    5G networks use virtual slices to segment traffic by application. Attackers can target misconfigured slices to gain unauthorized access. Poorly isolated slices can expose sensitive systems.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">IoT Device Hijacking</td>
-                  <td>
-                    Billions of IoT devices connected via 5G often lack basic security. Attackers use default credentials or unpatched flaws to hijack these devices. Compromised devices can be turned into botnets.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Man-in-the-Middle (MitM) over Edge Computing</td>
-                  <td>
-                    Edge devices process data closer to users to reduce latency. This decentralization creates opportunities for interception if encryption is weak. Attackers can alter data before it reaches its destination.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>radio-waves</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="drop" fill="currentColor" transform="translate(42.666667, 78.641067)">
+                                    <path d="M256,177.358933 C256,200.9216 236.898133,220.0256 213.333333,220.0256 C189.768533,220.0256 170.666667,200.9216 170.666667,177.358933 C170.666667,153.796267 189.768533,134.692267 213.333333,134.692267 C236.898133,134.692267 256,153.796267 256,177.358933 Z M128,177.358933 C128,147.776 143.071573,121.73696 165.936213,106.427093 L142.22272,70.94272 C107.92576,93.9063467 85.3333333,132.983467 85.3333333,177.358933 C85.3333333,221.7344 107.92576,260.8128 142.22272,283.776 L165.936213,248.288 C143.071573,232.9792 128,206.941867 128,177.358933 Z M298.666667,177.358933 C298.666667,206.941867 283.594667,232.9792 260.7296,248.288 L284.443733,283.776 C318.741333,260.8128 341.333333,221.7344 341.333333,177.358933 C341.333333,132.983467 318.741333,93.9061333 284.443733,70.94272 L260.7296,106.427093 C283.594667,121.73696 298.666667,147.776 298.666667,177.358933 Z M331.850667,1.42108547e-14 L308.1472,35.47136 C353.8752,66.0885333 384,118.195413 384,177.358933 C384,236.522667 353.8752,288.629333 308.1472,319.246933 L331.850667,354.717867 C389.009067,316.448 426.666667,251.3152 426.666667,177.358933 C426.666667,103.403733 389.0112,38.2709333 331.850667,1.42108547e-14 Z M94.8164267,354.717867 L118.519467,319.249067 C72.7904,288.629333 42.6666667,236.522667 42.6666667,177.358933 C42.6666667,118.195413 72.7904,66.0885333 118.519467,35.4688 L94.8164267,1.42108547e-14 C37.65632,38.2709333 7.10542736e-15,103.40096 7.10542736e-15,177.358933 C7.10542736e-15,251.317333 37.65632,316.448 94.8164267,354.717867 Z" id="Shape">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Exploitation of Network Slicing</h4>
+                    <p class="text-left">
+                        5G networks use virtual slices to segment traffic by application. Attackers can target misconfigured slices to gain unauthorized access. Poorly isolated slices can expose sensitive systems.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>monitor</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon" fill="currentColor" transform="translate(42.666667, 64.000000)">
+                                    <path d="M384.52736,269.682347 C399.834667,248.18496 408.197973,222.60416 408.197973,195.687467 C408.197973,168.474027 399.636693,142.625067 384,120.992213 L384,0 L-2.13162821e-14,0 L-2.13162821e-14,298.666667 L170.666667,298.666667 L170.666667,362.666667 L85.3333333,362.666667 L85.3333333,405.333333 L298.666667,405.333333 L298.666667,362.666667 L213.333333,362.666667 L213.333333,304.463573 C233.799467,317.031253 256.936107,323.62496 280.197973,323.62496 C306.231893,323.62496 332.084693,315.416533 354.194133,299.684907 L405.520853,350.583253 L435.562453,320.291627 L384.52736,269.682347 Z M167.23968,256 L42.6666667,256 L42.6666667,42.6666667 L341.333333,42.6666667 L341.333333,83.2162133 C322.785067,73.0990933 301.916587,67.6874667 280.208427,67.6874667 C246.010453,67.6874667 213.874987,80.9998933 189.69792,105.187413 C165.520853,129.354027 152.208427,161.499947 152.208427,195.687467 C152.208427,217.072853 157.419307,237.66144 167.23968,256 Z M340.541653,256.0416 C307.291733,289.312427 253.156267,289.312427 219.864533,256.0416 C203.749973,239.916587 194.87488,218.479147 194.87488,195.687467 C194.87488,172.895787 203.749973,151.47904 219.864533,135.35424 C235.989547,119.229227 257.416533,110.354133 280.208213,110.354133 C302.98944,110.354133 324.41664,119.229227 340.54144,135.35424 C356.656,151.479253 365.531093,172.896 365.531093,195.687467 C365.531093,218.478933 356.656213,239.916587 340.541653,256.0416 Z" id="Shape">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">IoT Device Hijacking</h4>
+                    <p class="text-left">
+                        Billions of IoT devices connected via 5G often lack basic security. Attackers use default credentials or unpatched flaws to hijack these devices. Compromised devices can be turned into botnets.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>audio-description2</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="audio-description1" fill="currentColor" transform="translate(108.373333, 50.206299)">
+                                    <path d="M245.973333,37.4737009 C277.946982,66.7049848 296.402056,107.862117 296.96,151.180368 C297.909951,195.216177 278.653958,237.264978 244.693333,265.313701 C226.004211,282.594089 213.679571,305.665214 209.706667,330.807034 C206.329518,353.742715 194.069818,374.430959 175.573333,388.407034 C157.66921,401.29244 136.409155,408.688071 114.386553,409.702731 L113.493333,409.740368 L104.96,409.740368 C80.3276219,407.522404 57.543602,395.780617 41.4457618,377.03069 L40.96,376.460368 L73.1733333,349.153701 C82.3277234,360.305185 95.684528,367.176605 110.08,368.140368 C123.827266,368.962113 137.33652,364.279929 147.626667,355.127034 C158.31779,346.967604 165.855509,335.359516 168.96,322.273701 C174.575554,288.287435 191.576543,257.219258 217.173333,234.167034 C242.646229,214.269794 257.203459,183.493912 256.426667,151.180368 C256.10565,120.082806 243.713655,90.3267194 221.866667,68.1937009 C198.168929,46.8403358 166.158236,37.2136483 134.613333,41.9537009 C86.9520408,49.0263675 49.3040095,85.9298209 41.1966163,133.31461 L40.96,134.753701 L2.84217094e-14,128.993701 C10.1305983,62.949981 61.9562801,11.1242992 128,0.993700904 C170.696138,-3.88489958 213.48351,9.34591518 245.973333,37.4737009 Z M107.52,134.327034 C149.73389,189.637483 150.156029,266.136955 108.786417,321.871184 L107.52,323.553701 L74.88,298.380368 C106.119334,257.873377 106.431727,201.55586 75.81718,160.732659 L74.88,159.500368 L107.52,134.327034 Z M45.44,181.900368 C65.8956326,209.924646 65.8956326,247.956089 45.44,275.980368 L45.44,275.980368 L13.0133333,251.020368 C22.138402,237.714547 22.138402,220.166188 13.0133333,206.860368 L13.0133333,206.860368 Z" id="Combined-Shape">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Man-in-the-Middle over Edge Computing</h4>
+                    <p class="text-left">
+                        Edge devices process data closer to users to reduce latency. This decentralization creates opportunities for interception if encryption is weak. Attackers can alter data before it reaches its destination.
+                    </p>
+                </div>
+            </div>
+        </div>   
 
           
 
@@ -344,89 +376,62 @@
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Telecom Providers and ISPs</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              These companies manage the 5G infrastructure and are prime targets for disruption. Attacks could impact millions of users. Infrastructure downtime can have major economic consequences.
+        <div class="space-y-4">
+            <div class="space-y-2">
+                <h5 class="text-xl">Telecom Providers and ISPs</h5>
+                <p class="text-gray-200">
+                    These companies manage the 5G infrastructure and are prime targets for disruption. Attacks could impact millions of users. Infrastructure downtime can have major economic consequences.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Smart Device Manufacturers</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              Devices that lack firmware integrity or security-by-design principles are easily compromised. Poorly secured devices put entire networks at risk. Manufacturers face reputational damage.
+            <div class="space-y-2">
+                <h5 class="text-xl">Smart Device Manufacturers</h5>
+                <p class="text-gray-200">
+                    Devices that lack firmware integrity or security-by-design principles are easily compromised. Poorly secured devices put entire networks at risk. Manufacturers face reputational damage.
+                </p>
             </div>
-          </details>
-
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Public and Critical Infrastructure</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              5G powers smart grids, transport systems, and emergency services. A successful attack could cripple essential services. The societal impact of disruption is severe.
+            <div class="space-y-2">
+                <h5 class="text-xl">Public and Critical Infrastructure</h5>
+                <p class="text-gray-200">
+                    5G powers smart grids, transport systems, and emergency services. A successful attack could cripple essential services. The societal impact of disruption is severe.
+                </p>
             </div>
-          </details>
+        </div>
         </div>
 
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">How Can We Prepare?</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 1: Implement Secure Network Slicing</h6>
-              <p class="p-3">
-                Use strict isolation policies between network slices. Monitor slice behavior for anomalies. Ensure each slice has unique security controls.
-              </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Implement Secure Network Slicing</h6>
+                <p class="text-gray-200">
+                    Use strict isolation policies between network slices. Monitor slice behavior for anomalies. Ensure each slice has unique security controls.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 2: Strengthen IoT Standards</h6>
-              <p class="p-3">
-                Mandate secure boot, encrypted communication, and regular updates. Avoid using default passwords across devices. Certifications can promote safer products.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Strengthen IoT Standards</h6>
+                <p class="text-gray-200">
+                    Mandate secure boot, encrypted communication, and regular updates. Avoid using default passwords across devices. Certifications can promote safer products.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 3: Deploy Edge Security Solutions</h6>
-              <p class="p-3">
-                Protect data at the edge using encryption, access controls, and real-time monitoring. Harden devices physically and digitally. Prevent lateral movement between nodes.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Deploy Edge Security Solutions</h6>
+                <p class="text-gray-200">
+                    Protect data at the edge using encryption, access controls, and real-time monitoring. Harden devices physically and digitally. Prevent lateral movement between nodes.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 4: Conduct Telecom Risk Assessments</h6>
-              <p class="p-3">
-                Continuously evaluate 5G infrastructure for vulnerabilities. Work with regulators and partners to maintain resilience. Incident response plans should be well-tested.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Conduct Telecom Risk Assessments</h6>
+                <p class="text-gray-200">
+                    Continuously evaluate 5G infrastructure for vulnerabilities. Work with regulators and partners to maintain resilience. Incident response plans should be well-tested.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 5: Raise Consumer Awareness</h6>
-              <p class="p-3">
-                Educate users on securing personal IoT devices. Encourage firmware updates and use of network firewalls. Awareness reduces exploitable endpoints.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Raise Consumer Awareness</h6>
+                <p class="text-gray-200">
+                    Educate users on securing personal IoT devices. Encourage firmware updates and use of network firewalls. Awareness reduces exploitable endpoints.
+                </p>
             </div>
-  
-    
-          </div>
+        </div>
         </div>
         
         <div>

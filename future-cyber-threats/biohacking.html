@@ -300,7 +300,7 @@
                 </div>
 			</div>
 		</div>
-    <div class="bg-gradient-to-b from-black to-[#141528] text-justify">
+    <div class="bg-gradient-to-b from-black to-[#141528]">
       <div class="max-w-6xl mx-auto px-6 py-32 space-y-4">
         
         <div class="space-y-4">
@@ -310,33 +310,65 @@
           </p>
           
         </div>
-    
-        <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
+        <div class="space-y-4">
             <h2 class="text-xl font-semibold mb-4">How do these work?</h2>
-          
-            <table class="table-auto w-full border-separate border-spacing-y-2 p-4">
-              <tbody>
-                <tr class="align-top mb-10">
-                  <td class="pr-4 font-medium w-20">Wireless Exploits of Implants</td>
-                  <td class="mb-52">
-                    Pacemakers, insulin pumps, and neural implants often use Bluetooth or RF communication. Without strong encryption, these signals can be intercepted or altered. Attackers could disrupt functionality or extract sensitive health data.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Unauthorized Firmware Manipulation</td>
-                  <td>
-                    Implants and wearables receive software updates for maintenance or upgrades. If the update process lacks authentication, attackers could install malicious firmware. This compromises device safety and patient trust.
-                  </td>
-                </tr>
-                <tr class="align-top">
-                  <td class="pr-4 font-medium w-20">Data Harvesting from Wearables</td>
-                  <td>
-                    Fitness trackers and smartwatches constantly collect biometric data. Without proper safeguards, this information can be sold or stolen. Privacy breaches can lead to discrimination or exploitation.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>radio-waves</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="drop" fill="currentColor" transform="translate(42.666667, 78.641067)">
+                                    <path d="M256,177.358933 C256,200.9216 236.898133,220.0256 213.333333,220.0256 C189.768533,220.0256 170.666667,200.9216 170.666667,177.358933 C170.666667,153.796267 189.768533,134.692267 213.333333,134.692267 C236.898133,134.692267 256,153.796267 256,177.358933 Z M128,177.358933 C128,147.776 143.071573,121.73696 165.936213,106.427093 L142.22272,70.94272 C107.92576,93.9063467 85.3333333,132.983467 85.3333333,177.358933 C85.3333333,221.7344 107.92576,260.8128 142.22272,283.776 L165.936213,248.288 C143.071573,232.9792 128,206.941867 128,177.358933 Z M298.666667,177.358933 C298.666667,206.941867 283.594667,232.9792 260.7296,248.288 L284.443733,283.776 C318.741333,260.8128 341.333333,221.7344 341.333333,177.358933 C341.333333,132.983467 318.741333,93.9061333 284.443733,70.94272 L260.7296,106.427093 C283.594667,121.73696 298.666667,147.776 298.666667,177.358933 Z M331.850667,1.42108547e-14 L308.1472,35.47136 C353.8752,66.0885333 384,118.195413 384,177.358933 C384,236.522667 353.8752,288.629333 308.1472,319.246933 L331.850667,354.717867 C389.009067,316.448 426.666667,251.3152 426.666667,177.358933 C426.666667,103.403733 389.0112,38.2709333 331.850667,1.42108547e-14 Z M94.8164267,354.717867 L118.519467,319.249067 C72.7904,288.629333 42.6666667,236.522667 42.6666667,177.358933 C42.6666667,118.195413 72.7904,66.0885333 118.519467,35.4688 L94.8164267,1.42108547e-14 C37.65632,38.2709333 7.10542736e-15,103.40096 7.10542736e-15,177.358933 C7.10542736e-15,251.317333 37.65632,316.448 94.8164267,354.717867 Z" id="Shape">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Wireless Exploits of Implants</h4>
+                    <p class="text-left">
+                        Pacemakers, insulin pumps, and neural implants often use Bluetooth or RF communication. Without strong encryption, these signals can be intercepted or altered. Attackers could disrupt functionality or extract sensitive health data.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>code</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon" fill="currentColor" transform="translate(37.333333, 128.141872)">
+                                    <path d="M111.084954,16.7215774 L141.254831,46.8914721 L60.356556,127.806522 L141.254831,208.721577 L111.084954,238.891472 L7.10542736e-15,127.806522 L111.084954,16.7215774 Z M326.063211,16.758697 L295.893333,46.9285921 L376.791607,127.843642 L295.893333,208.758697 L326.063211,238.928592 L437.148163,127.843642 L326.063211,16.758697 Z M231.145356,3.69482223e-12 L272.358192,11.0429459 L206.100516,258.319957 L164.887681,247.277012 L231.145356,3.69482223e-12 Z" id="Combined-Shape">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Unauthorized Firmware Manipulation</h4>
+                    <p class="text-left">
+                        Implants and wearables receive software updates for maintenance or upgrades. If the update process lacks authentication, attackers could install malicious firmware. This compromises device safety and patient trust.
+                    </p>
+                </div>
+                <div class="bg-[#141528] border border-indigo-900 rounded p-4 space-y-4 hover:bg-[#1D1F3E] ease duration-300">
+                    <div class="flex justify-center">
+                        <svg class="size-22 bg-purple-800/20 rounded-full p-4 text-purple-800" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>anomaly</title>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Shape" fill="currentColor" transform="translate(42.666667, 42.666667)">
+                                    <path d="M170.666667,-7.10542736e-15 C264.770773,-7.10542736e-15 341.333333,76.56256 341.333333,170.666667 C341.333333,210.04032 327.799467,246.239573 305.3152,275.148373 L426.630187,396.463573 L396.463573,426.630187 L275.148373,305.314987 C246.239573,327.799467 210.04032,341.333333 170.666667,341.333333 C76.56256,341.333333 7.10542736e-15,264.770773 7.10542736e-15,170.666667 C7.10542736e-15,76.56256 76.56256,-7.10542736e-15 170.666667,-7.10542736e-15 Z M170.666667,148.928 L133.408288,240 L63.1115909,240.001039 C85.9289807,275.276196 125.615934,298.666667 170.666667,298.666667 C215.7174,298.666667 255.404353,275.276196 278.221742,240.001039 L207.925046,240 L170.666667,148.928 Z M170.666667,42.6666667 C100.083413,42.6666667 42.6666667,100.083413 42.6666667,170.666667 C42.6666667,183.648708 44.6089886,196.185346 48.2183113,208.00126 L111.914667,208 L170.666667,64.4093713 L229.397333,208 L293.115022,208.00126 C296.724345,196.185346 298.666667,183.648708 298.666667,170.666667 C298.666667,100.083413 241.24992,42.6666667 170.666667,42.6666667 Z">
+
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-medium text-center">Data Harvesting from Wearables</h4>
+                    <p class="text-left">
+                        Fitness trackers and smartwatches constantly collect biometric data. Without proper safeguards, this information can be sold or stolen. Privacy breaches can lead to discrimination or exploitation.
+                    </p>
+                </div>
+            </div>
+        </div>       
 
           
 
@@ -344,88 +376,61 @@
         <div class="text-white mt-8">
           <h3 class="text-2xl font-medium text-[#E2C8F1] mb-3">Practical Usage</h3>
         
-          <!-- Accordion Item 1 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Patients with Critical Implants</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              Individuals using devices like pacemakers or insulin pumps are directly exposed to life-threatening risks. Compromised functionality could result in medical emergencies. These users depend heavily on device integrity.
+        <div class="space-y-4">
+            <div class="space-y-2">
+                <h5 class="text-xl">Patients with Critical Implants</h5>
+                <p class="text-gray-200">
+                    Individuals using devices like pacemakers or insulin pumps are directly exposed to life-threatening risks. Compromised functionality could result in medical emergencies. These users depend heavily on device integrity.
+                </p>
             </div>
-          </details>
-        
-          <!-- Accordion Item 2 -->
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Biohacker Enthusiasts</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              DIY biohackers implant unregulated chips for convenience or experimentation. These devices may lack encryption or authentication. Their open-source nature makes them vulnerable.
-          </details>
-
-          <details class="group" open>
-            <summary class="flex items-center justify-between cursor-pointer list-disc list-inside text-base font-medium marker:text-white">
-              <span class="text-xl">Healthcare Providers and Device Manufacturers</span>
-              <svg class="w-4 h-4 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="mt-2 pl-16 mb-8">
-              Hospitals and developers bear responsibility for device security. A single flaw could affect thousands of patients. Legal and reputational damage can be severe.
+            <div class="space-y-2">
+                <h5 class="text-xl">Biohacker Enthusiasts</h5>
+                <p class="text-gray-200">
+                    DIY biohackers implant unregulated chips for convenience or experimentation. These devices may lack encryption or authentication. Their open-source nature makes them vulnerable.
+                </p>
             </div>
-          </details>
+            <div class="space-y-2">
+                <h5 class="text-xl">Healthcare Providers and Device Manufacturers</h5>
+                <p class="text-gray-200">
+                    Hospitals and developers bear responsibility for device security. A single flaw could affect thousands of patients. Legal and reputational damage can be severe.
+                </p>
+            </div>
+        </div>
         </div>
 
         <div class="space-y-4">
           <h4 class="font-medium text-2xl text-[#E2C8F1]">How Can We Prepare?</h4>
-          <div class="grid grid-cols-3 gap-4">
-            
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 1: Use Encrypted Communication Channels</h6>
-              <p class="p-3">
-                All implant communications must use strong encryption. Authentication protocols should validate both the sender and receiver. Avoid default credentials or open ports.
-              </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Use Encrypted Communication Channels</h6>
+                <p class="text-gray-200">
+                    All implant communications must use strong encryption. Authentication protocols should validate both the sender and receiver. Avoid default credentials or open ports.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 2: Enforce Secure Firmware Updates</h6>
-              <p class="p-3">
-                Only verified updates should be accepted by medical devices. Implement signing and validation processes. Update rollout should be monitored for anomalies.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Enforce Secure Firmware Updates</h6>
+                <p class="text-gray-200">
+                    Only verified updates should be accepted by medical devices. Implement signing and validation processes. Update rollout should be monitored for anomalies.
+                </p>
             </div>
-    
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 3: Conduct Risk Assessments and Penetration Testing</h6>
-              <p class="p-3">
-                Devices should undergo regular security audits by ethical hackers. Testing uncovers vulnerabilities before exploitation. Continuous evaluation is essential.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Conduct Risk Assessments and Penetration Testing</h6>
+                <p class="text-gray-200">
+                    Devices should undergo regular security audits by ethical hackers. Testing uncovers vulnerabilities before exploitation. Continuous evaluation is essential.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 4: Educate Patients and Biohackers</h6>
-              <p class="p-3">
-                Provide clear guidance on device risks, safety settings, and updates. Informed users are better protected. Encourage responsible use of biohacking technology.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Educate Patients and Biohackers</h6>
+                <p class="text-gray-200">
+                    Provide clear guidance on device risks, safety settings, and updates. Informed users are better protected. Encourage responsible use of biohacking technology.
+                </p>
             </div>
-
-            <div class="p-5 bg-[#141528] border border-indigo-900 rounded space-y-2">
-              <h6 class="font-medium text-lg">Step 5: Develop Regulatory Oversight</h6>
-              <p class="p-3">
-                Enforce standards for implant cybersecurity through government or medical boards. Compliance must be mandatory for certification. Oversight ensures safer adoption.
-              </p>
+            <div class="space-y-2 p-4 bg-[#141528] border border-indigo-900 rounded hover:bg-[#1D1F3E] ease duration-300">
+                <h6 class="font-medium text-lg">Develop Regulatory Oversight</h6>
+                <p class="text-gray-200">
+                    Enforce standards for implant cybersecurity through government or medical boards. Compliance must be mandatory for certification. Oversight ensures safer adoption.
+                </p>
             </div>
-  
-    
-          </div>
         </div>
         
         <div>
@@ -448,7 +453,7 @@
 		
 		
 
-		<footer class="text-white w-full p-4 pt-24 bg-[#141528]">
+		<footer class="text-white w-full p-4 pt-24">
             <div class="max-w-7xl mx-auto border p-6 bg-[#141538]/80 border-indigo-900/50 rounded md:flex block justify-between">
                 <div>
                     <div class="flex items-center space-x-4">
