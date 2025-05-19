@@ -341,13 +341,13 @@
 		<div class="bg-gradient-to-b from-black to-[#141528]">
 			<div class="max-w-6xl mx-auto px-6 py-32 space-y-10">
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Overview</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="overview">Overview</h4>
 					<div class="space-y-2">
 						<p>Encryption is a fundamental cybersecurity technique that protects data by converting it into unreadable code, which can only be deciphered with the correct key. It ensures the confidentiality and integrity of sensitive information during storage and transmission. Encryption is used in emails, messaging, file storage, databases, and network communications. There are two main types: symmetric (same key to encrypt/decrypt) and asymmetric (public/private key pair). Without encryption, data sent across networks can be easily intercepted or altered. Encryption is essential for privacy, secure transactions, and regulatory compliance.</p>
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Data Encryption at Rest</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="detection">Data Encryption at Rest</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
 						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Full Disk Encryption</h6>
@@ -362,7 +362,7 @@
 							<p>Cloud services encrypt stored files (e.g., Google Drive, Dropbox). Usually paired with server-side encryption and user-specific access controls.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Data Encryption in Transit</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="removal">Data Encryption in Transit</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
 						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">TLS/SSL Protocols</h6>
@@ -377,7 +377,7 @@
 							<p>Encrypts email content and attachments. Ensures messages are readable only by intended recipients. Used in business and legal communication.</p>
 						</div>
 					</div>
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">End-to-End Encryption</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="management">End-to-End Encryption</h4>
 					<div class="grid md:grid-cols-3 grid-cols-1 gap-2">
 						<div class="p-4 bg-[#141528] border border-indigo-900 rounded space-y-2 hover:bg-[#1D1F3E] ease duration-300">
 							<h6 class="font-medium text-xl">Messaging Apps</h6>
@@ -394,7 +394,7 @@
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h3 class="text-2xl font-medium text-[#E2C8F1]">Practical Usage</h3>
+					<h3 class="text-2xl font-medium text-[#E2C8F1]" id="practical">Practical Usage</h3>
 					<div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
 						<div class="flex justify-center">
 							<a href="../assets/datacenter.jpg" target="image-viewer"><img src="../assets/datacenter.jpg" class="rounded w-full h-96 object-cover" alt="Antivirus Software" /></a>
@@ -432,7 +432,7 @@
 					</div>
 				</div>
 				<div class="space-y-4">
-					<h4 class="font-medium text-2xl text-[#E2C8F1]">Limitations</h4>
+					<h4 class="font-medium text-2xl text-[#E2C8F1]" id="limitations">Limitations</h4>
                     <div class="space-y-2">
                         <p>Encryption requires proper key management; lost or leaked keys can compromise the entire system. It can add processing overhead, especially for older hardware. Not all applications encrypt data by default, leading to inconsistent protection. Encrypted data cannot be scanned easily for malware or content unless decrypted. If improperly configured, encryption may provide a false sense of security. Finally, while encryption protects data, it does not prevent unauthorized access if the attacker gains valid credentials.</p>
                     </div>
